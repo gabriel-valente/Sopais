@@ -1,0 +1,28 @@
+.div-division {
+   width: 100%;
+   height: auto;
+   margin: 10px;
+   padding: 0px;
+   border-bottom: 3px solid #888;
+   overflow: hidden;
+}
+
+h2 {
+   font-weight: bolder;
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+}
+
+img {
+   width: 100%;
+   margin: auto;
+   transition: transform .5s ease-in-out;
+}
+
+img:hover {
+   transform: scale(1.3);
+}

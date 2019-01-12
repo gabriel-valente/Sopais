@@ -1,0 +1,33 @@
+footer {
+   width: 100%;
+   background-color: #CCC;
+}
+
+.contents {
+   width: 90%;
+   list-style-type: none;
+   margin: auto;
+   padding: 0px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.div-top {
+   width: 100%;
+   height: 90px;
+   background-color: #CBCBCB;
+}
+
+.vertical {
+   display: grid;
+   margin-bottom: auto;
+}
+
+footer a, footer p {
+   font-size: 14px;
+   line-height: 10px;
+}
+
+.text {
+
+}
