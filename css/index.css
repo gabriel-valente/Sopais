@@ -1,10 +1,10 @@
 .div-division {
    width: 100%;
    height: auto;
-   margin: 10px;
+   margin: auto;
    padding: 0px;
-   border-bottom: 3px solid #888;
    overflow: hidden;
+   object-fit: contain;
 }
 
 h2 {
