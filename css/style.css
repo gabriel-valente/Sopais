@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
    margin: 0px;
    padding: 0px;
@@ -15,6 +19,44 @@ main {
 
 .div-containter {
    align-content: space-between;
+}
+
+.div-division {
+   width: 100%;
+   height: auto;
+   margin: auto;
+   padding: 0px;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+}
+
+.div-content{
+   width: calc((100% / 3) - 60px);
+   margin: 0px 10px;
+   background-color: #1337;
+   padding: 10px;
+   margin-bottom: 35px;
+}
+
+.text-header {
+   font-weight: bolder;
+   text-align: center;
+   margin: 0px;
+   color: white;
+   font-size: 38px;
+}
+
+.text-content {
+   font-weight: normal;
+   text-align: left;
+   color: white;
+}
+
+.flow {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
 }
 
 .link {

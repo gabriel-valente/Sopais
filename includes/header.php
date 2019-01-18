@@ -8,7 +8,7 @@
          <a class="link active" href="index.php">Inicio</a>
       </div>
       <div class="div-containter">
-         <a class="link" href="index.php">Quem somos</a>
+         <a class="link" href="quemsomos.php">Quem somos</a>
       </div>
       <div class="div-containter">
          <a class="link" href="index.php">Tecnologia</a>
