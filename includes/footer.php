@@ -3,7 +3,10 @@
 </head>
 <footer>
    <div class="div-top">
-
+      <img src="img/logos/01.png">
+      <img src="img/logos/02.png">
+      <img src="img/logos/03.png">
+      <img src="img/logos/04.png">
    </div>
    <div class="contents">
       <div class="div-containter vertical">

@@ -4,25 +4,64 @@
    margin: auto;
    padding: 0px;
    overflow: hidden;
-   object-fit: contain;
+   position: relative;
+   text-align: center;
 }
 
-h2 {
-   font-weight: bolder;
-   text-align: center;
+.img-display {
+   width: 100%;
+   height: auto;
+   margin: auto;
+   object-fit: fill;
+}
+
+.div-overimage {
+   width: 95%;
+   height: 95%;
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+}
+
+.div-content{
+   width: calc((100% / 3) - 60px);
+   margin: 0px 10px;
+   background-color: #1337;
+   padding: 10px;
+}
+
+.text-header {
+   font-weight: bolder;
+   text-align: center;
+   margin: 0px;
+   color: white;
+   font-size: 38px;
+   text-shadow: 4px 4px 10px black, -4px -4px 10px black;
+}
+
+.text-content {
+   font-weight: normal;
+   text-align: left;
    color: white;
 }
 
-img {
-   width: 100%;
-   margin: auto;
-   transition: transform .5s ease-in-out;
+.flow {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
 }
 
-img:hover {
-   transform: scale(1.3);
+/*
+.img-display {
+   width: 100%;
+   height: auto;
+   margin: auto;
+   object-fit: fill;
+   transition: all 0.7s cubic-bezier(0.2,1,0.22,1);
 }
+
+.img-display:hover {
+   transform: scale(1.2);
+}
+*/

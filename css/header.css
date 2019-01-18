@@ -4,6 +4,7 @@ header, nav {
    background-color: #CCC;
    position: sticky;
    top: 0px;
+   z-index: 999;
 }
 
 nav {
@@ -12,7 +13,6 @@ nav {
    margin: auto;
    padding: 0px;
    align-items: center;
-   justify-content: center;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;

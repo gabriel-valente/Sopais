@@ -26,3 +26,8 @@ main {
 .active {
    color: #4040AA;
 }
+
+.box {
+   background-color: #AAA;
+   padding: 10px;
+}
