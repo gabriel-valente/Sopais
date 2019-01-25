@@ -6,7 +6,7 @@
       <title>SOPAIS</title>
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/index.css">
-      <script src="js/smoothscroll.js" charset="utf-8"></script>
+      <!--<script src="js/smoothscroll.js" charset="utf-8"></script>-->
    </head>
    <body>
       <?php
@@ -14,7 +14,7 @@
       ?>
       <main>
          <div class="div-division">
-            <img class="img-display" src="http://ultrawidewallpapers.com/wp-content/uploads/2015/12/rising-city-bw-3440x1440.jpg">
+            <img class="img-display" src="https://wallpaperbrowse.com/media/images/704532.jpg">
             <div class="div-overimage flow">
                <div class="div-content">
                   <h2 class="text-header">Lorem ipsum dolor sit amet.</h2>
@@ -50,7 +50,7 @@
          </div>
       </main>
       <?php
-         include_once "includes/footer.php";
+         //include_once "includes/footer.php";
       ?>
    </body>
 </html>
