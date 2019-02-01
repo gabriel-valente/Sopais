@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -17,7 +18,7 @@ main {
    margin: auto;
 }
 
-.div-container {
+.div-containter {
    align-content: space-between;
 }
 
