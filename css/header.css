@@ -1,26 +1,19 @@
-header, .topnav {
+header {
    width: 100%;
-   height: 60px;
-   background-color: #CCC;
+   height: auto;
+   background-color: #FFFB;
+   border-bottom: solid 1px #333A;
    position: sticky;
    top: 0px;
    z-index: 999;
 }
 
-.topnav {
-   width: 90%;
-   height: auto;
-   list-style-type: none;
-   margin: auto;
-   padding: 0px;
-   align-items: center;
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
+.div-nav-desktop {
+   display: block;
 }
 
-.menu {
-   height: 55px;
+.div-nav-mobile {
+   display: none;
 }
 
 .icon {
@@ -28,34 +21,135 @@ header, .topnav {
    display: none;
 }
 
-@media screen and (max-width: 805px) {
-   .topnav .div-container:not(:first-child):not(:last-child) {
+img {
+   height: 100px;
+   margin: 10px 50px;
+}
+
+.name {
+   color: #273B7B;
+   font-size: 21px;
+   left: 200px;
+   width: 422px;
+   position: absolute;
+   pointer-events: none;
+   top: 10px;
+}
+
+nav {
+   width: calc(100% - 250px);
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   position: absolute;
+   right: 80px;
+   top: 65px;
+}
+
+.item {
+   color: #605E5E;
+   margin: 15px;
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: lighter;
+   transform: scale(1) translateY(1px);
+   transition: all 0.1s ease-in-out;
+}
+
+.item:hover {
+   color: #273B7B;
+   transform: scale(1.5) translateY(-1px);
+   transition: all 0.1s ease-in-out;
+}
+
+.lang {
+   width: 75px;
+   height: calc(100% - 50px);
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 25px 0px;
+}
+
+.lang a {
+   color: #605E5E;
+   text-decoration: none;
+   margin: 0px;
+   text-align: right;
+   transition: all 0.1s ease-in-out;
+}
+
+.lang a:hover {
+   color: #FFF;
+   background-color: #273B7B;
+   padding-right: 50px;
+   transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 829px) {
+   .div-nav-desktop {
       display: none;
    }
 
+   .div-nav-mobile {
+      display: block;
+   }
+
    .icon {
-      float: right;
       display: block;
-   }
-
-   .topnav.responsive .div-container:not(:first-child):not(:last-child) {
-      display: flex;
-   }
-
-   .topnav.responsive {
-      position: relative;
-      display: block;
-   }
-
-   .topnav.responsive .div-container .icon {
       position: absolute;
-      right: 0;
-      top: 5px;
+      top: 3px;
+      right: 5px;
    }
 
-   .topnav.responsive .div-container {
-      width: calc(100% / 2);
-      float: none;
+   img {
+      height: 50px;
+      margin: 10px;
+   }
+
+   nav{
+      display: none;
+   }
+
+   .responsive {
+      width: 100%;
       display: flex;
+      position: absolute;
+      top: 75px;
+      right: 0px;
+      background-color: #FFFB;
+      flex-direction: column;
+      align-items: flex-end;
+   }
+
+   .item {
+      font-size: 20px;
+   }
+
+   .language {
+      width: calc(100% - 15px);
+      color: #605E5E;
+      padding-right: 15px;
+      padding-top: 10px;
+      margin: 10px 0px;
+      text-align: right;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      border-top: solid 3px #333A;
+   }
+
+   .itemLang {
+      color: #605E5E;
+      text-decoration: none;
+      margin: 5px 0px 0px 40px;
+      text-align: right;
+   }
+
+   .langSel {
+      color: #273B7B;
    }
 }

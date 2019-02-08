@@ -1,13 +1,14 @@
-html {
-  scroll-behavior: smooth;
-  text-rendering: optimizeLegibility;
+* {
+   font-family: sans-serif;
+   scroll-behavior: smooth;
+   text-rendering: optimizeLegibility;
 }
 
 body {
    margin: 0px;
    padding: 0px;
-   background-color: #DFDFDF;
-   font-family: "Poiret One", cursive;
+   background-color: #FFF;
+   font-family: sans-serif;
    color: #333;
    font-size: 18px;
 }
