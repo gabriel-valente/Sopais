@@ -20,11 +20,19 @@
          <a href="index.php">EN</a>
       </div>
    </div>
+
    <div class="div-nav-mobile">
       <img src="img/logo.png">
       <a href="javascript:void(0);" class="icon" onclick="ClassChanger()">
          <img class="icon" src="img/icons/menu.png">
       </a>
+      <div class="div-social">
+         <a class="link" href="index.php">
+            <img class="social" src="img/icons/facebook.png">
+         </a><a class="link" href="index.php">
+            <img class="social" src="img/icons/linkedin.png">
+         </a>
+      </div>
       <nav>
          <a class="item" href="index.php">Inicio</a>
          <a class="item" href="index.php">A Empresa</a>
@@ -41,6 +49,15 @@
    </div>
 </header>
 <script>
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 60) {
+      $("header").addClass("minimize");
+   }
+   else {
+      $("header").removeClass("minimize");
+   }
+});
 
 function ClassChanger() {
    var x = $("nav");

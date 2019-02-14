@@ -1,29 +1,62 @@
-.img-display {
+video {
    width: 100%;
-   height: auto;
-   margin: auto;
-   object-fit: fill;
+   height: 600px;
+   object-fit: cover;
+   -o-object-fit: cover;
+   z-index: -999;
 }
 
-.div-overimage {
-   width: 95%;
-   height: 95%;
+article {
    position: absolute;
-   top: 50%;
+   left: 0px;
+   right: 0px;
+   width: auto;
+   height: calc(100% - 50px);
+   border: solid 15px #FFF6;
+   -o-border-bottom: solid 15px #FFF6;
+   -moz-border-bottom: solid 15px #FFF6;
+   -webkit-border-bottom: solid 15px #FFF6;
+   margin: 10px;
+}
+
+.heading {
+   position: absolute;
    left: 50%;
-   transform: translate(-50%, -50%);
+   top: 20%;
+   transform-origin: center;
+   -ms-transform-origin: center;
+   -moz-transform-origin: center;
+   -webkit-transform-origin: center;
+   transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   width: 60%;
+   font-size: 40px;
+   font-weight: bold;
+   letter-spacing: 0.05px;
+   color: #fff;
+   text-align: center;
+   text-shadow: 0px 3px 10px #000A;
+   transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -webkit-transition: all 1s ease;
 }
 
-/*
-.img-display {
-   width: 100%;
-   height: auto;
-   margin: auto;
-   object-fit: fill;
-   transition: all 0.7s cubic-bezier(0.2,1,0.22,1);
+.div-content {
+   width: calc((100% / 4) - 60px);
 }
 
-.img-display:hover {
-   transform: scale(1.2);
+.img-certlogo {
+   height: calc(100% / 4);
+   width: calc(100% / 4);
+   margin: 0px;
 }
-*/
+@media screen and (max-width: 888px) {
+   .heading {
+      width: 90%;
+      transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+   }
+}

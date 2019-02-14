@@ -26,17 +26,43 @@ main {
 .div-division {
    width: 100%;
    height: auto;
-   margin: auto;
+   position: relative;
+   left: 50%;
+   transform-origin: center;
+   -ms-transform-origin: center;
+   -moz-transform-origin: center;
+   -webkit-transform-origin: center;
+   transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
    padding: 0px;
    overflow: hidden;
    position: relative;
    text-align: center;
 }
 
+.div-wrapper {
+   width: 60%;
+   position: relative;
+   left: 50%;
+   margin: 20px 0px;
+   transform-origin: center;
+   -ms-transform-origin: center;
+   -moz-transform-origin: center;
+   -webkit-transform-origin: center;
+   transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -webkit-transition: all 1s ease;
+}
+
 .div-content{
    width: calc((100% / 3) - 60px);
    margin: 0px 10px;
-   background-color: #1337;
    padding: 10px;
    margin-bottom: 35px;
 }
@@ -55,14 +81,37 @@ main {
    color: white;
 }
 
+.div-message {
+   height: auto;
+   width: 60%;
+   margin: auto;
+   color: #273B7B;
+   font-weight: normal;
+   text-align: center;
+   transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -webkit-transition: all 1s ease;
+}
+
+.div-message b {
+   font-weight: bolder;
+}
+
 .flow {
    display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+   -moz-flex-wrap: wrap;
+   -webkit-flex-wrap: wrap;
    justify-content: space-around;
 }
 
 .link {
    text-decoration: none;
+   -webkit-text-decoration: none;
    color: #333;
    margin: 15px;
 }
@@ -74,4 +123,38 @@ main {
 .box {
    background-color: #AAA;
    padding: 10px;
+}
+
+.button {
+   height: 40px;
+   width: 150px;
+   margin: auto;
+   border-radius: 20px;
+   background-color: #D12A3C;
+   filter: opacity(0.68);
+   -webkit-filter: opacity(0.68);
+}
+
+.button a {
+   display:inline-block;
+   height: 100%;
+   width: 100%;
+   color: #FFF;
+   text-decoration: none;
+   -webkit-text-decoration: none;
+   font-size: 13px;
+   padding: 1em 0px;
+}
+
+.button:hover {
+   background-color: #002D5C;
+}
+
+@media screen and (max-width: 888px) {
+   .div-message, .div-wrapper {
+      width: 90%;
+      transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+   }
 }

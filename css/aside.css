@@ -1,0 +1,96 @@
+.aside-social {
+   position: fixed;
+   right: 0px;
+   top: 45%;
+   display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
+   flex-direction: column;
+   -ms-flex-direction: column;
+   -moz-flex-direction: column;
+   -webkit-flex-direction: column;
+   align-items: flex-end;
+   -ms-align-items: flex-end;
+   -moz-align-items: flex-end;
+   -webkit-align-items: flex-end;
+}
+
+.div-button {
+   width: 36px;
+   display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
+   flex-direction: row;
+   -ms-flex-direction: row;
+   -moz-flex-direction: row;
+   -webkit-flex-direction: row;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
+}
+
+.div-button:hover {
+   width: 150px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
+}
+
+.div-button img {
+   display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
+   width: 26px;
+   height: 26px;
+   margin: 5px;
+}
+
+.div-button a {
+   display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
+   color: #FFF;
+   margin: 0px;
+   width: 100%;
+   height: 100%;
+}
+
+.div-button a p {
+   display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
+   color: #FFF;
+   margin: auto;
+   margin-left: 5px;
+   width: auto;
+   height: 100%;
+}
+
+.fb {
+   background-color: #3B5998;
+   border-top-left-radius: 10px;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
+}
+
+.ld {
+   background-color: #0077B5;
+   border-bottom-left-radius: 10px;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 888px) {
+   .aside-social {
+      display: none;
+   }
+}
