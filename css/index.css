@@ -43,15 +43,44 @@ article {
    -webkit-transition: all 1s ease;
 }
 
-.div-content {
-   width: calc((100% / 4) - 60px);
-}
-
 .img-certlogo {
-   height: calc(100% / 4);
-   width: calc(100% / 4);
+   height: calc((100% / 4) - 10px);
+   width: calc((100% / 4) - 10px);
    margin: 0px;
 }
+
+.link-post {
+   height: auto;
+   width: auto;
+   margin: 0px;
+}
+
+.post {
+   background-color: #EEE;
+   padding: 10px;
+}
+
+.post img, .image-container {
+   height: auto;
+   width: 100%;
+   margin: auto;
+   overflow: hidden;
+   object-fit: cover;
+}
+
+.post img:hover {
+   transform: scale(1.15);
+   -ms-transform: scale(1.15);
+   -moz-transform: scale(1.15);
+   -webkit-transform: scale(1.15);
+}
+
+.post h3 {
+   color: #333;
+   font-size: 16px;
+   margin: 0px;
+}
+
 @media screen and (max-width: 888px) {
    .heading {
       width: 90%;

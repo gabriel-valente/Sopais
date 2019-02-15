@@ -1,6 +1,9 @@
 header {
    width: 100%;
    height: auto;
+   position: fixed;
+   top: 0px;
+   left: 0px;
    background-color: #FFF;
    border-bottom: solid 1px #333A;
    -o-border-bottom: solid 1px #333A;

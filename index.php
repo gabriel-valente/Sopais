@@ -6,6 +6,8 @@
       <title>Sopais</title>
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/index.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/pageChange.js"></script>
    </head>
    <body>
       <?php
@@ -37,20 +39,41 @@
                   <a href="index.php">Saiba mais</a>
                </div>
             </div>
+            <br>
             <div class="div-division">
-               <div class="div-message">
-                  <h5><i>A SOPAIS – Componentes Metálicos, Lda.</i> foi fundada em 1987 contando com<b> mais de 30 anos de experiência na industria metalomecânica.</b></h5>
-               </div>
+               <div class="div-container flow">
+                  <div class="div-content post">
+                     <div class="image-container">
+                        <img src="https://cdn.pixabay.com/photo/2017/12/29/18/47/nature-3048299__340.jpg">
+                     </div>
+                     <h3>Lorem ipsum dolor sit amet.</h3>
+                  </div>
+
+                  <div class="div-content post">
+                     <div class="image-container">
+                        <img src="https://cdn.pixabay.com/photo/2017/12/29/18/47/nature-3048299__340.jpg">
+                     </div>
+                     <h3>Lorem ipsum dolor sit amet.</h3>
+                  </div>
+
+                  <div class="div-content post">
+                     <div class="image-container">
+                        <img src="https://cdn.pixabay.com/photo/2017/12/29/18/47/nature-3048299__340.jpg">
+                     </div>
+                     <h3>Lorem ipsum dolor sit amet.</h3>
+                  </div>
 
                <div class="button">
-                  <a href="index.php">Saiba mais</a>
+                  <a href="index.php">Mais notícias</a>
                </div>
             </div>
+            <br>
+
          </div>
       </main>
       <?php
          include_once "includes/aside.php";
-         //include_once "includes/footer.php";
+         include_once "includes/footer.php";
       ?>
    </body>
 </html>

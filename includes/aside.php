@@ -5,13 +5,13 @@
 </head>
 <aside class="aside-social">
    <div class="div-button fb">
-      <a class="link" href="index.php">
+      <a class="link" href="index.php" id="noScript">
          <img src="img/icons/facebook.png">
          <p>Facebook</p>
       </a>
    </div>
    <div class="div-button ld">
-      <a class="link" href="index.php">
+      <a class="link" href="index.php" id="noScript">
          <img src="img/icons/linkedin.png">
          <p>Linkedin</p>
       </a>
