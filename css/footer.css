@@ -9,12 +9,17 @@ footer {
 }
 
 .contents {
+   height: 306.88px;
    width: 90%;
    list-style-type: none;
    margin: auto;
    padding: 0px;
    display: flex;
    justify-content: space-between;
+   transition: all 1s;
+   -moz-transition: all 1s;
+   -webkit-transition: all 1s;
+   z-index: 1;
 }
 
 .contents-outter {
@@ -32,10 +37,33 @@ footer {
    text-align: center;
    align-items: center;
    justify-content: center;
+   z-index: 2;
 }
 
-.div-bar img {
+.div-bar-logo {
    height: calc(100% - 10px);
+   width: calc((100% / 3) - 10px);
+}
+
+#bg1 {
+   background-image: url("../img/logos/012.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+#bg2 {
+   background-image: url("../img/logos/022.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+#bg3 {
+   background-image: url("../img/logos/04.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 .vertical {
@@ -49,9 +77,31 @@ footer a, footer p {
 }
 
 .link, .text, h5 {
+   line-height: 15px;
    color: #DDD;
+}
+
+.contents .link, .contents .text, .contents h5 {
+   z-index: -999;
 }
 
 .link, .text {
    margin: 10px;
+}
+
+@media screen and (max-width: 760px) {
+   .contents {
+      height: 0px;
+      transition: all 1s;
+      -moz-transition: all 1s;
+      -webkit-transition: all 1s;
+      z-index: -999;
+   }
+}
+
+
+@media screen and (max-width: 760px) {
+   .div-bar {
+      width: 100%;
+   }
 }

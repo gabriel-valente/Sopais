@@ -250,8 +250,8 @@ nav {
 
    .div-social {
       position: absolute;
-      top: 10px;
-      right: 80px;
+      top: 15px;
+      right: 160px;
       height: auto;
       width: 24px;
       margin: 0px;
@@ -259,10 +259,10 @@ nav {
       -ms-display: flex;
       -moz-display: flex;
       -webkit-display: flex;
-      flex-direction: column;
-      -ms-flex-direction: column;
-      -moz-flex-direction: column;
-      -webkit-flex-direction: column;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row;
+      -webkit-flex-direction: row;
       align-items: flex-end;
       -ms-align-items: flex-end;
       -moz-align-items: flex-end;
@@ -270,7 +270,7 @@ nav {
    }
 
    .div-social a {
-      margin: 0px;
+      margin: 5px;
    }
 
    .social {

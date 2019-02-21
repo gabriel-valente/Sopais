@@ -4,9 +4,9 @@
 </head>
 <footer>
    <div class="div-bar">
-      <img src="img/logos/01.png">
-      <img src="img/logos/02.png">
-      <img src="img/logos/04.png">
+      <div class="div-bar-logo" id="bg1"></div>
+      <div class="div-bar-logo" id="bg2"></div>
+      <div class="div-bar-logo" id="bg3"></div>
    </div>
    <div class="contents-outter">
       <div class="contents">

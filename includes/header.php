@@ -28,9 +28,13 @@
          <img class="icon" src="img/icons/menu.png">
       </a>
       <div class="div-social">
-         <a class="link" href="index.php">
+         <a class="link" target="_blank" href="https://www.facebook.com/sopaislda" id="noScript">
             <img class="social" src="img/icons/facebook.png">
-         </a><a class="link" href="index.php">
+         </a>
+         <a class="link" target="_blank" href="https://www.youtube.com/channel/UCUwKckOoooyihJaUKwSuMIQ" id="noScript">
+            <img class="social" src="img/icons/youtube.png">
+         </a>
+         <a class="link" target="_blank" href="https://www.linkedin.com/company/sopais?trk=tyah&trkInfo=tarId%3A1397663293041%2Ctas%3Asopais%2Cidx%3A1-1-1" id="noScript">
             <img class="social" src="img/icons/linkedin.png">
          </a>
       </div>

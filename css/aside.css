@@ -45,12 +45,12 @@
 }
 
 .div-button img {
-   display: flex;
-   -ms-display: flex;
-   -moz-display: flex;
-   -webkit-display: flex;
    width: 26px;
    height: 26px;
+   min-width: 26px;
+   min-height: 26px;
+   max-width: 26px;
+   max-height: 26px;
    margin: 5px;
 }
 
@@ -80,6 +80,13 @@
 .fb {
    background-color: #3B5998;
    border-top-left-radius: 10px;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
+}
+
+.yt {
+   background-color: #CC181E;
    transition: all 0.4s ease;
    -moz-transition: all 0.4s ease;
    -webkit-transition: all 0.4s ease;
