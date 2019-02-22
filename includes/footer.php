@@ -14,10 +14,10 @@
             <h5>Menu</h5>
             <a class="link" href="index.php">Inicio</a>
             <a class="link" href="empresa.php">A Empresa</a>
-            <a class="link" href="#">O Que Fazemos</a>
-            <a class="link" href="#">Qualidade</a>
-            <a class="link" href="#">Notícias</a>
-            <a class="link" href="#">Contactos</a>
+            <a class="link" href="quefazemos.php">O Que Fazemos</a>
+            <a class="link" href="qualidade.php">Qualidade</a>
+            <a class="link" href="noticias.php">Notícias</a>
+            <a class="link" href="contactos.php">Contactos</a>
          </div>
          <div class="div-containter vertical">
             <h5>Setores de Trabalho</h5>
@@ -30,14 +30,11 @@
          </div>
          <div class="div-containter vertical">
             <h5>Contactos</h5>
-            <p class="text" href="#">Eco-Parque Empresarial</p>
-            <p class="text" href="#">Rua de Canelas, nº 3</p>
-            <p class="text" href="#">3860-529 Estarreja</p>
-            <p class="text" href="#"><b>Telefone:</b> +351 234 548 137</p>
-            <p class="text" href="#"><b>Fax:</b> +351 234 548 138</p>
-            <p class="text" href="#"><b>E-mail:</b> geral@sopais.pt</p>
-            <p class="text" href="#"><b>Compras e Orçamentos:</b> nelson.pereira@sopais.pt</p>
-            <p class="text" href="#"><b>Recrutamento:</b> recrutamento@sopais.pt</p>
+            <p class="text">Eco-Parque Empresarial</p>
+            <p class="text">Rua de Canelas, nº 3</p>
+            <p class="text">3860-529 Estarreja, Portugal</p>
+            <p class="text"><b>Telefone:</b> (+351) 234 548 137</p>
+            <p class="text"><b>E-mail:</b> geral@sopais.pt</p>
          </div>
       </div>
    </div>

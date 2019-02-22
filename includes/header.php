@@ -11,10 +11,10 @@
       <nav>
          <a class="item" href="index.php">Inicio</a>
          <a class="item" href="empresa.php">A Empresa</a>
-         <a class="item" href="index.php">O Que Fazemos</a>
-         <a class="item" href="index.php">Qualidade</a>
-         <a class="item" href="index.php">Notícias</a>
-         <a class="item" href="index.php">Contactos</a>
+         <a class="item" href="quefazemos.php">O Que Fazemos</a>
+         <a class="item" href="qualidade.php">Qualidade</a>
+         <a class="item" href="noticias.php">Notícias</a>
+         <a class="item" href="contactos.php">Contactos</a>
       </nav>
       <div class="lang">
          <a href="index.php">PT</a>
