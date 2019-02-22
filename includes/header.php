@@ -10,7 +10,7 @@
       <p class="name"><b>SOPAIS -</b><i> Componentes Metálicos Lda.</i></p>
       <nav>
          <a class="item" href="index.php">Inicio</a>
-         <a class="item" href="quemsomos.php">A Empresa</a>
+         <a class="item" href="empresa.php">A Empresa</a>
          <a class="item" href="index.php">O Que Fazemos</a>
          <a class="item" href="index.php">Qualidade</a>
          <a class="item" href="index.php">Notícias</a>

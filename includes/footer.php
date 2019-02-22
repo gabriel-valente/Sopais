@@ -12,11 +12,11 @@
       <div class="contents">
          <div class="div-containter vertical">
             <h5>Menu</h5>
-            <a class="link" href="#">Inicio</a>
-            <a class="link" href="#">Quem somos</a>
-            <a class="link" href="#">Tecnologia</a>
-            <a class="link" href="#">Produtos</a>
+            <a class="link" href="index.php">Inicio</a>
+            <a class="link" href="empresa.php">A Empresa</a>
+            <a class="link" href="#">O Que Fazemos</a>
             <a class="link" href="#">Qualidade</a>
+            <a class="link" href="#">Notícias</a>
             <a class="link" href="#">Contactos</a>
          </div>
          <div class="div-containter vertical">
