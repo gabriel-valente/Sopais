@@ -2,13 +2,6 @@ main {
    padding-bottom: 30px;
 }
 
-.img-heading {
-   width: 100%;
-   height: auto;
-   margin: 0px;
-   object-fit: cover;
-}
-
 .div-wrapper p {
    height: auto;
    width: 100%;

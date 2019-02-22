@@ -1,10 +1,3 @@
-.img-heading {
-   width: 100%;
-   height: auto;
-   margin: 0px;
-   object-fit: cover;
-}
-
 .div-container {
    display: flex;
    flex-direction: row;

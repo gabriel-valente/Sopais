@@ -152,9 +152,7 @@ main {
    width: 150px;
    margin: auto;
    border-radius: 20px;
-   background-color: #D12A3C;
-   filter: opacity(0.68);
-   -webkit-filter: opacity(0.68);
+   background-color: #CB5764;
    transition: all 0.4s ease;
    -moz-transition: all 0.4s ease;
    -webkit-transition: all 0.4s ease;
@@ -172,10 +170,17 @@ main {
 }
 
 .button:hover {
-   background-color: #002D5C;
+   background-color: #193C60;
    transition: all 0.4s ease;
    -moz-transition: all 0.4s ease;
    -webkit-transition: all 0.4s ease;
+}
+
+.img-heading {
+   width: 100%;
+   height: auto;
+   margin: 0px;
+   object-fit: cover;
 }
 
 @media screen and (max-width: 888px) {
