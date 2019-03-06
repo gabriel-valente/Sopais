@@ -263,6 +263,16 @@ nav {
       margin: 10px;
    }
 
+   .minimize nav {
+      position: absolute;
+      right: 0px;
+      top: 75px;
+   }
+
+   .minimize nav .item {
+      font-size: 20px;
+   }
+
    nav{
       width: 100%;
       display: flex;

@@ -4,8 +4,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Sopais</title>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/qualidade.css">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/qualidade.css">
    </head>
    <body>
       <?php
@@ -22,31 +22,31 @@
 
             <div class="div-container">
                <div class="div-box" id="color1">
-                  <img class="img-certif" src="img/certs/IATF16949-E.png">
+                  <img class="img-certif" src="../img/certs/IATF16949-E.png">
                   <h4>IATF 16949</h4>
                   <div class="button">
-                     <a href="index.php">Download</a>
+                     <a href="pt/index.php">Download</a>
                   </div>
                </div>
                <div class="div-box" id="color1">
-                  <img class="img-certif" src="img/certs/ISO9001Qu-E.png">
+                  <img class="img-certif" src="../img/certs/ISO9001Qu-E.png">
                   <h4>ISO 9001</h4>
                   <div class="button">
-                     <a href="index.php">Download</a>
+                     <a href="pt/index.php">Download</a>
                   </div>
                </div>
                <div class="div-box" id="color2">
-                  <img class="img-certif" src="img/certs/ISO14001.png">
+                  <img class="img-certif" src="../img/certs/ISO14001.png">
                   <h4>ISO 14001</h4>
                   <div class="button">
-                     <a href="index.php">Download</a>
+                     <a href="pt/index.php">Download</a>
                   </div>
                </div>
                <div class="div-box" id="color3">
-                  <img class="img-certif" src="img/certs/NP4397_OHSAS18001.png">
+                  <img class="img-certif" src="../img/certs/NP4397_OHSAS18001.png">
                   <h4>ISO 18001</h4>
                   <div class="button">
-                     <a href="index.php">Download</a>
+                     <a href="pt/index.php">Download</a>
                   </div>
                </div>
             </div>

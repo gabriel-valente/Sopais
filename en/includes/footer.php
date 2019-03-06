@@ -1,6 +1,6 @@
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="../css/footer.css">
 </head>
 <footer>
    <div class="div-bar">
@@ -12,12 +12,12 @@
       <div class="contents">
          <div class="div-containter vertical">
             <h5>Menu</h5>
-            <a class="link" href="index.php">Inicio</a>
-            <a class="link" href="empresa.php">A Empresa</a>
-            <a class="link" href="quefazemos.php">O Que Fazemos</a>
-            <a class="link" href="qualidade.php">Qualidade</a>
-            <a class="link" href="noticias.php">Notícias</a>
-            <a class="link" href="contactos.php">Contactos</a>
+            <a class="link" href="home.php">Home</a>
+            <a class="link" href="company.php">The Company</a>
+            <a class="link" href="whatwedo.php">What We Do</a>
+            <a class="link" href="quality.php">Quality</a>
+            <a class="link" href="news.php">News</a>
+            <a class="link" href="contacts.php">Contacts</a>
          </div>
          <div class="div-containter vertical">
             <h5>Setores de Trabalho</h5>
@@ -29,7 +29,7 @@
             <a class="link" href="#">Contactos</a>
          </div>
          <div class="div-containter vertical">
-            <h5>Contactos</h5>
+            <h5>Contacts</h5>
             <p class="text">Eco-Parque Empresarial</p>
             <p class="text">Rua de Canelas, nº 3</p>
             <p class="text">3860-529 Estarreja, Portugal</p>

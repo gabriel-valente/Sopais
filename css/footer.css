@@ -25,6 +25,11 @@ footer {
 .contents-outter {
    border-top: 1px solid #FFF1;
    border-bottom: 1px solid #FFF2;
+   overflow-y: hidden;
+}
+
+.div-containter {
+   z-index: 0;
 }
 
 .div-bar {
@@ -37,7 +42,7 @@ footer {
    text-align: center;
    align-items: center;
    justify-content: center;
-   z-index: 2;
+   z-index: 10;
 }
 
 .div-bar-logo {
@@ -82,11 +87,15 @@ footer a, footer p {
 }
 
 .contents .link, .contents .text, .contents h5 {
-   z-index: -999;
+   z-index: 0;
 }
 
 .link, .text {
    margin: 10px;
+}
+
+.link {
+   cursor: pointer;
 }
 
 @media screen and (max-width: 760px) {

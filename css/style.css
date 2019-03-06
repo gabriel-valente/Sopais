@@ -13,6 +13,7 @@ body {
    color: #333;
    font-size: 18px;
    background-color: #FFF;
+   z-index: 1;
 }
 
 main {
@@ -136,6 +137,7 @@ main {
    -webkit-text-decoration: none;
    color: #333;
    margin: 10px;
+   cursor: auto;
 }
 
 .active {

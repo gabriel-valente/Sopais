@@ -4,8 +4,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Sopais</title>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/empresa.css">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/empresa.css">
    </head>
    <body>
       <?php
@@ -17,11 +17,11 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque orci at turpis venenatis, ac elementum lorem gravida. In hac habitasse platea dictumst. Proin nec placerat augue, ut maximus turpis. In vulputate eleifend libero, a rhoncus dolor blandit sit amet. Aliquam molestie commodo ultricies. Phasellus at tellus ligula. Pellentesque elementum turpis feugiat nulla viverra tincidunt. Vivamus augue nulla, ornare quis vestibulum non, tincidunt sed ante. Sed sed mauris et massa iaculis dictum. Aenean consequat, massa in interdum molestie, erat diam pretium dui, ac egestas lorem risus quis turpis. Praesent ut porttitor mauris.</p>
             <div class="div-container">
                <div class="div-box">
-                  <h3>Missão</h3>
+                  <h3>Mission</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque orci at turpis venenatis, ac elementum lorem gravida. In hac habitasse platea dictumst. Proin nec placerat augue, ut maximus turpis. In vulputate eleifend libero, a rhoncus dolor blandit sit amet. Aliquam molestie commodo ultricies. Phasellus at tellus ligula. Pellentesque elementum turpis feugiat nulla viverra tincidunt. Vivamus augue nulla, ornare quis vestibulum non, tincidunt sed ante. Sed sed mauris et massa iaculis dictum. Aenean consequat, massa in interdum molestie, erat diam pretium dui, ac egestas lorem risus quis turpis. Praesent ut porttitor mauris.</p>
                </div>
                <div class="div-box">
-                  <h3>Visão</h3>
+                  <h3>Vision</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque orci at turpis venenatis, ac elementum lorem gravida. In hac habitasse platea dictumst. Proin nec placerat augue, ut maximus turpis. In vulputate eleifend libero, a rhoncus dolor blandit sit amet. Aliquam molestie commodo ultricies. Phasellus at tellus ligula. Pellentesque elementum turpis feugiat nulla viverra tincidunt. Vivamus augue nulla, ornare quis vestibulum non, tincidunt sed ante. Sed sed mauris et massa iaculis dictum. Aenean consequat, massa in interdum molestie, erat diam pretium dui, ac egestas lorem risus quis turpis. Praesent ut porttitor mauris.</p>
                </div>
             </div>

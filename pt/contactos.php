@@ -4,8 +4,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Sopais</title>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/contactos.css">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/contactos.css">
    </head>
    <body>
       <?php
@@ -31,12 +31,12 @@
             </div>
             <div class="div-container">
                <div class="div-content icons">
-                  <img src="img/icons/facebookbox.png">
-                  <img src="img/icons/youtubebox.png">
-                  <img src="img/icons/linkedinbox.png">
+                  <img src="../img/icons/facebookbox.png">
+                  <img src="../img/icons/youtubebox.png">
+                  <img src="../img/icons/linkedinbox.png">
                </div>
                <div class="div-content">
-                  <form action="backend/enviar_contacto.php" method="post">
+                  <form action="../backend/send.php" method="post">
                      <p>Nome:</p>
                      <input type="text" name="nome" value="" placeholder="Nome" maxlength="60" required>
                      <p>Email:</p>

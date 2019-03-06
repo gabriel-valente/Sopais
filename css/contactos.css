@@ -54,12 +54,14 @@
    letter-spacing: 0.02px;
    font-weight: normal;
    margin: 0px;
+   cursor: default;
 }
 
 .div-content p {
    font-size: 14px;
    letter-spacing: 0px;
    margin-bottom: 0px;
+   cursor: default;
 }
 
 .div-content.icons {
@@ -75,6 +77,7 @@
    height: 50px;
    width: 50px;
    margin: 7%;
+   cursor: pointer;
 }
 
 ::placeholder {
@@ -99,6 +102,7 @@ form {
 
 form p {
    margin-left: 15px;
+   cursor: default;
 }
 
 form input[type="text"] {
@@ -130,6 +134,7 @@ form input[type="submit"] {
    border: 0px;
    border-radius: 20px;
    background-color: #67cb57;
+   cursor: pointer;
    transition: all 0.4s ease;
    -moz-transition: all 0.4s ease;
    -webkit-transition: all 0.4s ease;
