@@ -1,4 +1,144 @@
-#mapa {
-   height: 600px;
+.mapouter{
+   text-align: right;
+   height: 500px;
    width: 100%;
+}
+
+.gmap_canvas {
+   background: none!important;
+   width: 100%;
+   height: 0;
+   padding-bottom: 100%;
+}
+
+#gmap_canvas {
+   height: 500px;
+   width: 100%;
+}
+
+.div-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   transition: all 1s;
+   -moz-transition: all 1s;
+   -webkit-transition: all 1s;
+   padding: 10px 0px;
+}
+
+.div-box {
+   height: auto;
+   width: 50%;
+   padding: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+.div-content {
+   width: calc(50% - 20px);
+   min-width: calc(50% - 20px);
+   height: auto;
+   margin: 0px;
+   font-weight: normal;
+   color: #273B7B;
+   text-align: left;
+   line-height: normal;
+   transition: all 1s;
+   -moz-transition: all 1s;
+   -webkit-transition: all 1s;
+}
+
+.div-content h6 {
+   font-size: 20px;
+   letter-spacing: 0.02px;
+   font-weight: normal;
+   margin: 0px;
+}
+
+.div-content p {
+   font-size: 14px;
+   letter-spacing: 0px;
+   margin-bottom: 0px;
+}
+
+.div-content.icons {
+   width: calc(50% - 40px);
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   margin: 0px;
+   justify-content:center;
+}
+
+.div-content img {
+   height: 50px;
+   width: 50px;
+   margin: 7%;
+}
+
+::placeholder {
+  color: #111;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+   color: #111;
+   opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+  color: #111;
+  opacity: 0.7;
+}
+
+form {
+   width: 100%;
+   height: auto;
+}
+
+form p {
+   margin-left: 15px;
+}
+
+form input[type="text"] {
+   width: 100%;
+   height: 40px;
+   background-color: #DDD;
+   border: 0px;
+   color: #000;
+   border-radius: 20px;
+   padding: 0px 10px;
+}
+
+form textarea {
+   width: 100%;
+   height: auto;
+   background-color: #DDD;
+   border: 0px;
+   color: #000;
+   border-radius: 20px;
+   padding: 10px;
+   resize: none;
+}
+
+form input[type="submit"] {
+   height: 40px;
+   max-width: 150px;
+   width: 90%;
+   margin: auto;
+   border: 0px;
+   border-radius: 20px;
+   background-color: #67cb57;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
+}
+
+form input[type="submit"]:hover {
+   background-color: #236019;
+   color: #FFF;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
 }

@@ -17,16 +17,11 @@ header {
    z-index: 999;
 }
 
-.div-nav-desktop {
+.desktop {
    display: block;
 }
 
-.div-nav-mobile {
-   display: none;
-}
-
-.icon {
-   height: 40px;
+.mobile {
    display: none;
 }
 
@@ -152,56 +147,123 @@ nav {
    -webkit-transition: all 0.2s ease-in-out;
 }
 
-.minimize .div-nav-desktop img {
+.minimize img {
    height: 40px;
    margin: 10px;
 }
 
-.minimize .div-nav-desktop .name {
+.minimize .name {
    position: absolute;
    left: 65px;
    top: -10px;
 }
 
-.minimize .div-nav-desktop nav {
+.minimize nav {
    position: absolute;
    right: 80px;
    top: 25px;
 }
 
-.minimize .div-nav-desktop nav .item {
+.minimize nav .item {
    font-size: 15px;
-   transition: all 1s ease;
-   -moz-transition: all 1s ease;
-   -webkit-transition: all 1s ease;
+   transition: all 0.2s ease, font-size 1s ease;
+   -moz-transition: all 0.2s ease, font-size 1s ease;
+   -webkit-transition: all 0.2s ease, font-size 1s ease;
+}
+
+#nav-icon {
+   display: hidden;
+   position: absolute;
+   top: 15px;
+   right: 5px;
+   width: 60px;
+   height: 45px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  background: #111;
+  border-radius: 15px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }
 
 @media screen and (max-width: 950px) {
-   .div-nav-desktop {
+   .desktop {
       display: none;
    }
 
-   .div-nav-mobile {
+   .mobile {
       display: block;
    }
 
-   .icon {
+   .minimize .icon, .icon {
       display: block;
-      position: absolute;
-      top: 3px;
-      right: 5px;
    }
 
-   img {
+   img, .minimize img {
       height: 50px;
       margin: 10px;
    }
 
    nav{
-      display: none;
-   }
-
-   .responsive {
       width: 100%;
       display: flex;
       -ms-display: flex;
@@ -211,6 +273,7 @@ nav {
       top: 75px;
       right: 0px;
       background-color: #FFFD;
+      transform: translateY(-186px) scaleY(0);
       flex-direction: column;
       -ms-flex-direction: column;
       -moz-flex-direction: column;
@@ -219,6 +282,18 @@ nav {
       -ms-align-items: flex-end;
       -moz-align-items: flex-end;
       -webkit-align-items: flex-end;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+   }
+
+   .responsive {
+      transform: translateY(0px) scaleY(1);
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
    }
 
    .item {
@@ -255,10 +330,10 @@ nav {
       color: #273B7B;
    }
 
-   .div-social {
+   .minimize .div-social, .div-social {
       position: absolute;
-      top: 15px;
-      right: 160px;
+      top: 14px;
+      right: 180px;
       height: auto;
       width: 24px;
       margin: 0px;
@@ -276,13 +351,13 @@ nav {
       -webkit-align-items: flex-end;
    }
 
-   .div-social a {
+   .minimize .div-social a, .div-social a {
       margin: 5px;
    }
 
-   .social {
-      height: 24px;
+   .minimize .social, .social {
+      height: 35px;
       margin: auto;
-      filter: invert(1);
+      border-radius: 5px;
    }
 }

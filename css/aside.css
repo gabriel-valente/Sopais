@@ -100,7 +100,7 @@
    -webkit-transition: all 0.4s ease;
 }
 
-@media screen and (max-width: 888px) {
+@media screen and (max-width: 950px) {
    .aside-social {
       display: none;
    }
