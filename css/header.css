@@ -92,7 +92,7 @@ nav {
 
 .item:hover {
    color: #273B7B;
-   border-bottom: solid 2px #273B7B;
+   border-bottom: solid 1px #273B7B;
    -o-border-bottom: solid 1px #333A;
    -moz-border-bottom: solid 1px #333A;
    -webkit-border-bottom: solid 1px #333A;
@@ -296,9 +296,21 @@ nav {
       transition: all 0.25s ease-in-out;
    }
 
-   .item {
+   .item, .item:hover {
       font-size: 20px;
       font-weight: normal;
+      color: #605E5E;
+      border-bottom: 0px;
+      -o-border-bottom: 0px;
+      -moz-border-bottom: 0px;
+      -webkit-border-bottom: 0px;
+      transform: scale(1);
+      -ms-transform: scale(1);
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      transition: all 0.2s ease, font-size 1s ease;
+      -moz-transition: all 0.2s ease, font-size 1s ease;
+      -webkit-transition: all 0.2s ease, font-size 1s ease;
    }
 
    .language {

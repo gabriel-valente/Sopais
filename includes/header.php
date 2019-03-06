@@ -5,7 +5,9 @@
    <script type="text/javascript" src="js/pageChange.js"></script>
 </head>
 <header>
-   <img src="img/logo.png">
+   <a href="index.php">
+      <img src="img/logo.png">
+   </a>
    <p class="desktop name"><b>SOPAIS -</b><i> Componentes Metálicos Lda.</i></p>
       <div class="mobile icon" id="nav-icon">
          <span></span>
