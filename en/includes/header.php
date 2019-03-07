@@ -35,8 +35,8 @@
       <a class="item" href="contacts.php">Contacts</a>
 
       <div class="mobile language">
-         <a class="itemLang langSel" href="../pt/inicio.php">PT</a>
-         <a class="itemLang" href="../en/home.php">EN</a>
+         <a class="itemLang" href="../pt/inicio.php">PT</a>
+         <a class="itemLang langSel" href="../en/home.php">EN</a>
       </div>
    </nav>
    <div class="desktop lang">

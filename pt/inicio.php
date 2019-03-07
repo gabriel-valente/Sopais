@@ -24,7 +24,7 @@
          </div>
 
          <div class="div-wrapper">
-            <div class="div-division flow">
+            <div class="div-division flow division-top">
                   <img class="img-certlogo" src="../img/certs/IATF16949-E.png">
                   <img class="img-certlogo" src="../img/certs/ISO9001Qu-E.png">
                   <img class="img-certlogo" src="../img/certs/ISO14001.png">

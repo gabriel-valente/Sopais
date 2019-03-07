@@ -283,6 +283,7 @@ nav {
       top: 75px;
       right: 0px;
       background-color: #FFFD;
+      visibility: hidden;
       transform: translateY(-186px) scaleY(0);
       flex-direction: column;
       -ms-flex-direction: column;
@@ -299,6 +300,7 @@ nav {
    }
 
    .responsive {
+      visibility: visible;
       transform: translateY(0px) scaleY(1);
       -webkit-transition: all 0.25s ease-in-out;
       -moz-transition: all 0.25s ease-in-out;

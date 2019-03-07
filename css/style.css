@@ -53,6 +53,11 @@ main {
    overflow: hidden;
    position: relative;
    text-align: center;
+   z-index: -1;
+}
+
+.division-top {
+   z-index: 1;
 }
 
 .div-wrapper {

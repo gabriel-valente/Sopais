@@ -37,6 +37,31 @@ article {
    height: calc((100% / 4) - 10px);
    width: calc((100% / 4) - 10px);
    margin: 0px;
+   filter: saturate(0.25);
+   transform: scale(1);
+   overflow: visible;
+   transition: all 0.25s ease-in-out;
+   -moz-transition: all 0.25s ease-in-out;
+   -webkit-transition: all 0.25s ease-in-out;
+}
+
+
+
+.img-certlogo:hover {
+   filter: saturate(1);
+   transform: scale(2.5);
+   background-color: #FFF;
+   box-shadow: 0px 0px 10px 10px #FFF;
+   border-radius: 30px;
+   overflow: visible;
+   z-index: 1;
+   transition: all 0.25s ease-in-out;
+   -moz-transition: all 0.25s ease-in-out;
+   -webkit-transition: all 0.25s ease-in-out;
+}
+
+.div-division {
+   overflow: visible;
 }
 
 .link-post {
