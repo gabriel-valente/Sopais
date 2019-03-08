@@ -31,9 +31,15 @@
             </div>
             <div class="div-container">
                <div class="div-content icons">
-                  <img src="../img/icons/facebookbox.png">
-                  <img src="../img/icons/youtubebox.png">
-                  <img src="../img/icons/linkedinbox.png">
+                  <a class="link" target="_blank" href="https://www.facebook.com/sopaislda" id="noScript">
+                     <img class="social" src="../img/icons/facebookbox.png">
+                  </a>
+                  <a class="link" target="_blank" href="https://www.youtube.com/channel/UCUwKckOoooyihJaUKwSuMIQ" id="noScript">
+                     <img class="social" src="../img/icons/youtubebox.png">
+                  </a>
+                  <a class="link" target="_blank" href="https://www.linkedin.com/company/sopais?trk=tyah&trkInfo=tarId%3A1397663293041%2Ctas%3Asopais%2Cidx%3A1-1-1" id="noScript">
+                     <img class="social" src="../img/icons/linkedinbox.png">
+                  </a>
                </div>
                <div class="div-content">
                   <form action="../backend/send.php" method="post">

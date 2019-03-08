@@ -20,6 +20,7 @@ main {
    height: auto;
    width: 100%;
    position: sticky;
+   -webkit-position: sticky;
    top: 0px;
    left: 0px;
    margin: auto;
@@ -34,6 +35,9 @@ main {
 
 .div-containter {
    align-content: space-between;
+   -ms-align-content: space-between;
+   -moz-align-content: space-between;
+   -webkit-align-content: space-between;
 }
 
 .div-division {

@@ -32,7 +32,7 @@
             </div>
             <div class="div-division">
                <div class="div-message">
-                  <h5><i>A SOPAIS – Componentes Metálicos, Lda.</i> foi fundada em 1987 contando com<b> mais de 30 anos de experiência na industria metalomecânica.</b></h5>
+                  <h5>A <i> SOPAIS – Componentes Metálicos, Lda.</i> foi fundada em 1987 contando com <b> mais de 30 anos de experiência na indústria metalomecânica.</b></h5>
                </div>
 
                <div class="button">
@@ -41,6 +41,7 @@
             </div>
             <br>
             <div class="div-division">
+               <h2>Notícias</h2>
                <div class="div-container flow">
                   <div class="div-content post">
                      <div class="image-container">

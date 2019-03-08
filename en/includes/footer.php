@@ -13,8 +13,8 @@
          <div class="div-containter vertical">
             <h5>Menu</h5>
             <a class="link" href="home.php">Home</a>
-            <a class="link" href="company.php">The Company</a>
-            <a class="link" href="whatwedo.php">What We Do</a>
+            <a class="link" href="whoweare.php">Who we are?</a>
+            <a class="link" href="whatwedo.php">What do we do</a>
             <a class="link" href="quality.php">Quality</a>
             <a class="link" href="news.php">News</a>
             <a class="link" href="contacts.php">Contacts</a>

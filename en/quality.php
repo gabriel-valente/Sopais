@@ -15,9 +15,8 @@
          <img class="img-heading" src="https://i.imgur.com/ic9nTKH.jpg">
          <div class="div-wrapper">
             <div class="div-container">
-               <p>"The excellence with which SOPAIS - Componentes Metálicos, Lda. serves customers has always been their main focus.<br>
-                  In order to cement its position in production quality, the company is certified by the IATF 16949:2016 and ISO 9001:2008 management standards.<br>
-                  To reduce the ecological footprint derived from industrial activity, and to ensure a healthy and safe working environment, are commitments to which Sopais - Componentes Metálicos, Lda. devotes a lot of time and attention, as it was acquired with the obtaining of the certifications of environmental quality management - ISO 14001:2015, and Occupational Safety and Health Management - ISO 18001:2014. "</p>
+               <p>The biggest challenge on <i>Sopais – Componentes Metálicos, Lda. </i> entrepreneurial orientation is to serve clients with excellence. Due to that our production quality is certified to ISO 9001 & IATF 16949 for the automotive industry.<br>
+                  Now-a-days companies are key part of the community where it is established. Issues like the ecological footprint caused by its production must be solved by the company itself as well as taking care of its employees health and safety must be one of the company’s first concerns – like a family take care of their child –, that is why we managed to be certified to ISO 14001 & ISO 18001.</p>
             </div>
 
             <div class="div-container">
@@ -50,6 +49,12 @@
                   </div>
                </div>
             </div>
+            <div class="div-container">
+               <p><b>IATF 16949:</b> Automotive Quality Management Systems<br>
+                  <b>ISO 9001:</b> Quality Management Systems<br>
+                  <b>ISO 14001:</b> Environmental Management Systems<br>
+                  <b>ISO 18001:</b> Health & Safety Management Systems</p>
+               </div>
          </div>
       </main>
       <?php

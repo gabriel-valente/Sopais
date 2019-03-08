@@ -32,7 +32,7 @@
             </div>
             <div class="div-division">
                <div class="div-message">
-                  <h5><i>SOPAIS – Componentes Metálicos, Lda.</i> was founded in 1987 with <b> more than 30 years of experience in the metalworking industry.</b></h5>
+                  <h5><i>SOPAIS – Componentes Metálicos, Lda.</i> is a <b> metalworking company with nearly 30 years of experience </b> founded in 1987.</h5>
                </div>
 
                <div class="button">
@@ -41,6 +41,7 @@
             </div>
             <br>
             <div class="div-division">
+               <h2>News</h2>
                <div class="div-container flow">
                   <div class="div-content post">
                      <div class="image-container">

@@ -28,8 +28,8 @@
    </div>
    <nav>
       <a class="item" href="home.php">Home</a>
-      <a class="item" href="company.php">The Company</a>
-      <a class="item" href="whatwedo.php">What We Do</a>
+      <a class="item" href="whoweare.php">Who we are?</a>
+      <a class="item" href="whatwedo.php">What do we do</a>
       <a class="item" href="quality.php">Quality</a>
       <a class="item" href="news.php">News</a>
       <a class="item" href="contacts.php">Contacts</a>

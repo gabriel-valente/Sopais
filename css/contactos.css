@@ -6,6 +6,9 @@
 
 .gmap_canvas {
    background: none!important;
+   -o-background: none!important;
+   -moz-background: none!important;
+   -webkit-background: none!important;
    width: 100%;
    height: 0;
    padding-bottom: 100%;
@@ -18,8 +21,17 @@
 
 .div-container {
    display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    flex-direction: row;
+   -ms-flex-direction: row;
+   -moz-flex-direction: row;
+   -webkit-flex-direction: row;
    flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+   -moz-flex-wrap: wrap;
+   -webkit-flex-wrap: wrap;
    transition: all 1s;
    -moz-transition: all 1s;
    -webkit-transition: all 1s;
@@ -31,8 +43,17 @@
    width: 50%;
    padding: 15px;
    display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+   -moz-flex-wrap: wrap;
+   -webkit-flex-wrap: wrap;
    flex-direction: row;
+   -ms-flex-direction: row;
+   -moz-flex-direction: row;
+   -webkit-flex-direction: row;
 }
 
 .div-content {
@@ -68,7 +89,13 @@
    width: calc(50% - 40px);
    height: auto;
    display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    flex-direction: row;
+   -ms-flex-direction: row;
+   -moz-flex-direction: row;
+   -webkit-flex-direction: row;
    margin: 0px;
    justify-content:center;
 }
@@ -90,7 +117,7 @@
    opacity: 0.7;
 }
 
-::-ms-input-placeholder {
+::-webkit-input-placeholder {
   color: #111;
   opacity: 0.7;
 }
@@ -102,6 +129,7 @@ form {
 
 form p {
    margin-left: 15px;
+   font-size: 14px;
    cursor: default;
 }
 
@@ -109,9 +137,12 @@ form input[type="text"] {
    width: 100%;
    height: 40px;
    background-color: #DDD;
+   font-size: 14px;
    border: 0px;
    color: #000;
    border-radius: 20px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
    padding: 0px 10px;
 }
 
@@ -119,9 +150,12 @@ form textarea {
    width: 100%;
    height: auto;
    background-color: #DDD;
+   font-size: 14px;
    border: 0px;
    color: #000;
    border-radius: 20px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
    padding: 10px;
    resize: none;
 }
@@ -133,7 +167,10 @@ form input[type="submit"] {
    margin: auto;
    border: 0px;
    border-radius: 20px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
    background-color: #67cb57;
+   font-size: 14px;
    cursor: pointer;
    transition: all 0.4s ease;
    -moz-transition: all 0.4s ease;

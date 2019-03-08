@@ -18,44 +18,44 @@
                <div class="div-box">
                   <div class="box-heading">
                      <img class="img-icon" src="../img/icons/light-bulb.png">
-                     <h3>Apoio ao Desenvolvimento de Projetos</h3>
+                     <h3>Apoio ao Desenvolvimento de Projetos:</h3>
                   </div>
                   <p>Dispomos de uma equipa de especialistas prontos para ajudar o seu negócio.</p>
                </div>
                <div class="div-box">
                   <div class="box-heading">
                      <img class="img-icon" src="../img/icons/light-bulb.png">
-                     <h3>Laboratório Metrológico</h3>
+                     <h3>Laboratório Metrológico:</h3>
                   </div>
-                  <p>No nosso laboratório somos capazes de realizar testes metrológicos para desenvolver relatórios de análise dimensional e de dureza.</p>
+                  <p>Laboratório interno equipado para realizar diferentes testes dimensionais e funcionais.</p>
                </div>
                <div class="div-box">
                   <div class="box-heading">
                      <img class="img-icon" src="../img/icons/light-bulb.png">
-                     <h3>Estampagem</h3>
+                     <h3>Metalomecânica de precisão:</h3>
                   </div>
-                  <p>Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 - 315 toneladas.</p>
+                  <p>Ao serviço da empresa temos máquinas BIHLER e técnicos com know-how especializado na afinação das mesmas.</p>
                </div>
                <div class="div-box">
                   <div class="box-heading">
                      <img class="img-icon" src="../img/icons/light-bulb.png">
-                     <h3>Conformação de peças / Metalomecânica de precisão</h3>
+                     <h3>Estampagem:</h3>
                   </div>
-                  <p>Ao serviço da empresa estão máquinas BIHLER e técnicos com know-how especializado na sua afinação.</p>
+                  <p>Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 e as 315 toneladas.</p>
                </div>
                <div class="div-box">
                   <div class="box-heading">
                      <img class="img-icon" src="../img/icons/light-bulb.png">
-                     <h3>Soldadura</h3>
-                  </div>
-                  <p>Dispomos de uma ótima qualidade de soldagem através dos métodos MIG/MAG e soldagem por resistência.</p>
-               </div>
-               <div class="div-box">
-                  <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
-                     <h3>Conformação de Tubo</h3>
+                     <h3>Conformação de tubo:</h3>
                   </div>
                   <p>Redução, alargamento, corte e conformação de tubo são capacidades que a SOPAIS põe à disposição dos seus clientes.</p>
+               </div>
+               <div class="div-box">
+                  <div class="box-heading">
+                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <h3>Soldadura:</h3>
+                  </div>
+                  <p>Dispomos de uma ótima qualidade de soldadura com tecnologias MIG/MAG e soldadura por resistência.</p>
                </div>
             </div>
          </div>

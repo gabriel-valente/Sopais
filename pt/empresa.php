@@ -14,15 +14,21 @@
       <main>
          <img class="img-heading" src="https://i.imgur.com/ic9nTKH.jpg">
          <div class="div-wrapper">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque orci at turpis venenatis, ac elementum lorem gravida. In hac habitasse platea dictumst. Proin nec placerat augue, ut maximus turpis. In vulputate eleifend libero, a rhoncus dolor blandit sit amet. Aliquam molestie commodo ultricies. Phasellus at tellus ligula. Pellentesque elementum turpis feugiat nulla viverra tincidunt. Vivamus augue nulla, ornare quis vestibulum non, tincidunt sed ante. Sed sed mauris et massa iaculis dictum. Aenean consequat, massa in interdum molestie, erat diam pretium dui, ac egestas lorem risus quis turpis. Praesent ut porttitor mauris.</p>
-            <div class="div-container">
+            <p><i>Sopais – Componentes Metálicos, Lda. <i> foi fundada em 1987 contando com mais de 30 anos de experiência na indústria metalomecânica.<br><br>Assente no know-how adquirido ao longo da sua história a empresa olha para as suas instalações, tecnologia e estrutura humana qualificada, flexível e profissional – capaz de abraçar projetos ambiciosos –, como fatores que a diferenciam. Com uma oferta de excelência a empresa visa fixar-se no mercado como top of mind na indústria da produção de componentes metálicos para todos os setores.</p>
+            <div class="div-container horizontal">
                <div class="div-box">
                   <h3>Missão</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque orci at turpis venenatis, ac elementum lorem gravida. In hac habitasse platea dictumst. Proin nec placerat augue, ut maximus turpis. In vulputate eleifend libero, a rhoncus dolor blandit sit amet. Aliquam molestie commodo ultricies. Phasellus at tellus ligula. Pellentesque elementum turpis feugiat nulla viverra tincidunt. Vivamus augue nulla, ornare quis vestibulum non, tincidunt sed ante. Sed sed mauris et massa iaculis dictum. Aenean consequat, massa in interdum molestie, erat diam pretium dui, ac egestas lorem risus quis turpis. Praesent ut porttitor mauris.</p>
+                  <p>Desenvolver e dar soluções, produzir e comercializar com excelência, componentes metálicos para vários tipos de setores de atividade.<br><br>Procuramos sempre produzir produtos/serviços que satisfaçam integralmente os nossos clientes, assim como as suas exigências, privilegiando prazos de entrega, qualidade, preços e uma relação de plena confiança.<br><br>Com os nossos fornecedores privilegiamos uma relação de confiança e cooperação e pretendemos dispor aos nossos colaboradores as melhores condições que proporcionem um bom ambiente laboral criando uma equipa qualificada e competente.</p>
                </div>
-               <div class="div-box">
-                  <h3>Visão</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque orci at turpis venenatis, ac elementum lorem gravida. In hac habitasse platea dictumst. Proin nec placerat augue, ut maximus turpis. In vulputate eleifend libero, a rhoncus dolor blandit sit amet. Aliquam molestie commodo ultricies. Phasellus at tellus ligula. Pellentesque elementum turpis feugiat nulla viverra tincidunt. Vivamus augue nulla, ornare quis vestibulum non, tincidunt sed ante. Sed sed mauris et massa iaculis dictum. Aenean consequat, massa in interdum molestie, erat diam pretium dui, ac egestas lorem risus quis turpis. Praesent ut porttitor mauris.</p>
+               <div class="div-container vertical">
+                  <div class="div-box ignore">
+                     <h3>Visão</h3>
+                     <p>Ser uma das primeiras empresas a ser consultada, dentro da indústria metalomecânica, pelos grandes grupos internacionais que necessitarem de componentes metálicos.</p>
+                  </div>
+                  <div class="div-box ignore">
+                     <h3>Valores</h3>
+                     <p>Satisfação do cliente;<br>Melhoria contínua;<br>Respeito pelo meio ambiente e prevenção da poluição;<br>Prevenção das lesões e afeções da saúde;<br>Cumprir os requisitos legais aplicáveis às atividades da empresa;<br>Foco em resultados;<br>Confiança entre as partes;<br>Valorização e respeito pelos colaboradores;<br>Inovação.</p>
+                  </div>
                </div>
             </div>
          </div>

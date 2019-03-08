@@ -16,14 +16,34 @@ main {
 
 .div-container {
    display: flex;
-   flex-direction: row;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    background-color: #002D5C;
+}
+
+.horizontal {
+   flex-direction: row;
+   -ms-flex-direction: row;
+   -moz-flex-direction: row;
+   -webkit-flex-direction: row;
+}
+
+.vertical {
+   flex-direction: column;
+   -ms-flex-direction: column;
+   -moz-flex-direction: column;
+   -webkit-flex-direction: column;
 }
 
 .div-box {
    height: auto;
    width: 50%;
    padding: 15px;
+}
+
+.ignore {
+   width: auto;
 }
 
 .div-box h3 {
@@ -54,4 +74,5 @@ main {
    height: 200px;
    margin: 0px;
    object-fit: cover;
+   -o-object-fit: cover;
 }

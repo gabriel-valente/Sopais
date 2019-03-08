@@ -16,8 +16,17 @@ main {
 
 .div-container {
    display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    flex-direction: row;
+   -ms-flex-direction: row;
+   -moz-flex-direction: row;
+   -webkit-flex-direction: row;
    flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+   -moz-flex-wrap: wrap;
+   -webkit-flex-wrap: wrap;
 }
 
 .div-box {

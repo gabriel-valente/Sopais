@@ -15,6 +15,9 @@ footer {
    margin: auto;
    padding: 0px;
    display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    justify-content: space-between;
    transition: all 1s;
    -moz-transition: all 1s;
@@ -38,6 +41,9 @@ footer {
    margin: auto;
    padding: 5px;
    display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    background-color: #333;
    text-align: center;
    align-items: center;
@@ -52,6 +58,9 @@ footer {
 
 #bg1 {
    background-image: url("../img/logos/012.png");
+   -o-background-image: url("../img/logos/012.png");
+   -moz-background-image: url("../img/logos/012.png");
+   -webkit-background-image: url("../img/logos/012.png");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;
@@ -59,6 +68,9 @@ footer {
 
 #bg2 {
    background-image: url("../img/logos/022.png");
+   -o-background-image: url("../img/logos/022.png");
+   -moz-background-image: url("../img/logos/022.png");
+   -webkit-background-image: url("../img/logos/022.png");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;
@@ -66,6 +78,9 @@ footer {
 
 #bg3 {
    background-image: url("../img/logos/04.png");
+   -o-background-image: url("../img/logos/04.png");
+   -moz-background-image: url("../img/logos/04.png");
+   -webkit-background-image: url("../img/logos/04.png");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;
