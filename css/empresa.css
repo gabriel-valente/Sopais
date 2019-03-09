@@ -23,6 +23,11 @@ main {
 }
 
 .horizontal {
+   width: 50%;
+   display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    flex-direction: row;
    -ms-flex-direction: row;
    -moz-flex-direction: row;
@@ -30,6 +35,12 @@ main {
 }
 
 .vertical {
+   height: 50%;
+   width: 50%;
+   display: flex;
+   -ms-display: flex;
+   -moz-display: flex;
+   -webkit-display: flex;
    flex-direction: column;
    -ms-flex-direction: column;
    -moz-flex-direction: column;
@@ -37,13 +48,7 @@ main {
 }
 
 .div-box {
-   height: auto;
-   width: 50%;
    padding: 15px;
-}
-
-.ignore {
-   width: auto;
 }
 
 .div-box h3 {
@@ -75,4 +80,21 @@ main {
    margin: 0px;
    object-fit: cover;
    -o-object-fit: cover;
+}
+
+@media screen and (max-width: 950px) {
+   .div-container {
+      display: flex;
+      -ms-display: flex;
+      -moz-display: flex;
+      -webkit-display: flex;
+      flex-direction: column;
+      -ms-flex-direction: column;
+      -moz-flex-direction: column;
+      -webkit-flex-direction: column;
+   }
+
+   .horizontal, .vertical {
+      width: 100%;
+   }
 }

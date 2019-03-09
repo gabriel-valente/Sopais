@@ -43,12 +43,15 @@
                </div>
                <div class="div-content">
                   <form action="../backend/send.php" method="post">
-                     <p>Name:</p>
-                     <input type="text" name="nome" value="" placeholder="Name" maxlength="60" required>
-                     <p>Email:</p>
+                     <p>Name:<br>
+                        <input type="text" name="nome" value="" placeholder="Name" maxlength="60" required>
+                     </p>
+                     <p>Email:<br>
                      <input type="text" name="email" value="" placeholder="Email" maxlength="256" required>
-                     <p>Message:</p>
+                     </p>
+                     <p>Message:<br>
                      <textarea name="mensagem" rows="16" cols="80" placeholder="Message" maxlength="512" required></textarea>
+                     </p>
                      <input type="submit" name="submit" value="Send">
                   </form>
                </div>

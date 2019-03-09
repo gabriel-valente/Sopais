@@ -87,7 +87,7 @@
 
 .div-content.icons {
    width: calc(50% - 40px);
-   height: auto;
+   height: 50px;
    display: flex;
    -ms-display: flex;
    -moz-display: flex;
@@ -104,6 +104,7 @@
    height: 50px;
    width: 50px;
    margin: 7%;
+   border-radius: 5px;
    cursor: pointer;
 }
 
@@ -130,41 +131,71 @@ form {
 form p {
    margin-left: 15px;
    font-size: 14px;
+   padding: 10px;
+   border-radius: 20px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   background-color: #DDD;
    cursor: default;
 }
 
 form input[type="text"] {
-   width: 100%;
+   width: 100px;
    height: 40px;
-   background-color: #DDD;
+   background-color: #CCC;
    font-size: 14px;
    border: 0px;
    color: #000;
+   margin: 5px -10px -10px;
    border-radius: 20px;
    -moz-border-radius: 20px;
    -webkit-border-radius: 20px;
    padding: 0px 10px;
+   transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+}
+
+form input[type="text"]:focus {
+   width: 100%;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
 }
 
 form textarea {
-   width: 100%;
-   height: auto;
-   background-color: #DDD;
+   width: 100px;
+   height: 50px;
+   background-color: #CCC;
    font-size: 14px;
    border: 0px;
    color: #000;
+   margin: 5px -10px -13px;
    border-radius: 20px;
    -moz-border-radius: 20px;
    -webkit-border-radius: 20px;
    padding: 10px;
    resize: none;
+   overflow: hidden;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
+}
+
+form textarea:focus {
+   width: 100%;
+   height: 276px;
+   overflow-y: visible;
+   transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -webkit-transition: all 0.4s ease;
 }
 
 form input[type="submit"] {
    height: 40px;
    max-width: 150px;
    width: 90%;
-   margin: auto;
+   margin: 5px 15px;
    border: 0px;
    border-radius: 20px;
    -moz-border-radius: 20px;
