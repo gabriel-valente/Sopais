@@ -3,6 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
       <title>Sopais</title>
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/contactos.css">
@@ -41,16 +42,16 @@
                      <img class="social" src="../img/icons/linkedinbox.png">
                   </a>
                </div>
-               <div class="div-content">
+               <div class="div-content form">
                   <form action="../backend/send.php" method="post">
                      <p>Nome:<br>
                         <input type="text" name="nome" value="" placeholder="Nome" maxlength="60" required>
                      </p>
                      <p>Email:<br>
-                     <input type="text" name="email" value="" placeholder="Email" maxlength="256" required>
+                        <input type="text" name="email" value="" placeholder="Email" maxlength="256" required>
                      </p>
                      <p>Mensagem:<br>
-                     <textarea name="mensagem" rows="16" cols="80" placeholder="Mensagem" maxlength="512" required></textarea>
+                        <textarea name="mensagem" rows="16" cols="80" placeholder="Mensagem" maxlength="512" required></textarea>
                      </p>
                      <input type="submit" name="submit" value="Enviar">
                   </form>

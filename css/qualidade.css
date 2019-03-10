@@ -29,18 +29,37 @@ main {
    -webkit-flex-wrap: wrap;
 }
 
+
 .div-box {
    width: calc((100% / 4) - 10px);
    height: auto;
    padding: 20px 0px;
    margin: auto;
    text-align: center;
+   filter: saturate(0.25);
+   -webkit-filter: saturate(0.25);
+   transition: all 0.25s ease-in-out;
+   -moz-transition: all 0.25s ease-in-out;
+   -webkit-transition: all 0.25s ease-in-out;
 }
 
-.div-box img {
+.div-box:hover {
+   filter: saturate(1);
+   -webkit-filter: saturate(1);
+   transition: all 0.25s ease-in-out;
+   -moz-transition: all 0.25s ease-in-out;
+   -webkit-transition: all 0.25s ease-in-out;
+}
+
+.img-certif {
    height: auto;
    width: 95%;
    margin: 0px;
+}
+
+.button {
+   filter: saturate(1);
+   -webkit-filter: saturate(1);
 }
 
 .div-box h4 {
@@ -63,4 +82,19 @@ main {
 
 #color3 {
    background-color: #86B8DB;
+}
+
+@media screen and (max-width: 888px) {
+   .div-box {
+      width: calc((100% / 2) - 10px);
+      height: auto;
+      padding: 20px 0px;
+      margin: 5px auto;
+      text-align: center;
+   }
+
+   .div-box {
+      filter: saturate(1);
+      -webkit-filter: saturate(1);
+   }
 }

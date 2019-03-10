@@ -116,4 +116,9 @@ article {
       -moz-transition: all 1s ease;
       -webkit-transition: all 1s ease;
    }
+
+   .img-certlogo {
+      filter: saturate(1);
+      -webkit-filter: saturate(1);
+   }
 }
