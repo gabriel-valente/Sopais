@@ -52,8 +52,6 @@ article {
    -webkit-transition: all 0.25s ease-in-out;
 }
 
-
-
 .img-certlogo:hover {
    filter: saturate(1);
    -webkit-filter: saturate(1);

@@ -43,22 +43,193 @@
                   </a>
                </div>
                <div class="div-content form">
-                  <form action="../backend/send.php" method="post">
+                  <form id="formulario" name="formulario" action="../backend/send.php" method="post">
                      <p>Name:<br>
-                        <input type="text" name="nome" value="" placeholder="Name" maxlength="60" required>
+                        <input type="text" id="nome" name="nome" value="" placeholder="Name" maxlength="60" required>
                      </p>
                      <p>Email:<br>
-                     <input type="text" name="email" value="" placeholder="Email" maxlength="256" required>
+                     <input type="text" id="email" name="email" value="" placeholder="Email" maxlength="256" required>
                      </p>
                      <p>Message:<br>
-                     <textarea name="mensagem" rows="16" cols="80" placeholder="Message" maxlength="512" required></textarea>
+                     <textarea id="mensagem" name="mensagem" rows="16" cols="80" placeholder="Message" maxlength="512" required></textarea>
                      </p>
-                     <input type="submit" name="submit" value="Send">
+                     <input type="submit" id="submit" name="submit" value="Send">
                   </form>
+                  <h4 id="form-report"></h4>
                </div>
             </div>
          </div>
       </main>
+
+      <script>
+         function Styling(input, action) {
+            if (action == "Error") {
+               document.getElementById(input).classList.add("form-input-erro");
+            } else if (action == "Valid") {
+               document.getElementById(input).classList.remove("form-input-erro");
+            }
+         }
+
+         var Timer;
+         var Intervalo = 500;
+
+         $("#nome").on("blur", function() {
+            $.ajax({
+               type: "POST",
+               url: "../backend/validations/nome.php",
+               data: {
+                  nome: formulario.nome.value
+               },
+               success: function(output) {
+                  Styling("nome", output);
+               }
+            });
+         });
+         $("#nome").on("keyup", function() {
+            clearTimeout(Timer);
+            Timer = setTimeout(function() {
+               $.ajax({
+                  type: "POST",
+                  url: "../backend/validations/nome.php",
+                  data: {
+                     nome: formulario.nome.value
+                  },
+                  success: function(output) {
+                     Styling("nome", output);
+                  }
+               });
+            }, Intervalo);
+         });
+         $("#nome").on("keydown", function() {
+            clearTimeout(Timer);
+         });
+
+         $("#email").on("blur", function() {
+            $.ajax({
+               type: "POST",
+               url: "../backend/validations/email.php",
+               data: {
+                  email: formulario.email.value
+               },
+               success: function(output) {
+                  Styling("email", output);
+               }
+            });
+         });
+         $("#email").on("keyup", function() {
+            clearTimeout(Timer);
+            Timer = setTimeout(function() {
+               $.ajax({
+                  type: "POST",
+                  url: "../backend/validations/email.php",
+                  data: {
+                     email: formulario.email.value
+                  },
+                  success: function(output) {
+                     Styling("email", output);
+                  }
+               });
+            }, Intervalo);
+         });
+         $("#email").on("keydown", function() {
+            clearTimeout(Timer);
+         });
+
+         $("#mensagem").on("blur", function() {
+            $.ajax({
+               type: "POST",
+               url: "../backend/validations/mensagem.php",
+               data: {
+                  mensagem: formulario.mensagem.value
+               },
+               success: function(output) {
+                  Styling("mensagem", output);
+               }
+            });
+         });
+         $("#mensagem").on("keyup", function() {
+            clearTimeout(Timer);
+            Timer = setTimeout(function() {
+               $.ajax({
+                  type: "POST",
+                  url: "../backend/validations/mensagem.php",
+                  data: {
+                     mensagem: formulario.mensagem.value
+                  },
+                  success: function(output) {
+                     Styling("mensagem", output);
+                  }
+               });
+            }, Intervalo);
+         });
+         $("#mensagem").on("keydown", function() {
+            clearTimeout(Timer);
+         });
+
+         $("#formulario").submit(function(e) {
+         e.preventDefault();
+         $.ajax({
+            type: "POST",
+            url: "../backend/validations/nome.php",
+            data: {
+               nome: formulario.nome.value
+            },
+            success: function(output) {
+               if (output == "Error") {
+                  Styling("nome", output);
+               } else if (output == "Valid") {
+                  $.ajax({
+                     type: "POST",
+                     url: "../backend/validations/email.php",
+                     data: {
+                        email: formulario.email.value
+                     },
+                     success: function(output) {
+                        if (output == "Error") {
+                           Styling("email", output);
+                        } else if (output == "Valid") {
+                           $.ajax({
+                              type: "POST",
+                              url: "../backend/validations/mensagem.php",
+                              data: {
+                                 mensagem: formulario.mensagem.value
+                              },
+                              success: function(output) {
+                                 if (output == "Error") {
+                                    Styling("mensagem", output);
+                                 } else if (output == "Valid") {
+                                    $.ajax({
+                                       type: "POST",
+                                       url: "../backend/send.php",
+                                       data: {
+                                          nome: formulario.nome.value,
+                                          email: formulario.email.value,
+                                          mensagem: formulario.mensagem.value
+                                       },
+                                       success: function(output) {
+                                          if (output == "Sent") {
+                                             $("#nome").val("");
+                                             $("#email").val("");
+                                             $("#mensagem").val("");
+
+                                             $("#form-report").html("Message sent! We will respond soon!");
+                                          } else if (output == "Error") {
+                                             $("#form-report").html("Couldn't send the message! Please try again in a few moments.");
+                                          }
+                                       }
+                                    });
+                                 }
+                              }
+                           });
+                        }
+                     }
+                  });
+               }
+            }
+         });
+      })
+
+      </script>
       <?php
          include_once "includes/footer.php";
       ?>

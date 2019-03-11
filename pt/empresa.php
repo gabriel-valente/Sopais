@@ -8,15 +8,15 @@
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/empresa.css">
    </head>
-   <body>
+   <body onresize="UpdateWidth();">
       <?php
          include_once "includes/header.php";
       ?>
       <main>
          <img class="img-heading" src="https://i.imgur.com/ic9nTKH.jpg">
          <div class="div-wrapper">
-            <p><i>Sopais – Componentes Metálicos, Lda. </i> foi fundada em 1987 contando com mais de 30 anos de experiência na indústria metalomecânica.<br><br>Assente no know-how adquirido ao longo da sua história a empresa olha para as suas instalações, tecnologia e estrutura humana qualificada, flexível e profissional – capaz de abraçar projetos ambiciosos –, como fatores que a diferenciam. Com uma oferta de excelência a empresa visa fixar-se no mercado como top of mind na indústria da produção de componentes metálicos para todos os setores.</p>
-            <div class="div-container">
+            <p id="p-texto"><i>Sopais – Componentes Metálicos, Lda. </i> foi fundada em 1987 contando com mais de 30 anos de experiência na indústria metalomecânica.<br><br>Assente no know-how adquirido ao longo da sua história a empresa olha para as suas instalações, tecnologia e estrutura humana qualificada, flexível e profissional – capaz de abraçar projetos ambiciosos – como fatores que a diferenciam. Com uma oferta de excelência a empresa visa fixar-se no mercado como top of mind na indústria da produção de componentes metálicos para todos os setores.</p>
+            <div class="div-container" id="div-azul">
                <div class="horizontal">
                   <div class="div-box">
                      <h3>Missão</h3>
@@ -37,6 +37,55 @@
          </div>
          <img class="img-footing" src="https://i.imgur.com/ic9nTKH.jpg">
       </main>
+
+      <script>
+         var altura;
+         var largura;
+
+         function UpdateWidth() {
+            largura = window.innerWidth;
+
+            if (largura > 888) {
+               $("#p-texto").css("opacity", "0");
+               $("#div-azul").css("opacity", "0");
+            } else {
+               $("#p-texto").css("opacity", "1");
+               $("#div-azul").css("opacity", "1");
+            }
+         }
+
+         $(document).ready(function() {
+            altura = window.innerHeight / 3;
+            largura = window.innerWidth;
+
+            if (largura > 888) {
+               $("#p-texto").css("opacity", "0");
+               $("#div-azul").css("opacity", "0");
+            } else {
+               $("#p-textos").css("opacity", "1");
+               $("#div-azul").css("opacity", "1");
+            }
+
+            $(document).scroll(function() {
+               var scroll = $(this).scrollTop();
+
+               if (largura > 888) {
+                  if (scroll >= altura / 3) {
+                     $("#p-texto").css({"opacity" : "1", "display" : "block", "transition" : "opacity 0.75s ease"});
+                  } else {
+                     $("#p-texto").css({"opacity" : "0", "display" : "block", "transition" : "opacity 0.75s ease"});
+                  }
+
+                  if (scroll >= altura) {
+                     $("#div-azul").css({"opacity" : "1", "display" : "flex", "transition" : "opacity 0.75s ease"});
+                  } else {
+                     $("#div-azul").css({"opacity" : "0", "display" : "flex", "transition" : "opacity 0.75s ease"});
+                  }
+               }
+            });
+         });
+
+      </script>
       <?php
          include_once "includes/footer.php";
       ?>
