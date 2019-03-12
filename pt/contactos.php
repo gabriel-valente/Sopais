@@ -28,7 +28,7 @@
                   <p>Eco-Parque Empresarial Estarreja<br>Rua de Canelas, nº3<br>3860-529 Estarreja, Portugal</p>
                </div>
                <div class="div-content">
-                  <h6>Fale Conosco</h6>
+                  <h6>Fale Connosco</h6>
                   <p>Tel.: (+351) 234 548 137<br>E-mail: geral@sopais.pt</p>
                </div>
             </div>

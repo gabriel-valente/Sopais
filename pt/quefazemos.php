@@ -18,42 +18,42 @@
             <div class="div-container">
                <div class="div-box" id="div-1">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/projectdev.png">
                      <h3>Apoio ao Desenvolvimento de Projetos:</h3>
                   </div>
                   <p>Dispomos de uma equipa de especialistas prontos para ajudar o seu negócio.</p>
                </div>
                <div class="div-box" id="div-11">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/metrolab.png">
                      <h3>Laboratório Metrológico:</h3>
                   </div>
                   <p>Laboratório interno equipado para realizar diferentes testes dimensionais e funcionais.</p>
                </div>
                <div class="div-box" id="div-2">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/metalwork.png">
                      <h3>Metalomecânica de precisão:</h3>
                   </div>
                   <p>Ao serviço da empresa temos máquinas BIHLER e técnicos com know-how especializado na afinação das mesmas.</p>
                </div>
                <div class="div-box" id="div-22">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/stamp.png">
                      <h3>Estampagem:</h3>
                   </div>
                   <p>Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 e as 315 toneladas.</p>
                </div>
                <div class="div-box" id="div-3">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/bending.png">
                      <h3>Conformação de tubo:</h3>
                   </div>
                   <p>Redução, alargamento, corte e conformação de tubo são capacidades que a SOPAIS põe à disposição dos seus clientes.</p>
                </div>
                <div class="div-box" id="div-33">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/welding.png">
                      <h3>Soldadura:</h3>
                   </div>
                   <p>Dispomos de uma ótima qualidade de soldadura com tecnologias MIG/MAG e soldadura por resistência.</p>

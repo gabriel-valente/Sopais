@@ -18,42 +18,42 @@
             <div class="div-container">
                <div class="div-box" id="div-1">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/projectdev.png">
                      <h3>Support for new projects development:</h3>
                   </div>
                   <p>Our team of specialist is at your disposal to help you develop your new projects.</p>
                </div>
                <div class="div-box" id="div-11">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/metrolab.png">
                      <h3>Metrological Lab:</h3>
                   </div>
                   <p>Internal laboratory equipped to perform different functional and dimensional tests.</p>
                </div>
                <div class="div-box" id="div-2">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/metalwork.png">
                      <h3>Precision Metal Working:</h3>
                   </div>
                   <p>We have BIHLER machines working for the company with specialized technicians dedicated to them.</p>
                </div>
                <div class="div-box" id="div-22">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/stamp.png">
                      <h3>Stamping:</h3>
                   </div>
                   <p>We have a diversified range of hydraulic and mechanic stamping machines with pressures between 45 and 315 tons of force.</p>
                </div>
                <div class="div-box" id="div-3">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/bending.png">
                      <h3>Tube forming:</h3>
                   </div>
                   <p>Decreasing, widening, cutting and tube forming are some of the capabilities that SOPAIS has to offer to its clients.</p>
                </div>
                <div class="div-box" id="div-33">
                   <div class="box-heading">
-                     <img class="img-icon" src="../img/icons/light-bulb.png">
+                     <img class="img-icon" src="../img/icons/welding.png">
                      <h3>Welding:</h3>
                   </div>
                   <p>Robotic MIG/MAG welding processed by Yaskawa robots and resistance welding used to fix nuts.</p>
