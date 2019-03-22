@@ -217,6 +217,10 @@
                                              $("#form-report").html("Mensagem enviada com sucesso! Responderemos em breve!");
                                           } else if (output == "Error") {
                                              $("#form-report").html("Não foi possivel enviar a mensagem! Tente novamente em uns instantes.");
+                                          } else if (output == "EmailError") {
+                                             $("#form-report").html("A mensagem não foi corretamente enviada! Poderemos demorar a responder!");
+                                          } else {
+                                             console.log(output);
                                           }
                                        }
                                     });

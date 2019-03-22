@@ -215,6 +215,8 @@
                                              $("#form-report").html("Message sent! We will respond soon!");
                                           } else if (output == "Error") {
                                              $("#form-report").html("Couldn't send the message! Please try again in a few moments.");
+                                          } else if (output == "EmailError") {
+                                             $("#form-report").html("The message was not sent correctly! We can take some time to respond!");
                                           }
                                        }
                                     });

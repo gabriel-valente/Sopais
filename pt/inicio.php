@@ -26,10 +26,22 @@
 
          <div class="div-wrapper">
             <div class="div-division flow division-top" id="img-certs">
+               <div class="div-cert">
                   <img class="img-certlogo" src="../img/certs/IATF16949-E.png">
+                  <p><b>IATF 16949:</b> Sistemas de Gestão de Qualidade para a Indústria Automóvel</p>
+               </div>
+               <div class="div-cert">
                   <img class="img-certlogo" src="../img/certs/ISO9001Qu-E.png">
+                  <p><b>ISO 9001:</b> Sistemas de Gestão de Qualidade</p>
+               </div>
+               <div class="div-cert">
                   <img class="img-certlogo" src="../img/certs/ISO14001.png">
+                  <p><b>ISO 14001:</b> Sistemas de Gestão Ambiental</p>
+               </div>
+               <div class="div-cert">
                   <img class="img-certlogo" src="../img/certs/NP4397_OHSAS18001.png">
+                  <p><b>ISO 18001:</b> Sistemas de Gestão de Saúde e Segurança no Trabalho</p>
+               </div>
             </div>
             <div class="div-division" id="div-mensagem">
                <div class="div-message">
@@ -46,27 +58,27 @@
                <div class="div-container flow">
                   <div class="div-content post">
                      <div class="image-container">
-                        <img src="https://cdn.pixabay.com/photo/2017/12/29/18/47/nature-3048299__340.jpg">
+                        <img src="http://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9">
                      </div>
                      <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
 
                   <div class="div-content post">
                      <div class="image-container">
-                        <img src="https://cdn.pixabay.com/photo/2017/12/29/18/47/nature-3048299__340.jpg">
+                        <img src="https://i.pinimg.com/originals/e2/b8/2a/e2b82aded815e80351b929a77519adaa.jpg">
                      </div>
                      <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
 
                   <div class="div-content post">
                      <div class="image-container">
-                        <img src="https://cdn.pixabay.com/photo/2017/12/29/18/47/nature-3048299__340.jpg">
+                        <img src="https://images.wallpaperscraft.com/image/city_vector_panorama_119914_3840x2160.jpg">
                      </div>
                      <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
 
                <div class="button">
-                  <a href="inicio.php">Mais notícias</a>
+                  <a href="noticias.php">Mais notícias</a>
                </div>
             </div>
             <br>
