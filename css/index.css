@@ -6,28 +6,15 @@ video {
    z-index: -999;
 }
 
-article {
-   position: absolute;
-   left: 0px;
-   right: 0px;
-   width: auto;
-   height: calc(100% - 50px);
-   border-bottom: solid 15px #FFF6;
-   -o-border-bottom: solid 15px #FFF6;
-   -moz-border-bottom: solid 15px #FFF6;
-   -webkit-border-bottom: solid 15px #FFF6;
-   margin: 10px;
-}
-
 .heading {
-   margin: 15% auto;
-   width: 60%;
-   font-size: 40px;
-   font-weight: bold;
+   margin: 20px auto;
+   width: 75%;
+   font-size: 30px;
+   font-weight: normal;
    letter-spacing: 0.05px;
-   color: #fff;
+   color: #273B7B;
    text-align: center;
-   text-shadow: 0px 3px 10px #000A;
+   text-shadow: 0px 3px 10px #4A61AB;
    transition: all 1s ease;
    -moz-transition: all 1s ease;
    -webkit-transition: all 1s ease;

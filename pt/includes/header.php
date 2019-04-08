@@ -9,7 +9,7 @@
    <a href="inicio.php">
       <img src="../img/logo.png">
    </a>
-   <p class="desktop name"><b>SOPAIS -</b><i> Componentes Metálicos Lda.</i></p>
+   <p class="desktop name"><b>SOPAIS -</b> Componentes Metálicos Lda.</p>
       <div class="mobile icon" id="nav-icon">
          <span></span>
          <span></span>
