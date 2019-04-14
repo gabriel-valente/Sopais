@@ -20,20 +20,45 @@
       ?>
       <main id="fullpage">
          <div class="section" id="section0">
-            <video autoplay muted loop>
-               <source src="../img/video.mp4" type="video/mp4">
-            </video>
-            <article>
-               <h1 class="heading">"Excellence tailored for your products."</h1>
-            </article>
+            <video preload="metadata" autoplay controls controlsList="nodownload">
+               <source src="../img/SOPAIS.mp4" type="video/mp4">
+               </video>
+               <article>
+                  <h1 class="heading">"Excellence tailored for your products."</h1>
+               </article>
+            </div>
+         <div class="section" id="section1">
+            <div class="div-message">
+               <h5>A <i> SOPAIS – Componentes Metálicos, Lda.</i> foi fundada em 1987 contando com <b> mais de 30 anos de experiência na indústria metalomecânica.</b></h5>
+            </div>
          </div>
       </main>
 
+      <?php
+      include_once "includes/aside.php";
+      include_once "includes/footer.php";
+      ?>
+      
       <script>
+         $(document).ready(setTimeout(function() {
+            window.location = "inicio.php#firstPage";
+            $("header").addClass("hide");
+         }, 10));
+
+         $(document).ready(function() {
+            $(window).on("scroll", function () {
+               if (window.location.hash.substr(1) == "firstPage") {
+                  $("header").removeClass("show").addClass("hide");
+               }
+               else if (window.location.hash.substr(1) == "secondPage") {
+                  $("header").removeClass("hide").addClass("show");
+               }
+            });
+         });
+
          var myFullpage = new fullpage("#fullpage", {
             anchors: ["firstPage", "secondPage", "3rdPage"],
-            scrollBar: true,
-            licenseKey:"OPEN-SOURCE-GPLV3-LICENSE"
+            scrollBar: true
          });
       </script>
    </body>

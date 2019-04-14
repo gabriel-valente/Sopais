@@ -171,6 +171,24 @@ nav {
    -webkit-transition: all 0.2s ease, font-size 1s ease;
 }
 
+.hide {
+   position: fixed;
+   top: -126px;
+   left: 0px;
+   transition: all 1s 1s ease;
+   -moz-transition: all 1s 1s ease;
+   -webkit-transition: all 1s 1s ease;
+}
+
+.show {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -webkit-transition: all 1s ease;
+}
+
 #nav-icon {
    display: hidden;
    position: absolute;
