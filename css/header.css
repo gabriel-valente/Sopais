@@ -25,7 +25,7 @@ header {
    display: none;
 }
 
-img {
+.logo {
    height: 100px;
    margin: 10px 50px;
    transition: all 1s;
@@ -33,7 +33,7 @@ img {
    -webkit-transition: all 1s;
 }
 
-img::selection {
+.logo::selection {
    user-select: none;
    -ms-user-select: none;
    -moz-user-select: none;
@@ -147,7 +147,7 @@ nav {
    -webkit-transition: all 0.2s ease-in-out;
 }
 
-.minimize img {
+.minimize .logo {
    height: 40px;
    margin: 10px;
 }
@@ -171,7 +171,7 @@ nav {
    -webkit-transition: all 0.2s ease, font-size 1s ease;
 }
 
-.hide {
+.hideHeader {
    position: fixed;
    top: -126px;
    left: 0px;
@@ -180,7 +180,7 @@ nav {
    -webkit-transition: all 1s 1s ease;
 }
 
-.show {
+.showHeader {
    position: fixed;
    top: 0px;
    left: 0px;
@@ -276,7 +276,7 @@ nav {
       display: block;
    }
 
-   img, .minimize img {
+   .logo, .minimize .logo {
       height: 50px;
       margin: 10px;
    }
