@@ -5,56 +5,169 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
       <title>Sopais</title>
+      <link rel="stylesheet" type="text/css" href="../fullPage.js/dist/fullpage.css" />
+      <script type="text/javascript" src="../fullPage.js/dist/fullpage.js"></script>
+      <script type="text/javascript" src="../fullPage.js/vendors/easings.min.js"></script>
+      <script type="text/javascript" src="../fullPage.js/vendors/scrolloverflow.min.js"></script>
+
+      <link rel="stylesheet" href="../materialize/css/materialize.css">
+      <script src="../materialize/js/materialize.min.js"></script>
+
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/index.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="../js/pageChange.js"></script>
    </head>
-   <body onresize="UpdateWidth();">
+   <body>
       <?php
          include_once "includes/header.php";
       ?>
-      <main>
-         <div class="div-division">
-            <article>
-              <h1 class="heading">"Excellence tailored for your products by the precision of our technology"</h1>
-            </article>
-            <video autoplay muted loop>
-               <source src="../img/video.mp4" type="video/mp4">
-            </video>
+      <main id="fullpage">
+         <div class="section" id="section0">
+            <video preload="metadata" data-autoplay autoplay controls muted controlsList="nodownload">
+               <source src="../img/SOPAIS.mp4" type="video/mp4">
+               </video>
+               <article>
+                  <h1 class="heading">Excellence tailored for your products.</h1>
+               </article>
+            </div>
+         <div class="section" id="section1">
+               <div class="div-division flow division-top" id="img-certs">
+                  <div class="div-cert" id="1" onclick="changeText($(this).attr('id'))">
+                     <img class="img-certlogo" src="../img/certs/IATF16949-E.png">
+                  </div>
+                  <div class="div-cert" id="2" onclick="changeText($(this).attr('id'))">
+                     <img class="img-certlogo" src="../img/certs/ISO9001Qu-E.png">
+                  </div>
+                  <div class="div-cert" id="3" onclick="changeText($(this).attr('id'))">
+                     <img class="img-certlogo" src="../img/certs/ISO14001.png">
+                  </div>
+                  <div class="div-cert" id="4" onclick="changeText($(this).attr('id'))">
+                     <img class="img-certlogo" src="../img/certs/NP4397_OHSAS18001.png">
+                  </div>
+
+                  <b class="cert-desc"></b>
+                  <div class="button">
+                     <a href="quality.php">Know more</a>
+                  </div>
+               </div>
          </div>
-
-         <div class="div-wrapper">
-            <div class="div-division flow division-top" id="img-certs">
-               <div class="div-cert">
-                  <img class="img-certlogo" src="../img/certs/IATF16949-E.png">
-                  <p><b>IATF 16949:</b> Automotive Quality Management Systems</p>
+         <div class="section div-division flow division-top" id="section2">
+            <div class="navigation" id="back" onclick="back();">
+               <img src="../img/icons/arrow.png">
+            </div>
+            <div class="carousel carousel-slider center">
+               <div class="carousel-item center" href="#one!">
+                  <img src="../img/carousel/1.1.jpg">
                </div>
-               <div class="div-cert">
-                  <img class="img-certlogo" src="../img/certs/ISO9001Qu-E.png">
-                  <p><b>ISO 9001:</b> Quality Management Systems</p>
+               <div class="carousel-item center" href="#two!">
+                  <img src="../img/carousel/1.2.jpg">
                </div>
-               <div class="div-cert">
-                  <img class="img-certlogo" src="../img/certs/ISO14001.png">
-                  <p><b>ISO 14001:</b> Environmental Management Systems</p>
+               <div class="carousel-item center" href="#three!">
+                  <img src="../img/carousel/1.3.jpg">
                </div>
-               <div class="div-cert">
-                  <img class="img-certlogo" src="../img/certs/NP4397_OHSAS18001.png">
-                  <p><b>ISO 18001:</b> Health & Safety Management Systems</p>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/2.1.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/2.2.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/2.3.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/3.1.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/3.2.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/3.3.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/3.4.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/4.1.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/4.2.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/4.3.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/4.4.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/4.5.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/5.1.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/5.2.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/5.3.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/6.1.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/6.2.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/7.1.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/7.2.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/7.3.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/8.1.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/8.2.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/9.1.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/9.2.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/9.3.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/10.1.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/10.2.jpg">
+               </div>
+               <div class="carousel-item center" href="#four!">
+                  <img src="../img/carousel/10.3.jpg">
                </div>
             </div>
-            <div class="div-division" id="div-mensagem">
-               <div class="div-message">
-                  <h5><i>SOPAIS – Componentes Metálicos, Lda.</i> is a <b> metalworking company with nearly 30 years of experience </b> founded in 1987.</h5>
-               </div>
-
-               <div class="button">
-                  <a href="whoweare.php">Know More</a>
+            <div class="navigation" onclick="forward();">
+               <img src="../img/icons/arrow.png">
+            </div>
+         </div>
+         <div class="section" id="section3">
+            <div class="div-division" id="fundo">
+               <div class="div-wrapper">
+                  <h5 class="div-message"><i><b> SOPAIS </b> – Componentes Metálicos, Lda.</i> is a <b> metalworking company with nearly 30 years of experience </b> founded in 1987.</h5>
+                  <div class="button">
+                     <a href="whoweare.php">Know more</a>
+                  </div>
                </div>
             </div>
-            <br>
+         </div>
+         <div class="section" id="section4">
+            <h5>News</h5>
             <div class="div-division" id="div-noticias">
-               <h2>News</h2>
                <div class="div-container flow">
                   <div class="div-content post">
                      <div class="image-container">
@@ -78,75 +191,68 @@
                   </div>
 
                <div class="button">
-                  <a href="news.php">More News</a>
+                  <a href="noticias.php">Mais notícias</a>
                </div>
             </div>
-            <br>
-
          </div>
       </main>
 
+      <?php
+      include_once "includes/aside.php";
+      include_once "includes/footer.php";
+      ?>
+
       <script>
-         var altura;
-         var largura;
+         $(document).ready(setTimeout(function() {
+            window.location = "#video";
+         }, 25));
 
-         function UpdateWidth() {
-            largura = window.innerWidth;
+         function changeText(id) {
+            $("#img-certs").find("*").removeClass("selected");
+            $("#" + id).addClass("selected");
 
-            if (largura > 888) {
-               $("#img-certs").css("opacity", "0");
-               $("#div-mensagem").css("opacity", "0");
-               $("#div-noticias").css("opacity", "0");
-            } else {
-               $("#img-certs").css("opacity", "1");
-               $("#div-mensagem").css("opacity", "1");
-               $("#div-noticias").css("opacity", "1");
+            if (id == 1) {
+               $(".cert-desc").html("Provides credibility to produce metal parts for the automotive industry");
+            }
+            else if (id == 2) {
+               $(".cert-desc").html("Enables more efficiency leveraging at the same time the quality standards");
+            }
+            else if (id == 3) {
+               $(".cert-desc").html("Minimizes the environmental impact as well as it enhances the commitment with environmental protection");
+            }
+            else if (id == 4) {
+               $(".cert-desc").html("Certifies the commitment of the company with its collaborator’s health and security");
+            }
+            else {
+               $(".cert-desc").html();
             }
          }
 
-         $(document).ready(function() {
-            altura = window.innerHeight / 3;
-            largura = window.innerWidth;
 
-            if (largura > 888) {
-               $("#img-certs").css("opacity", "0");
-               $("#div-mensagem").css("opacity", "0");
-               $("#div-noticias").css("opacity", "0");
-            } else {
-               $("#img-certs").css("opacity", "1");
-               $("#div-mensagem").css("opacity", "1");
-               $("#div-noticias").css("opacity", "1");
-            }
+         var myFullpage = new fullpage("#fullpage", {
+            anchors: ["video", "certificates", "products", "information", "news"],
+            scrollBar: true,
+            easing: "easeInOutCubic"
+         });
 
-            $(document).scroll(function() {
-               var scroll = $(this).scrollTop();
-
-               if (largura > 888) {
-                  if (scroll >= altura / 3) {
-                     $("#img-certs").css({"opacity" : "1", "display" : "flex", "transition" : "opacity 0.75s ease"});
-                  } else {
-                     $("#img-certs").css({"opacity" : "0", "display" : "flex", "transition" : "opacity 0.75s ease"});
-                  }
-
-                  if (scroll >= altura / 2) {
-                     $("#div-mensagem").css({"opacity" : "1", "display" : "block", "transition" : "opacity 0.75s ease"});
-                  } else {
-                     $("#div-mensagem").css({"opacity" : "0", "display" : "block", "transition" : "opacity 0.75s ease"});
-                  }
-
-                  if (scroll >= altura) {
-                     $("#div-noticias").css({"opacity" : "1", "display" : "block", "transition" : "opacity 0.75s ease"});
-                  } else {
-                     $("#div-noticias").css({"opacity" : "0", "display" : "block", "transition" : "opacity 0.75s ease"});
-                  }
-               }
+         document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+               fullWidth: true
             });
          });
 
+         function back() {
+            var el = document.querySelector(".carousel");
+             var l = M.Carousel.getInstance(el);
+             l.prev();
+         }
+
+         function forward() {
+            var el = document.querySelector(".carousel");
+             var l = M.Carousel.getInstance(el);
+             l.next();
+         }
       </script>
-      <?php
-         include_once "includes/aside.php";
-         include_once "includes/footer.php";
-      ?>
    </body>
 </html>

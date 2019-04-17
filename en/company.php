@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,9 @@
       <title>Sopais</title>
       <link rel="stylesheet" type="text/css" href="../fullPage.js/dist/fullpage.css" />
       <script type="text/javascript" src="../fullPage.js/dist/fullpage.js"></script>
+
+      <link rel="stylesheet" href="../materialize/css/materialize.css">
+      <script src="../materialize/js/materialize.min.js"></script>
 
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/empresa.css">
@@ -20,7 +23,7 @@
          <div class="section" id="section0">
             <img class="img-heading" src="../img/drone.png">
             <div class="div-wrapper">
-               <p id="p-texto"><i>Sopais – Componentes Metálicos, Lda. </i> foi fundada em 1987 contando com mais de 30 anos de experiência na indústria metalomecânica.<br><br>Assente no know-how adquirido ao longo da sua história a empresa olha para as suas instalações, tecnologia e estrutura humana qualificada, flexível e profissional – capaz de abraçar projetos ambiciosos – como fatores que a diferenciam. Com uma oferta de excelência a empresa visa fixar-se no mercado como top of mind na indústria da produção de componentes metálicos para todos os setores.</p>
+               <p id="p-texto"><i>Sopais – Componentes Metálicos, Lda. </i> was <b> founded in 1987. </b> Today the company counts with more than <b>30 years of experience </b> on the metalworking industry.<br><br>Based on the know-how achieved with the enterprise experience on the sector it finds differentiation on its facilities, technology and qualified, flexible and professional human resources. With a <b> tailored offer </b><i> SOPAIS </i> wants to settle on the market as <b> top of mind brand to produce metal parts.</b></p>
             </div>
          </div>
          <div class="section" id="section1">
@@ -32,16 +35,16 @@
                </div>
                <div class="div-container" id="div-azul">
                   <div class="div-box hidden" id="1">
-                     <h3>Visão</h3>
-                     <p>Ser uma das primeiras empresas a ser consultada, dentro da indústria metalomecânica, pelos grandes grupos internacionais que necessitarem de componentes metálicos.</p>
+                     <h3>Vision</h3>
+                     <p>To be on the top tier metal working companies to be consulted by the major international groups that need metallic parts on their products.</p>
                   </div>
                   <div class="div-box shown" id="2">
-                     <h3>Missão</h3>
-                     <p>Desenvolver e dar soluções, produzir e comercializar com excelência, componentes metálicos para vários tipos de setores de atividade.<br><br>Procuramos sempre produzir produtos/serviços que satisfaçam integralmente os nossos clientes, assim como as suas exigências, privilegiando prazos de entrega, qualidade, preços e uma relação de plena confiança.<br><br>Com os nossos fornecedores privilegiamos uma relação de confiança e cooperação e pretendemos dispor aos nossos colaboradores as melhores condições que proporcionem um bom ambiente laboral criando uma equipa qualificada e competente.</p>
+                     <h3>Mission</h3>
+                     <p>Develop, produce and commercialize metal parts for various industry sectors with excellence. We strive to fit our clients needs with our products; quality, pricing, delivery deadlines and win-win partnerships are some of the factors that are relevant on our daily routine. We desire to be known as a cooperative and trustable organization among our suppliers as well as a company that’s concerned with a good labor environment for the employees.</p>
                   </div>
                   <div class="div-box hidden" id="3">
-                     <h3>Valores</h3>
-                     <p>Satisfação do cliente;<br>Melhoria contínua;<br>Respeito pelo meio ambiente e prevenção da poluição;<br>Prevenção das lesões e afeções da saúde;<br>Cumprir os requisitos legais aplicáveis às atividades da empresa;<br>Foco em resultados;<br>Confiança entre as partes;<br>Valorização e respeito pelos colaboradores;<br>Inovação.</p>
+                     <h3>Values</h3>
+                     <p>Client satisfaction;<br>Lean thinking;<br>Environmental care;<br>Health and safety first;<br>Meet the legal requirements applied on the industry;<br>Focus on results;<br>Trust;<br>Professional valorization and respect;<br>Innovation.</p>
                   </div>
                </div>
             </div>
@@ -58,7 +61,7 @@
          }
 
          var myFullpage = new fullpage("#fullpage", {
-            anchors: ["intro", "objetivos"],
+            anchors: ["intro", "goals"],
             scrollBar: true,
             easing: "easeInOutCubic"
          });

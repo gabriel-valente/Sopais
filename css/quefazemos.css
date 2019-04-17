@@ -1,3 +1,7 @@
+main {
+   padding-bottom: 30px;
+}
+
 .div-container {
    display: flex;
    -ms-display: flex;
@@ -54,6 +58,17 @@
    color: #2F2E2E;
    letter-spacing: 0px;
    line-height: normal;
+}
+
+#section0 {
+   display: flex;
+   flex-direction: row;
+   flex-flow: row;
+   margin-top: auto;
+}
+
+#section0 .fp-tableCell {
+   display: flex;
 }
 
 @media screen and (max-width: 950px) {

@@ -2,7 +2,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="../css/footer.css">
 </head>
-<footer class="section" id="section2">
+<footer>
    <div class="div-bar">
       <div class="div-bar-logo" id="bg1"></div>
       <div class="div-bar-logo" id="bg2"></div>

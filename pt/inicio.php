@@ -21,16 +21,15 @@
          include_once "includes/header.php";
       ?>
       <main id="fullpage">
-         <div class="section" id="section0" style="padding-top: 0px;">
+         <div class="section" id="section0">
             <video preload="metadata" data-autoplay autoplay controls muted controlsList="nodownload">
                <source src="../img/SOPAIS.mp4" type="video/mp4">
-               </video>
-               <article>
-                  <h1 class="heading">"Excellence tailored for your products."</h1>
-               </article>
-            </div>
+            </video>
+            <article>
+               <h1 class="heading">Excellence tailored for your products.</h1>
+            </article>
+         </div>
          <div class="section" id="section1">
-            <div class="div-wrapper">
                <div class="div-division flow division-top" id="img-certs">
                   <div class="div-cert" id="1" onclick="changeText($(this).attr('id'))">
                      <img class="img-certlogo" src="../img/certs/IATF16949-E.png">
@@ -47,119 +46,151 @@
 
                   <b class="cert-desc"></b>
                   <div class="button">
+                     <a href="qualidade.php">Saiba mais</a>
+                  </div>
+               </div>
+         </div>
+         <div class="section div-division flow division-top" id="section2">
+            <div class="navigation" onclick="back();">
+               <img src="../img/icons/arrow-bwd.png">
+            </div>
+            <div class="carousel carousel-slider center">
+               <div class="carousel-item center">
+                  <img src="../img/carousel/1.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/1.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/1.3.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/2.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/2.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/2.3.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/3.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/3.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/3.3.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/3.4.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/4.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/4.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/4.3.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/4.4.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/4.5.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/5.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/5.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/5.3.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/6.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/6.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/7.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/7.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/7.3.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/8.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/8.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/9.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/9.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/9.3.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/10.1.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/10.2.jpg">
+               </div>
+               <div class="carousel-item center">
+                  <img src="../img/carousel/10.3.jpg">
+               </div>
+            </div>
+            <div class="navigation" onclick="forward();">
+               <img src="../img/icons/arrow-fwd.png">
+            </div>
+         </div>
+         <div class="section" id="section3">
+            <div class="div-division" id="fundo">
+               <div class="div-wrapper">
+                  <h5 class="div-message">A <i><b> SOPAIS </b> - Componentes Metálicos, Lda. </i> foi fundada em 1987 contando com <b> mais de 30 anos de experiência na indústria metalomecânica.</b></h5>
+                  <div class="button">
                      <a href="empresa.php">Saiba mais</a>
                   </div>
                </div>
             </div>
          </div>
-         <div class="section" id="section2">
-            <div class="navigation" id="back" onclick="back();">
-               <img src="../img/icons/arrow.png">
-            </div>
-            <div class="div-wrapper">
-               <div class="carousel carousel-slider center">
-                  <div class="carousel-item center" href="#one!">
-                     <img src="../img/carousel/1.1.jpg">
+         <div class="section" id="section4">
+            <h5>Notícias</h5>
+            <div class="div-division" id="div-noticias">
+               <div class="div-container flow">
+                  <div class="div-content post">
+                     <div class="image-container">
+                        <img src="http://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9">
+                     </div>
+                     <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
-                  <div class="carousel-item center" href="#two!">
-                     <img src="../img/carousel/1.2.jpg">
+
+                  <div class="div-content post">
+                     <div class="image-container">
+                        <img src="https://i.pinimg.com/originals/e2/b8/2a/e2b82aded815e80351b929a77519adaa.jpg">
+                     </div>
+                     <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
-                  <div class="carousel-item center" href="#three!">
-                     <img src="../img/carousel/1.3.jpg">
+
+                  <div class="div-content post">
+                     <div class="image-container">
+                        <img src="https://images.wallpaperscraft.com/image/city_vector_panorama_119914_3840x2160.jpg">
+                     </div>
+                     <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/2.1.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/2.2.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/2.3.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/3.1.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/3.2.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/3.3.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/3.4.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/4.1.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/4.2.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/4.3.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/4.4.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/4.5.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/5.1.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/5.2.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/5.3.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/6.1.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/6.2.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/7.1.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/7.2.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/7.3.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/8.1.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/8.2.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/9.1.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/9.2.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/9.3.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/10.1.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/10.2.jpg">
-                  </div>
-                  <div class="carousel-item center" href="#four!">
-                     <img src="../img/carousel/10.3.jpg">
-                  </div>
+
+               <div class="button">
+                  <a href="noticias.php">Mais notícias</a>
                </div>
-            </div>
-            <div class="navigation" onclick="forward();">
-               <img src="../img/icons/arrow.png">
-            </div>
-         </div>
-         <div class="section" id="section3">
-            <div class="div-division" id="fundo">
-               <p>sdgfhm,hgfdhjkmgfd</p>
             </div>
          </div>
       </main>
@@ -171,7 +202,7 @@
 
       <script>
          $(document).ready(setTimeout(function() {
-            window.location = "inicio.php#video";
+            window.location = "#video";
          }, 25));
 
          function changeText(id) {
@@ -198,7 +229,8 @@
 
          var myFullpage = new fullpage("#fullpage", {
             anchors: ["video", "certificados", "produtos", "informacoes", "noticias"],
-            scrollBar: true
+            scrollBar: true,
+            easing: "easeInOutCubic"
          });
 
          document.addEventListener('DOMContentLoaded', function() {

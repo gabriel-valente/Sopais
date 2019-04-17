@@ -107,7 +107,7 @@ nav {
 
 .lang {
    width: 75px;
-   height: calc(100% - 50px);
+   height: 100%;
    position: absolute;
    top: 0px;
    right: 0px;

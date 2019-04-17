@@ -7,7 +7,7 @@
 </head>
 <header>
    <a href="home.php">
-      <img src="../img/logo.png">
+      <img class="logo" src="../img/logos/logo.png">
    </a>
    <p class="desktop name"><b>SOPAIS -</b> Componentes Metálicos Lda.</p>
       <div class="mobile icon" id="nav-icon">
@@ -29,7 +29,7 @@
    </div>
    <nav>
       <a class="item" href="home.php">Home</a>
-      <a class="item" href="whoweare.php">Who we are?</a>
+      <a class="item" href="company.php">The company</a>
       <a class="item" href="whatwedo.php">What do we do</a>
       <a class="item" href="quality.php">Quality</a>
       <a class="item" href="news.php">News</a>
