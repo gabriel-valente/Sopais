@@ -129,7 +129,7 @@ h2 {
 
 #section1 .fp-tableCell {
    vertical-align: top;
-   padding-top: 60px;
+   padding-top: 10%;
 }
 
 #section1 {
@@ -216,6 +216,10 @@ h2 {
 
 #div-noticias {
    width: 90%;
+}
+
+#section5 {
+   padding: 0px;
 }
 
 @media screen and (max-width: 888px) {

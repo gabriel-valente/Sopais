@@ -57,20 +57,20 @@ footer {
 }
 
 #bg1 {
-   background-image: url("../img/logos/012.png");
-   -o-background-image: url("../img/logos/012.png");
-   -moz-background-image: url("../img/logos/012.png");
-   -webkit-background-image: url("../img/logos/012.png");
+   background-image: url("../img/logos/01.png");
+   -o-background-image: url("../img/logos/01.png");
+   -moz-background-image: url("../img/logos/01.png");
+   -webkit-background-image: url("../img/logos/01.png");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;
 }
 
 #bg2 {
-   background-image: url("../img/logos/022.png");
-   -o-background-image: url("../img/logos/022.png");
-   -moz-background-image: url("../img/logos/022.png");
-   -webkit-background-image: url("../img/logos/022.png");
+   background-image: url("../img/logos/02.png");
+   -o-background-image: url("../img/logos/02.png");
+   -moz-background-image: url("../img/logos/02.png");
+   -webkit-background-image: url("../img/logos/02.png");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;

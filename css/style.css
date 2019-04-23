@@ -5,7 +5,7 @@
 }
 
 body {
-   display: none;
+   display: block;
    margin: 0px;
    padding: 0px;
    background-color: #FFF;
@@ -262,6 +262,26 @@ main {
       -moz-transition: all 1s ease;
       -webkit-transition: all 1s ease;
    }
+}
+
+.vertical h5 {
+   line-height: 15px;
+   color: #DDD;
+   font-size: 0.83em;
+   margin-block-start: 1.67em;
+   margin-block-end: 1.67em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-weight: bold;
+}
+
+.div-bar {
+   height: 70px !important;
+}
+
+.contents h5 {
+   text-align: left !important;
+   color: #DDD !important;
 }
 
 @media screen and (max-width: 760px) {

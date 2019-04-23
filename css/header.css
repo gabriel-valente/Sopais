@@ -93,9 +93,9 @@ nav {
 .item:hover {
    color: #273B7B;
    border-bottom: solid 1px #273B7B;
-   -o-border-bottom: solid 1px #333A;
-   -moz-border-bottom: solid 1px #333A;
-   -webkit-border-bottom: solid 1px #333A;
+   -o-border-bottom: solid 1px #273B7B;
+   -moz-border-bottom: solid 1px #273B7B;
+   -webkit-border-bottom: solid 1px #273B7B;
    transform: scale(1.2);
    -ms-transform: scale(1.2);
    -moz-transform: scale(1.2);
