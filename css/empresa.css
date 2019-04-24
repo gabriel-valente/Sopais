@@ -7,7 +7,7 @@ main {
    width: 100%;
    margin: 20px 0px;
    margin-top: 30px;
-   font-size: 25px;
+   font-size: 20px;
    text-align: center;
    color: #063C73;
    letter-spacing: 0px;
@@ -18,7 +18,8 @@ main {
 }
 
 .div-container {
-   height: 50vh;
+   min-height: 50vh;
+   height: auto;
    background-color: #EFF0FE;
 }
 
@@ -46,7 +47,7 @@ main {
    height: auto;
    width: 100%;
    margin: 20px 0px;
-   font-size: 20px;
+   font-size: 16px;
    text-align: center;
    color: #757BC9;
    letter-spacing: 0px;
@@ -169,6 +170,12 @@ main {
    }
 }
 
+@media screen and (max-width: 888px) {
+   #p-texto, .div-box p {
+      font-size: 14px;
+   }
+}
+
 @media screen and (max-width: 600px) {
    .div-wrapper p {
       font-size: 20px;
@@ -178,6 +185,6 @@ main {
    }
 
    .div-box p {
-      font-size: 17px;
+      font-size: 14px;
    }
 }

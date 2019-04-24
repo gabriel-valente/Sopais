@@ -234,14 +234,6 @@ h2 {
 }
 
 @media screen and (max-width: 888px) {
-   #fullPage {
-      display: none !important;
-   }
-
-   #mobile {
-      display: block !important;
-   }
-
    .heading {
       width: 90%;
       margin: auto;
@@ -259,8 +251,34 @@ h2 {
       justify-content: space-around;
    }
 
+   #section1, #section2 {
+      height: auto !important;
+   }
+
    #section1 .fp-tableCell {
+      height: auto !important;
       padding-top: 20px;
+      padding-bottom: 200px !important;
+   }
+
+   #section2 .fp-tableCell {
+      height: auto !important;
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+   }
+
+   .div-message {
+      font-size: 14px;
+      line-height: 23px;
+   }
+
+   .post img {
+      transform: scale(1);
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
    }
 }
 

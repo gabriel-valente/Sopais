@@ -302,7 +302,7 @@ nav {
       right: 0px;
       background-color: #FFFD;
       visibility: hidden;
-      transform: translateY(-186px) scaleY(0);
+      transform: translateY(-209px) scaleY(0);
       flex-direction: column;
       -ms-flex-direction: column;
       -moz-flex-direction: column;
@@ -373,9 +373,9 @@ nav {
    }
 
    .minimize .div-social, .div-social {
-      position: absolute;
-      top: 14px;
-      right: 180px;
+      position: relative;
+      top: -10px;
+      right: 120px;
       height: auto;
       width: 24px;
       margin: 0px;
