@@ -21,7 +21,7 @@
          include_once "includes/header.php";
       ?>
       <main id="fullpage">
-         <div class="section" id="section0">
+         <div class="section fp-auto-height" id="section0">
             <video preload="metadata" data-autoplay autoplay controls muted controlsList="nodownload">
                <source src="../img/SOPAIS.mp4" type="video/mp4">
             </video>
@@ -192,7 +192,7 @@
                </div>
             </div>
          </div>
-         <div class="section" id="section5">
+         <div class="section fp-auto-height" id="section5">
             <footer>
                <div class="div-bar">
                   <div class="div-bar-logo" id="bg1"></div>
@@ -209,15 +209,6 @@
                         <a class="link" href="qualidade.php">Qualidade</a>
                         <a class="link" href="noticias.php">Notícias</a>
                         <a class="link" href="contactos.php">Contactos</a>
-                     </div>
-                     <div class="div-containter vertical">
-                        <h5>Setores de Trabalho</h5>
-                        <a class="link" href="#">Automóvel</a>
-                        <a class="link" href="#">Quem somos</a>
-                        <a class="link" href="#">Tecnologia</a>
-                        <a class="link" href="#">Produtos</a>
-                        <a class="link" href="#">Qualidade</a>
-                        <a class="link" href="#">Contactos</a>
                      </div>
                      <div class="div-containter vertical">
                         <h5>Contactos</h5>
@@ -268,7 +259,7 @@
 
 
          var myFullpage = new fullpage("#fullpage", {
-            anchors: ["video", "certificados", "produtos", "informacoes", "noticias"],
+            anchors: ["video", "certificados", "produtos", "informacoes", "noticias", "footer"],
             scrollBar: true,
             responsiveWidth: 888,
             easing: "easeInOutCubic"

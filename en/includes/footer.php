@@ -20,15 +20,6 @@
             <a class="link" href="contacts.php">Contacts</a>
          </div>
          <div class="div-containter vertical">
-            <h5>Setores de Trabalho</h5>
-            <a class="link" href="#">Automóvel</a>
-            <a class="link" href="#">Quem somos</a>
-            <a class="link" href="#">Tecnologia</a>
-            <a class="link" href="#">Produtos</a>
-            <a class="link" href="#">Qualidade</a>
-            <a class="link" href="#">Contactos</a>
-         </div>
-         <div class="div-containter vertical">
             <h5>Contacts</h5>
             <p class="text">Eco-Parque Empresarial</p>
             <p class="text">Rua de Canelas, nº 3</p>

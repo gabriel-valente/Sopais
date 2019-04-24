@@ -18,7 +18,7 @@ footer {
    -ms-display: flex;
    -moz-display: flex;
    -webkit-display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    transition: all 1s;
    -moz-transition: all 1s;
    -webkit-transition: all 1s;

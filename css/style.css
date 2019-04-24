@@ -223,7 +223,7 @@ main {
 .navigation {
    height: 20%;
    width: 20%;
-   margin: auto 0px;
+   margin: 30% 0px;
 }
 
 .navigation img {
@@ -255,6 +255,16 @@ main {
 .carousel {
    height: auto;
    width: 60%;
+}
+
+@media screen and (max-width: 950px) {
+   .navigation {
+      height: 5%;
+      width: 5%;
+      transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -webkit-transition: all 0.25s ease-in-out;
+   }
 }
 
 @media screen and (max-width: 888px) {

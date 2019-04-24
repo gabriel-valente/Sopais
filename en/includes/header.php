@@ -15,17 +15,6 @@
          <span></span>
          <span></span>
       </div>
-   <div class="mobile div-social">
-      <a class="link" target="_blank" href="https://www.facebook.com/sopaislda" id="noScript">
-         <img class="social" src="../img/icons/facebookbox.png">
-      </a>
-      <a class="link" target="_blank" href="https://www.youtube.com/channel/UCUwKckOoooyihJaUKwSuMIQ" id="noScript">
-         <img class="social" src="../img/icons/youtubebox.png">
-      </a>
-      <a class="link" target="_blank" href="https://www.linkedin.com/company/sopais?trk=tyah&trkInfo=tarId%3A1397663293041%2Ctas%3Asopais%2Cidx%3A1-1-1" id="noScript">
-         <img class="social" src="../img/icons/linkedinbox.png">
-      </a>
-   </div>
    <nav>
       <a class="item" href="home.php">Home</a>
       <a class="item" href="company.php">The company</a>
@@ -37,6 +26,17 @@
       <div class="mobile language">
          <a class="itemLang" href="../pt/inicio.php">PT</a>
          <a class="itemLang langSel" href="../en/home.php">EN</a>
+      </div>
+      <div class="mobile div-social">
+         <a class="link" target="_blank" href="https://www.facebook.com/sopaislda" id="noScript">
+            <img class="social" src="../img/icons/facebookbox.png">
+         </a>
+         <a class="link" target="_blank" href="https://www.youtube.com/channel/UCUwKckOoooyihJaUKwSuMIQ" id="noScript">
+            <img class="social" src="../img/icons/youtubebox.png">
+         </a>
+         <a class="link" target="_blank" href="https://www.linkedin.com/company/sopais?trk=tyah&trkInfo=tarId%3A1397663293041%2Ctas%3Asopais%2Cidx%3A1-1-1" id="noScript">
+            <img class="social" src="../img/icons/linkedinbox.png">
+         </a>
       </div>
    </nav>
    <div class="desktop lang">
