@@ -25,9 +25,7 @@
             <video preload="metadata" data-autoplay autoplay controls muted controlsList="nodownload">
                <source src="../img/SOPAIS.mp4" type="video/mp4">
             </video>
-            <article>
-               <h1 class="heading">Excellence tailored for your products.</h1>
-            </article>
+            <h1 class="heading">Excellence tailored for your products</h1>
          </div>
          <div class="section" id="section1">
                <div class="div-division flow division-top" id="img-certs">
@@ -140,13 +138,13 @@
                   <img src="../img/carousel/9.3.jpg">
                </div>
                <div class="carousel-item center">
-                  <img src="../img/carousel/10.1.jpg">
+                  <img src="../img/carousel/10.1.jpg" >
                </div>
                <div class="carousel-item center">
-                  <img src="../img/carousel/10.2.jpg">
+                  <img src="../img/carousel/10.2.jpg" >
                </div>
                <div class="carousel-item center">
-                  <img src="../img/carousel/10.3.jpg">
+                  <img src="../img/carousel/10.3.jpg" >
                </div>
             </div>
             <div class="navigation" onclick="forward();">
@@ -188,6 +186,7 @@
                      <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
 
+               </div>
                <div class="button">
                   <a href="noticias.php">Mais notícias</a>
                </div>
@@ -271,6 +270,7 @@
          var myFullpage = new fullpage("#fullpage", {
             anchors: ["video", "certificados", "produtos", "informacoes", "noticias"],
             scrollBar: true,
+            responsiveWidth: 888,
             easing: "easeInOutCubic"
          });
 

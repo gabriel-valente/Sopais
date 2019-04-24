@@ -193,7 +193,7 @@ nav {
    display: hidden;
    position: absolute;
    top: 15px;
-   right: 5px;
+   right: 0px;
    width: 60px;
    height: 45px;
    -webkit-transform: rotate(0deg);
@@ -209,10 +209,10 @@ nav {
 #nav-icon span {
   display: block;
   position: absolute;
-  height: 7px;
-  width: 100%;
+  height: 5px;
+  width: 80%;
   background: #111;
-  border-radius: 15px;
+  border-radius: 20px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);

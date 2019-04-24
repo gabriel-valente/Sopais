@@ -24,97 +24,97 @@
                <img src="../img/icons/arrow-bwd.png">
             </div>
             <div class="carousel carousel-slider center">
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="0">
                   <img src="../img/carousel/1.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="1">
                   <img src="../img/carousel/1.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="2">
                   <img src="../img/carousel/1.3.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="3">
                   <img src="../img/carousel/2.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="4">
                   <img src="../img/carousel/2.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="5">
                   <img src="../img/carousel/2.3.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="6">
                   <img src="../img/carousel/3.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="7">
                   <img src="../img/carousel/3.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="8">
                   <img src="../img/carousel/3.3.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="9">
                   <img src="../img/carousel/3.4.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="10">
                   <img src="../img/carousel/4.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="11">
                   <img src="../img/carousel/4.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="12">
                   <img src="../img/carousel/4.3.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="13">
                   <img src="../img/carousel/4.4.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="14">
                   <img src="../img/carousel/4.5.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="15">
                   <img src="../img/carousel/5.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="16">
                   <img src="../img/carousel/5.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="17">
                   <img src="../img/carousel/5.3.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="18">
                   <img src="../img/carousel/6.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="19">
                   <img src="../img/carousel/6.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="20">
                   <img src="../img/carousel/7.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="21">
                   <img src="../img/carousel/7.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="22">
                   <img src="../img/carousel/7.3.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="23">
                   <img src="../img/carousel/8.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="24">
                   <img src="../img/carousel/8.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="25">
                   <img src="../img/carousel/9.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="26">
                   <img src="../img/carousel/9.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="27">
                   <img src="../img/carousel/9.3.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="28">
                   <img src="../img/carousel/10.1.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="29">
                   <img src="../img/carousel/10.2.jpg">
                </div>
-               <div class="carousel-item center">
+               <div class="carousel-item center" data-cindex="30">
                   <img src="../img/carousel/10.3.jpg">
                </div>
             </div>
@@ -123,19 +123,19 @@
             </div>
          </div>
          <div class="div-wrapper flow division-top temas">
-            <p onclick="mudarCarousel(0, 1);">Estampagem</p>
-            <p onclick="mudarCarousel(3, 2);">Mecânica de Precisão</p>
-            <p onclick="mudarCarousel(6, 3);">Conformação de Tubo</p>
-            <p onclick="mudarCarousel(10, 4);">Apoio ao Desenvolvimento de Projetos</p>
-            <p onclick="mudarCarousel(15, 5);">Soldadura</p>
-         </div>
-         <div class="div-wrapper texto">
-            <p></p>
+            <p class="temaSelected" id="1" onclick="mudarCarousel(18, 1);">Estampagem</p>
+            <p id="2" onclick="mudarCarousel(0, 2);">Conformação de Fita</p>
+            <p id="3" onclick="mudarCarousel(28, 3);">Conformação de Tubo</p>
+            <p id="4" onclick="mudarCarousel(null, 4);">Apoio ao Desenvolvimento de Projetos</p>
+            <p id="5" onclick="mudarCarousel(null, 5);">Soldadura</p>
          </div>
          <div class="div-wrapper">
             <video preload="metadata" autoplay muted loop id="video">
-               <source src="" type="video/mp4">
-            </video>
+               <source src="../img/Stamping.mp4" type="video/mp4">
+               </video>
+            </div>
+         <div class="div-wrapper texto">
+            <p>Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 e as 315 toneladas.</p>
          </div>
          <img class="img-footing" src="../img/welding.png">
       </main>
@@ -145,11 +145,20 @@
             window.location = "#intro";
          }, 25));
 
-         document.addEventListener('DOMContentLoaded', function() {
+         $(document).ready(function() {
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, {
-               fullWidth: true
+               fullWidth: true,
+               onCycleTo: function(data) {
+                  var lastindex;
+                  var index;
+                  lastindex = index;
+                  index = $(data).data('cindex');
+               },
             });
+            var el = document.querySelector(".carousel");
+            var l = M.Carousel.getInstance(el);
+            l.set(20);
          });
 
          function back() {
@@ -167,9 +176,14 @@
          function mudarCarousel(item, id) {
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
-            l.set(item);
+            if (item != null) {
+               l.set(item);
+            }
 
             var $video = $('video');
+
+            $(".temaSelected").removeClass("temaSelected");
+            $("#" + id).addClass("temaSelected");
 
             if (id == 1) {
                $(".texto p").html("Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 e as 315 toneladas.");

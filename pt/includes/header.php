@@ -6,7 +6,7 @@
 </head>
 <header>
    <a href="inicio.php">
-      <img class="logo" src="../img/logos/logo.png">
+      <img class="logo" src="../img/logos/Logo.png">
    </a>
    <p class="desktop name"><b>SOPAIS -</b> Componentes Metálicos Lda.</p>
       <div class="mobile icon" id="nav-icon">

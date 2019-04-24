@@ -158,7 +158,7 @@
                <div class="div-wrapper">
                   <h5 class="div-message"><i><b> SOPAIS </b> – Componentes Metálicos, Lda.</i> is a <b> metalworking company with nearly 30 years of experience </b> founded in 1987.</h5>
                   <div class="button">
-                     <a href="whoweare.php">Know more</a>
+                     <a href="company.php">Know more</a>
                   </div>
                </div>
             </div>
@@ -188,6 +188,7 @@
                      <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
 
+               </div>
                <div class="button">
                   <a href="noticias.php">Mais notícias</a>
                </div>

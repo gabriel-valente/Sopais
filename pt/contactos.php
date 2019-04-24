@@ -6,9 +6,14 @@
       <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
       <title>Sopais</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/contactos.css">
+
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+      <script type="text/javascript" src="../js/map.js">
+
+      </script>
    </head>
    <body>
       <?php
@@ -17,11 +22,7 @@
       <main>
          <img class="img-heading" src="https://i.imgur.com/ic9nTKH.jpg">
          <div class="div-wrapper">
-               <div class="mapouter">
-                  <div class="gmap_canvas">
-                     <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=40.775443%2C%20-8.590434&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
-                  </div>
-               </div>
+               <div id="mapid"></div>
             <div class="div-container">
                <div class="div-content">
                   <h6>Endereço</h6>
