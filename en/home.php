@@ -187,7 +187,7 @@
                   </div>
                </div>
                <div class="button">
-                  <a href="noticias.php">Mais notícias</a>
+                  <a href="new.php">More News</a>
                </div>
             </div>
          </div>

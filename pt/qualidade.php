@@ -82,6 +82,7 @@
          });
       </script>
       <?php
+         include_once "includes/aside.php";
          include_once "includes/footer.php";
       ?>
    </body>
