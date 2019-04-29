@@ -18,7 +18,11 @@
          include_once "includes/header.php";
       ?>
       <main>
-         <img class="img-heading" src="../img/drone.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-heading" src="../img/drone.png">
+            </div>
+         </div>
          <div class="div-wrapper">
             <p id="p-texto"><i>Sopais – Componentes Metálicos, Lda. </i> was <b> founded in 1987. </b> Today the company counts with more than <b>30 years of experience </b> on the metalworking industry.<br><br>Based on the know-how achieved with the enterprise experience on the sector it finds differentiation on its facilities, technology and qualified, flexible and professional human resources. With a <b> tailored offer </b><i> SOPAIS </i> wants to settle on the market as <b> top of mind brand to produce metal parts.</b></p>
          </div>
@@ -43,22 +47,25 @@
                </div>
             </div>
          </div>
-         <img class="img-footing" src="../img/drone.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-footing" src="../img/drone.png">
+            </div>
+         </div>
       </main>
 
       <script>
+         $(document).ready(function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+         });
+
          function mudar(id) {
             $("#div-azul").find(".div-box").removeClass("shown").addClass("hidden");
             $("#div-azul").find("#" + id).removeClass("hidden").addClass("shown");
             $(".imgbuttons").find("img").removeClass("selected").addClass("normal");
             $(".imgbuttons").find("#" + id).removeClass("normal").addClass("selected");
          }
-
-         var myFullpage = new fullpage("#fullpage", {
-            anchors: ["intro", "goals"],
-            scrollBar: true,
-            easing: "easeInOutCubic"
-         });
       </script>
       <?php
          include_once "includes/footer.php";

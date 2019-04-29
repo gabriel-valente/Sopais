@@ -2442,7 +2442,7 @@
                             previousHeight = currentHeight;
 
                             //issue #3336
-                            //when using Chrome we add a small timeout to get the right window height 
+                            //when using Chrome we add a small timeout to get the right window height
                             //https://stackoverflow.com/a/12556928/1081396
                             //https://stackoverflow.com/questions/13807810/ios-chrome-detection
                         }, navigator.userAgent.match('CriOS') ? 50 : 0);

@@ -18,12 +18,16 @@
          include_once "includes/header.php";
       ?>
       <main>
-         <img class="img-heading" src="../img/welding.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-heading" src="../img/welding.png">
+            </div>
+         </div>
          <div class="section div-division flow division-top">
             <div class="navigation" onclick="back();">
                <img src="../img/icons/arrow-bwd.png">
             </div>
-            <div class="carousel carousel-slider center">
+            <div class="carousel carousel-slider center" id="carousel">
                <div class="carousel-item center" data-cindex="0">
                   <img src="../img/carousel/1.1.jpg">
                </div>
@@ -122,12 +126,12 @@
                <img src="../img/icons/arrow-fwd.png">
             </div>
          </div>
-         <div class="div-wrapper flow division-top temas">
-            <p class="temaSelected" id="1" onclick="mudarCarousel(18, 1);">Estampagem</p>
-            <p id="2" onclick="mudarCarousel(0, 2);">Conformação de Fita</p>
-            <p id="3" onclick="mudarCarousel(28, 3);">Conformação de Tubo</p>
-            <p id="4" onclick="mudarCarousel(null, 4);">Apoio ao Desenvolvimento de Projetos</p>
-            <p id="5" onclick="mudarCarousel(null, 5);">Soldadura</p>
+         <div class="div-wrapper flow division-top temas" id="info">
+            <p class="temaSelected" id="1" onclick="mudarCarousel(18, 1);"><a href="#carousel">Estampagem</a></p>
+            <p id="2" onclick="mudarCarousel(0, 2);"><a href="#carousel">Conformação de Fita</a></p>
+            <p id="3" onclick="mudarCarousel(28, 3);"><a href="#carousel">Conformação de Tubo</a></p>
+            <p id="4" onclick="mudarCarousel(null, 4);"><a href="#info">Apoio ao Desenvolvimento de Projetos</a></p>
+            <p id="5" onclick="mudarCarousel(null, 5);"><a href="#info">Soldadura</a></p>
          </div>
          <div class="div-wrapper">
             <video preload="metadata" autoplay muted loop id="video">
@@ -137,15 +141,26 @@
          <div class="div-wrapper texto">
             <p>Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 e as 315 toneladas.</p>
          </div>
-         <img class="img-footing" src="../img/welding.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-footing" src="../img/welding.png">
+            </div>
+         </div>
       </main>
 
       <script>
-         $(document).ready(setTimeout(function() {
-            window.location = "#intro";
-         }, 25));
+         $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+               scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+         });
 
          $(document).ready(function() {
+            var elems2 = document.querySelectorAll('.parallax');
+            var instances2 = M.Parallax.init(elems2);
+
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, {
                fullWidth: true,
@@ -154,6 +169,11 @@
                   var index;
                   lastindex = index;
                   index = $(data).data('cindex');
+                  var timer;
+                  console.log(clearTimeout(timer));
+                  timer = setTimeout(function() {
+                     console.log("cena");
+                  }, 1000);
                },
             });
             var el = document.querySelector(".carousel");

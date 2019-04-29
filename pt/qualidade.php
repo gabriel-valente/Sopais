@@ -18,7 +18,11 @@
          include_once "includes/header.php";
       ?>
       <main>
-         <img class="img-heading" src="../img/medicoescota.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-heading" src="../img/medicoescota.png">
+            </div>
+         </div>
          <div class="div-wrapper">
             <div class="div-container" id="div-texto">
                <div class="div-imagetext">
@@ -36,7 +40,7 @@
                   <h4>IATF 16949</h4>
                   <p>Sistemas de Gestão de Qualidade para a Indústria Automóvel</p>
                   <div class="button">
-                     <a href="" download="../img/.png">Download</a>
+                     <a download="CertificadoIATF16949" href="../img/certs/IATF16949-E.png">Download</a>
                   </div>
                </div>
                <div class="div-box" id="color1">
@@ -44,7 +48,7 @@
                   <h4>ISO 9001</h4>
                   <p>Sistemas de Gestão de Qualidade</p>
                   <div class="button">
-                     <a href="" download="../img/.png">Download</a>
+                     <a download="CertificadoISO9001" href="../img/certs/ISO9001Qu-E.png">Download</a>
                   </div>
                </div>
                <div class="div-box" id="color2">
@@ -52,7 +56,7 @@
                   <h4>ISO 14001</h4>
                   <p>Sistemas de Gestão Ambiental</p>
                   <div class="button">
-                     <a href="" download="../img/.png">Download</a>
+                     <a download="CertificadoISO14001" href="../img/certs/ISO14001.png">Download</a>
                   </div>
                </div>
                <div class="div-box" id="color3">
@@ -60,13 +64,23 @@
                   <h4>OHSAS 18001</h4>
                   <p>Sistemas de Gestão de Saúde e Segurança no Trabalho</p>
                   <div class="button">
-                     <a href="" download="../img/.png">Download</a>
+                     <a download="CertificadoOHSAS18001" href="../img/certs/NP4397_OHSAS18001.png">Download</a>
                   </div>
                </div>
             </div>
          </div>
-         <img class="img-footing" src="../img/medicoescota.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-footing" src="../img/medicoescota.png">
+            </div>
+         </div>
       </main>
+      <script>
+         $(document).ready(function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+         });
+      </script>
       <?php
          include_once "includes/footer.php";
       ?>

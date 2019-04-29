@@ -18,7 +18,11 @@
          include_once "includes/header.php";
       ?>
       <main>
-         <img class="img-heading" src="../img/medicoescota.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-heading" src="../img/medicoescota.png">
+            </div>
+         </div>
          <div class="div-wrapper">
             <div class="div-container" id="div-texto">
                <div class="div-imagetext">
@@ -37,7 +41,7 @@
                   <h4>IATF 16949</h4>
                   <p>Provides credibility to produce metal parts for the automotive industry</p>
                   <div class="button">
-                     <a href="" download="../img/.png">Download</a>
+                     <a download="CertificateIATF16949" href="../img/certs/IATF16949-E.png">Download</a>
                   </div>
                </div>
                <div class="div-box" id="color1">
@@ -45,7 +49,7 @@
                   <h4>ISO 9001</h4>
                   <p>Enables more efficiency leveraging at the same time the quality standards</p>
                   <div class="button">
-                     <a href="" download="../img/.png">Download</a>
+                     <a download="CertificateISO9001" href="../img/certs/ISO9001Qu-E.png">Download</a>
                   </div>
                </div>
                <div class="div-box" id="color2">
@@ -53,7 +57,7 @@
                   <h4>ISO 14001</h4>
                   <p>Minimizes the environmental impact as well as it enhances the commitment with environmental protection</p>
                   <div class="button">
-                     <a href="" download="../img/.png">Download</a>
+                     <a download="CertificateISO14001" href="../img/certs/ISO14001.png">Download</a>
                   </div>
                </div>
                <div class="div-box" id="color3">
@@ -61,23 +65,21 @@
                   <h4>OHSAS 18001</h4>
                   <p>Certifies the commitment of the company with its collaborator’s health and security</p>
                   <div class="button">
-                     <a href="" download="../img/.png">Download</a>
+                     <a download="CertificateOHSAS18001" href="../img/certs/NP4397_OHSAS18001.png">Download</a>
                   </div>
                </div>
             </div>
          </div>
-         <img class="img-footing" src="../img/medicoescota.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-footing" src="../img/medicoescota.png">
+            </div>
+         </div>
       </main>
-
       <script>
-         $(".button a").click(function(e){
-            e.preventDefault();
-         });
-
-         var myFullpage = new fullpage("#fullpage", {
-            anchors: ["intro", "goals"],
-            scrollBar: true,
-            easing: "easeInOutCubic"
+         $(document).ready(function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
          });
       </script>
       <?php

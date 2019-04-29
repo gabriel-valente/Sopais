@@ -18,12 +18,16 @@
          include_once "includes/header.php";
       ?>
       <main>
-         <img class="img-heading" src="../img/welding.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-heading" src="../img/welding.png">
+            </div>
+         </div>
          <div class="section div-division flow division-top">
             <div class="navigation" onclick="back();">
                <img src="../img/icons/arrow-bwd.png">
             </div>
-            <div class="carousel carousel-slider center">
+            <div class="carousel carousel-slider center" id="carousel">
                <div class="carousel-item center">
                   <img src="../img/carousel/1.1.jpg">
                </div>
@@ -122,12 +126,12 @@
                <img src="../img/icons/arrow-fwd.png">
             </div>
          </div>
-         <div class="div-wrapper flow division-top temas">
-            <p onclick="mudarCarousel(0, 1);">Stamping</p>
-            <p onclick="mudarCarousel(3, 2);">Precision Metalworking</p>
-            <p onclick="mudarCarousel(6, 3);">Tube Forming</p>
-            <p onclick="mudarCarousel(10, 4);">Support for New Projects</p>
-            <p onclick="mudarCarousel(15, 5);">Welding</p>
+         <div class="div-wrapper flow division-top temas" id="info">
+            <p onclick="mudarCarousel(0, 1);"><a href="#carousel">Stamping</a></p>
+            <p onclick="mudarCarousel(3, 2);"><a href="#carousel">Precision Metalworking</a></p>
+            <p onclick="mudarCarousel(6, 3);"><a href="#carousel">Tube Forming</a></p>
+            <p onclick="mudarCarousel(null, 4);"><a href="#info">Support for New Projects</a></p>
+            <p onclick="mudarCarousel(null, 5);"><a href="#info">Welding</a></p>
          </div>
          <div class="div-wrapper texto">
             <p></p>
@@ -137,15 +141,26 @@
                <source src="" type="video/mp4">
             </video>
          </div>
-         <img class="img-footing" src="../img/welding.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-footing" src="../img/welding.png">
+            </div>
+         </div>
       </main>
 
       <script>
-         $(document).ready(setTimeout(function() {
-            window.location = "#intro";
-         }, 25));
+         $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
 
-         document.addEventListener('DOMContentLoaded', function() {
+            $('html, body').animate({
+               scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+         });
+
+         $(document).ready(function() {
+            var elems2 = document.querySelectorAll('.parallax');
+            var instances2 = M.Parallax.init(elems2);
+
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, {
                fullWidth: true

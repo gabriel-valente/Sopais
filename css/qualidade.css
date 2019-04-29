@@ -24,7 +24,7 @@ main {
 }
 
 .div-imagetext img {
-   height: 100%;
+   height: auto;
    width: 100%;
    margin-top: 20px;
    border-radius: 20px;
@@ -33,13 +33,21 @@ main {
 .div-imagetext h1 {
    width: 100%;
    margin: 0px;
+   font-size: 400%;
    color: #3E56A4;
    text-shadow: #000 -10px 0px 150px, #000 10px 0px 150px, #000 0px -10px 150px, #000 0px 10px 150px;
    filter: brightness(1.3);
+   -webkit-filter: brightness(1.3);
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
 }
 
 .div-container {
@@ -127,5 +135,12 @@ main {
    .div-box {
       filter: saturate(1);
       -webkit-filter: saturate(1);
+   }
+
+   .div-imagetext h1 {
+      font-size: 250%;
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
    }
 }

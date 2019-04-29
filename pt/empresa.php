@@ -18,7 +18,11 @@
          include_once "includes/header.php";
       ?>
       <main>
-         <img class="img-heading" src="../img/drone.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-heading" src="../img/drone.png">
+            </div>
+         </div>
          <div class="div-wrapper">
             <p id="p-texto"><i>Sopais – Componentes Metálicos, Lda. </i> foi fundada em 1987 contando com mais de 30 anos de experiência na indústria metalomecânica.<br><br>Assente no know-how adquirido ao longo da sua história a empresa olha para as suas instalações, tecnologia e estrutura humana qualificada, flexível e profissional – capaz de abraçar projetos ambiciosos – como fatores que a diferenciam. Com uma oferta de excelência a empresa visa fixar-se no mercado como top of mind na indústria da produção de componentes metálicos para todos os setores.</p>
          </div>
@@ -43,10 +47,19 @@
                </div>
             </div>
          </div>
-         <img class="img-footing" src="../img/drone.png">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-footing" src="../img/drone.png">
+            </div>
+         </div>
       </main>
 
       <script>
+         $(document).ready(function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+         });
+
          function mudar(id) {
             $("#div-azul").find(".div-box").removeClass("shown").addClass("hidden");
             $("#div-azul").find("#" + id).removeClass("hidden").addClass("shown");

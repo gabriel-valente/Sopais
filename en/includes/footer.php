@@ -14,7 +14,7 @@
             <h5>Menu</h5>
             <a class="link" href="home.php">Home</a>
             <a class="link" href="company.php">The company</a>
-            <a class="link" href="whatwedo.php">What do we do</a>
+            <a class="link" href="whatwedo.php">What we do</a>
             <a class="link" href="quality.php">Quality</a>
             <a class="link" href="news.php">News</a>
             <a class="link" href="contacts.php">Contacts</a>
@@ -24,7 +24,7 @@
             <p class="text">Eco-Parque Empresarial</p>
             <p class="text">Rua de Canelas, nº 3</p>
             <p class="text">3860-529 Estarreja, Portugal</p>
-            <p class="text"><b>Telefone:</b> (+351) 234 548 137</p>
+            <p class="text"><b>Phone:</b> (+351) 234 548 137</p>
             <p class="text"><b>E-mail:</b> geral@sopais.pt</p>
          </div>
       </div>

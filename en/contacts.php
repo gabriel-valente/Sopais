@@ -5,21 +5,29 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
       <title>Sopais</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="../materialize/css/materialize.css">
+      <script src="../materialize/js/materialize.min.js"></script>
+
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/contactos.css">
+
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+      <script type="text/javascript" src="../js/map.js"></script>
    </head>
    <body>
       <?php
          include_once "includes/header.php";
       ?>
       <main>
-         <img class="img-heading" src="https://i.imgur.com/ic9nTKH.jpg">
+         <div class="parallax-container">
+            <div class="parallax">
+               <img class="img-heading" src="../img/seguranca.png">
+            </div>
+         </div>
          <div class="div-wrapper">
-               <div class="mapouter">
-                  <div class="gmap_canvas">
-                     <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=40.775443%2C%20-8.590434&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
-                  </div>
-               </div>
+               <div id="mapid"></div>
             <div class="div-container">
                <div class="div-content">
                   <h6>Address</h6>
@@ -27,7 +35,7 @@
                </div>
                <div class="div-content">
                   <h6>Contact us</h6>
-                  <p>Tel.: (+351) 234 548 137<br>E-mail: geral@sopais.pt</p>
+                  <p>Phone: (+351) 234 548 137<br>E-mail: geral@sopais.pt</p>
                </div>
             </div>
             <div class="div-container">
@@ -62,11 +70,22 @@
       </main>
 
       <script>
+         $(document).ready(function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+         });
+
          function Styling(input, action) {
             if (action == "Error") {
                document.getElementById(input).classList.add("form-input-erro");
             } else if (action == "Valid") {
                document.getElementById(input).classList.remove("form-input-erro");
+            }
+            
+            if (document.getElementById(input).value != "") {
+               document.getElementById(input).classList.add("formUsed");
+            } else {
+               document.getElementById(input).classList.remove("formUsed");
             }
          }
 

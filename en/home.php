@@ -21,13 +21,11 @@
          include_once "includes/header.php";
       ?>
       <main id="fullpage">
-         <div class="section" id="section0">
+         <div class="section fp-auto-height" id="section0">
             <video preload="metadata" data-autoplay autoplay controls muted controlsList="nodownload">
                <source src="../img/SOPAIS.mp4" type="video/mp4">
-               </video>
-               <article>
-                  <h1 class="heading">Excellence tailored for your products.</h1>
-               </article>
+            </video>
+            <h1 class="heading">Excellence tailored for your products.</h1>
             </div>
          <div class="section" id="section1">
                <div class="div-division flow division-top" id="img-certs">
@@ -51,101 +49,101 @@
                </div>
          </div>
          <div class="section div-division flow division-top" id="section2">
-            <div class="navigation" id="back" onclick="back();">
+            <div class="navigation" onclick="back();">
                <img src="../img/icons/arrow-bwd.png">
             </div>
             <div class="carousel carousel-slider center">
-               <div class="carousel-item center" href="#one!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/1.1.jpg">
                </div>
-               <div class="carousel-item center" href="#two!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/1.2.jpg">
                </div>
-               <div class="carousel-item center" href="#three!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/1.3.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/2.1.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/2.2.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/2.3.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/3.1.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/3.2.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/3.3.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/3.4.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/4.1.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/4.2.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/4.3.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/4.4.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/4.5.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/5.1.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/5.2.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/5.3.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/6.1.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/6.2.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/7.1.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/7.2.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/7.3.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/8.1.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/8.2.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/9.1.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/9.2.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/9.3.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/10.1.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/10.2.jpg">
                </div>
-               <div class="carousel-item center" href="#four!">
+               <div class="carousel-item center">
                   <img src="../img/carousel/10.3.jpg">
                </div>
             </div>
@@ -187,14 +185,13 @@
                      </div>
                      <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
-
                </div>
                <div class="button">
                   <a href="noticias.php">Mais notícias</a>
                </div>
             </div>
          </div>
-         <div class="section" id="section5">
+         <div class="section fp-auto-height" id="section5">
             <footer>
                <div class="div-bar">
                   <div class="div-bar-logo" id="bg1"></div>
@@ -205,28 +202,19 @@
                   <div class="contents">
                      <div class="div-containter vertical">
                         <h5>Menu</h5>
-                        <a class="link" href="inicio.php">Inicio</a>
-                        <a class="link" href="empresa.php">A Empresa</a>
-                        <a class="link" href="quefazemos.php">O Que Fazemos</a>
-                        <a class="link" href="qualidade.php">Qualidade</a>
-                        <a class="link" href="noticias.php">Notícias</a>
-                        <a class="link" href="contactos.php">Contactos</a>
+                        <a class="link" href="home.php">Home</a>
+                        <a class="link" href="company.php">The company</a>
+                        <a class="link" href="whatwedo.php">What we do</a>
+                        <a class="link" href="quality.php">Quality</a>
+                        <a class="link" href="news.php">News</a>
+                        <a class="link" href="contacts.php">Contacts</a>
                      </div>
                      <div class="div-containter vertical">
-                        <h5>Setores de Trabalho</h5>
-                        <a class="link" href="#">Automóvel</a>
-                        <a class="link" href="#">Quem somos</a>
-                        <a class="link" href="#">Tecnologia</a>
-                        <a class="link" href="#">Produtos</a>
-                        <a class="link" href="#">Qualidade</a>
-                        <a class="link" href="#">Contactos</a>
-                     </div>
-                     <div class="div-containter vertical">
-                        <h5>Contactos</h5>
+                        <h5>Contacts</h5>
                         <p class="text">Eco-Parque Empresarial</p>
                         <p class="text">Rua de Canelas, nº 3</p>
                         <p class="text">3860-529 Estarreja, Portugal</p>
-                        <p class="text"><b>Telefone:</b> (+351) 234 548 137</p>
+                        <p class="text"><b>Phone:</b> (+351) 234 548 137</p>
                         <p class="text"><b>E-mail:</b> geral@sopais.pt</p>
                      </div>
                   </div>
@@ -253,26 +241,26 @@
             $("#" + id).addClass("selected");
 
             if (id == 1) {
-               $(".cert-desc").html("Provides credibility to produce metal parts for the automotive industry");
+               $(".cert-desc").html("Sistemas de Gestão de Qualidade para a Indústria Automóvel");
             }
             else if (id == 2) {
-               $(".cert-desc").html("Enables more efficiency leveraging at the same time the quality standards");
+               $(".cert-desc").html("Sistemas de Gestão de Qualidade");
             }
             else if (id == 3) {
-               $(".cert-desc").html("Minimizes the environmental impact as well as it enhances the commitment with environmental protection");
+               $(".cert-desc").html("Sistemas de Gestão Ambiental");
             }
             else if (id == 4) {
-               $(".cert-desc").html("Certifies the commitment of the company with its collaborator’s health and security");
+               $(".cert-desc").html("Sistemas de Gestão de Saúde e Segurança no Trabalho");
             }
             else {
                $(".cert-desc").html();
             }
          }
 
-
          var myFullpage = new fullpage("#fullpage", {
-            anchors: ["video", "certificates", "products", "information", "news"],
+            anchors: ["video", "certificados", "produtos", "informacoes", "noticias", "footer"],
             scrollBar: true,
+            responsiveWidth: 888,
             easing: "easeInOutCubic"
          });
 

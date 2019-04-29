@@ -185,14 +185,13 @@
                      </div>
                      <h3>Lorem ipsum dolor sit amet.</h3>
                   </div>
-
                </div>
                <div class="button">
                   <a href="noticias.php">Mais notícias</a>
                </div>
             </div>
          </div>
-         <div class="section fp-auto-height" id="section5">
+         <div class="section fp-auto-height fp-footer" id="section5">
             <footer>
                <div class="div-bar">
                   <div class="div-bar-logo" id="bg1"></div>
@@ -256,7 +255,6 @@
                $(".cert-desc").html();
             }
          }
-
 
          var myFullpage = new fullpage("#fullpage", {
             anchors: ["video", "certificados", "produtos", "informacoes", "noticias", "footer"],
