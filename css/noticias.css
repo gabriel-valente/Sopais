@@ -1,3 +1,8 @@
+.wide {
+   width: 90%;
+   margin: 0px;
+}
+
 .masterPost {
    height: 33.75vw;
    width: 100%;
@@ -111,6 +116,28 @@
    position: absolute;
    left: 50%;
    transform: translateX(-50%);
+}
+
+.btn-visible {
+   display: block;
+}
+
+.btn-hidden {
+   display: none;
+}
+
+.div-header {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.div-header>* {
+   margin: 0px;
+}
+
+.div-header p {
+   font-size: 14px;
+   color: #7E7E7E;
 }
 
 @media screen and (max-width: 888px) {

@@ -22,16 +22,6 @@
                <img class="img-heading" src="../img/noticias.jpg">
             </div>
          </div>
-
-         <!-- POST TEMPLATE
-         <div class="div-content post" id="">
-            <div class="image-container">
-               <img id="imagem" src="">
-            </div>
-            <h3 id="titulo"></h3>
-         </div>
-         -->
-
          <div class="div-wrapper">
             <?php
                include_once "../backend/database.php";
@@ -63,7 +53,7 @@
                   if ($queryLoadNoticias->rowCount() == 1) {
                      foreach ($queryLoadNoticias->fetchAll() as $resultado) {
                         setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
-                        echo '<div class="div-content masterPost" id="'.$resultado["Key_Noticia"].'">
+                        echo '<div class="div-content masterPost artigo" id="'.$resultado["Key_Noticia"].'">
                         <div class="image-container">
                         <img id="imagem" src="data:image/jpeg;base64,'.base64_encode($resultado["Imagem"]).'">
                         </div>
@@ -76,7 +66,7 @@
                }
             ?>
             <div class="div-division" id="div-noticias">
-               <div class="div-container flow">
+               <div class="div-container flow" id="noticias">
                   <?php
                      if ($contagem >= 1) {
                         $ultimoPost++;
@@ -86,14 +76,14 @@
                         INNER JOIN Imagem ON Noticia.Key_Noticia = Imagem.Key_Noticia
                         WHERE Index_Imagem = 0
                         ORDER BY DataPublicacao DESC
-                        LIMIT ".($ultimoPost).",".($ultimoPost + 7));
+                        LIMIT ".($ultimoPost).",6");
                         $queryLoadNoticias->execute();
 
                         if ($queryLoadNoticias->rowCount() >= 1) {
                            foreach ($queryLoadNoticias->fetchAll() as $resultado) {
                               $ultimoPost++;
                               setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
-                              echo '<div class="div-content post" id="'.$resultado["Key_Noticia"].'">
+                              echo '<div class="div-content post artigo" id="'.$resultado["Key_Noticia"].'" cont="'.$ultimoPost.'">
                               <div class="image-container">
                               <img id="imagem" src="data:image/jpeg;base64,'.base64_encode($resultado["Imagem"]).'">
                               </div>
@@ -102,7 +92,6 @@
                               </div>';
                            }
                         }
-                        echo $ultimoPost;
                         $queryLoadNoticias->closeCursor();
                      } else {
                         echo "Ainda não existe nenhuma notícia.";
@@ -110,17 +99,20 @@
                   ?>
                </div>
             </div>
+
             <?php
                if ($contagem > $ultimoPost) {
-                  echo '<div class="div-load">
-                     <div class="botao">
-                        <p>Carregar Mais</p>
-                        <img src="../img/icons/arrow-dwn.png">
-                     </div>
-                  </div>';
+                  $class = "btn-visible";
                } else if ($contagem == 0 || $contagem <= $ultimoPost) {
-                  // code...
+                  $class = "btn-hidden";
                }
+
+               echo '<div class="div-load '.$class.'">
+                  <div class="botao loadMore" id="'.$ultimoPost.'">
+                     <p>Carregar Mais</p>
+                     <img src="../img/icons/arrow-dwn.png">
+                  </div>
+               </div>';
             ?>
          </div>
          <div class="parallax-container">
@@ -130,6 +122,29 @@
          </div>
       </main>
       <script>
+         $(document).on('click','.loadMore',function(){
+            var ultimoPost = parseInt($("#noticias .div-content.post:last").attr('cont'));
+            var contagem = <?php echo $contagem; ?>;
+            $.ajax({
+               type:'POST',
+               url:'../backend/loadNews.php',
+               data: { ultimoPost: ultimoPost },
+               success:function(result){
+                  $('.loadMore').attr("id", ultimoPost + 1);
+                  $('#noticias').append(result);
+                  if (ultimoPost = contagem) {
+                     $(".div-load").removeClass("btn-visible");
+                     $(".div-load").addClass("btn-hidden");
+                  }
+               }
+            });
+         });
+
+         $(document).on('click','.artigo',function(){
+            id = $(this).attr("id");
+            window.location = "paginaNoticia.php?" + id;
+         });
+
          $(document).ready(function() {
             var elems = document.querySelectorAll('.parallax');
             var instances = M.Parallax.init(elems);
