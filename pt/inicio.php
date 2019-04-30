@@ -52,99 +52,104 @@
             <div class="navigation" onclick="back();">
                <img src="../img/icons/arrow-bwd.png">
             </div>
-            <div class="carousel carousel-slider center">
-               <div class="carousel-item center">
-                  <img src="../img/carousel/1.1.jpg">
+            <div class="div-carousel flow">
+               <div class="div-header">
+                  <h3>O que fazemos</h3>
                </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/1.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/1.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/2.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/2.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/2.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/3.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/3.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/3.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/3.4.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.4.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.5.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/5.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/5.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/5.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/6.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/6.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/7.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/7.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/7.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/8.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/8.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/9.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/9.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/9.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/10.1.jpg" >
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/10.2.jpg" >
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/10.3.jpg" >
+               <div class="carousel carousel-slider center">
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/1.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/1.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/1.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/2.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/2.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/2.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/3.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/3.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/3.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/3.4.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.4.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.5.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/5.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/5.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/5.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/6.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/6.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/7.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/7.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/7.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/8.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/8.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/9.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/9.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/9.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/10.1.jpg" >
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/10.2.jpg" >
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/10.3.jpg" >
+                  </div>
                </div>
             </div>
             <div class="navigation" onclick="forward();">
@@ -234,6 +239,8 @@
          $(document).ready(setTimeout(function() {
             window.location = "#video";
          }, 25));
+
+         changeText(1);
 
          function changeText(id) {
             $("#img-certs").find("*").removeClass("selected");

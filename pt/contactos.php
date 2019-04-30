@@ -52,13 +52,13 @@
                </div>
                <div class="div-content form">
                   <form id="formulario" name="formulario" action="../backend/send.php" method="post">
-                     <p>Nome:<br>
+                     <p>
                         <input type="text" id="nome" name="nome" value="" placeholder="Nome" maxlength="60" required>
                      </p>
-                     <p>Email:<br>
+                     <p>
                         <input type="text" id="email" name="email" value="" placeholder="Email" maxlength="256" required>
                      </p>
-                     <p>Mensagem:<br>
+                     <p>
                         <textarea id="mensagem" name="mensagem" rows="16" cols="80" placeholder="Mensagem" maxlength="65535" required></textarea>
                      </p>
                      <input type="submit" id="submit" name="submit" value="Enviar">

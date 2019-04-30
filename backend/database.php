@@ -5,6 +5,6 @@
    }
    catch(PDOException $e)
    {
-      echo "Sem Conexão! Não é possivel enviar mensagens!";
+      echo "Sem Conexão! Não é possivel comunicar com o servidor!";
    }
 ?>

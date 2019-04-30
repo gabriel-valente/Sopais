@@ -22,33 +22,106 @@
                <img class="img-heading" src="../img/noticias.jpg">
             </div>
          </div>
-         <div class="div-wrapper">
-            <div class="div-content masterPost">
-               <div class="image-container" id="">
-                  <img id="imagem" src="http://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9">
-               </div>
-               <h3 id="titulo">Lorem ipsum dolor sit amet.</h3>
-            </div>
 
-            <!-- POST TEMPLATE
-            <div class="div-content post">
-               <div class="image-container" id="">
-                  <img id="imagem" src="">
+         <!-- POST TEMPLATE
+         <div class="div-content post" id="">
+            <div class="image-container">
+               <img id="imagem" src="">
+            </div>
+            <h3 id="titulo"></h3>
+         </div>
+         -->
+
+         <div class="div-wrapper">
+            <?php
+               include_once "../backend/database.php";
+
+               $contagem;
+               $ultimoPost = 0;
+
+               $queryVerificar = $connection->prepare("SELECT COUNT(key_Noticia) AS 'Contagem' FROM Noticia");
+               $queryVerificar->execute();
+
+               if ($queryVerificar->rowCount() == 0) {
+                  echo "Erro de coneção com o servidor!";
+
+                  $queryVerificar->closeCursor();
+               } else {
+                  $resultado = $queryVerificar->fetch(PDO::FETCH_OBJ);
+                  $contagem = $resultado->Contagem;
+
+                  $queryVerificar->closeCursor();
+
+                  $queryLoadNoticias = $connection->prepare("SELECT Noticia.Key_Noticia, Titulo, DataPublicacao, Imagem.Imagem
+                  FROM Noticia
+                  INNER JOIN Imagem ON Noticia.Key_Noticia = Imagem.Key_Noticia
+                  WHERE Index_Imagem = 0
+                  ORDER BY DataPublicacao DESC
+                  LIMIT 1");
+                  $queryLoadNoticias->execute();
+
+                  if ($queryLoadNoticias->rowCount() == 1) {
+                     foreach ($queryLoadNoticias->fetchAll() as $resultado) {
+                        setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
+                        echo '<div class="div-content masterPost" id="'.$resultado["Key_Noticia"].'">
+                        <div class="image-container">
+                        <img id="imagem" src="data:image/jpeg;base64,'.base64_encode($resultado["Imagem"]).'">
+                        </div>
+                        <h4 id="Data">'.ucfirst(utf8_encode(strftime("%d %B, %Y &agrave;s %H:%M", strtotime($resultado["DataPublicacao"])))).'</h4>
+                        <h3 id="titulo">'.utf8_encode($resultado["Titulo"]).'</h3>
+                        </div>';
+                     }
+                  }
+                  $queryLoadNoticias->closeCursor();
+               }
+            ?>
+            <div class="div-division" id="div-noticias">
+               <div class="div-container flow">
+                  <?php
+                     if ($contagem >= 1) {
+                        $ultimoPost++;
+
+                        $queryLoadNoticias = $connection->prepare("SELECT Noticia.Key_Noticia, Titulo, DataPublicacao, Imagem.Imagem
+                        FROM Noticia
+                        INNER JOIN Imagem ON Noticia.Key_Noticia = Imagem.Key_Noticia
+                        WHERE Index_Imagem = 0
+                        ORDER BY DataPublicacao DESC
+                        LIMIT ".($ultimoPost).",".($ultimoPost + 7));
+                        $queryLoadNoticias->execute();
+
+                        if ($queryLoadNoticias->rowCount() >= 1) {
+                           foreach ($queryLoadNoticias->fetchAll() as $resultado) {
+                              $ultimoPost++;
+                              setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
+                              echo '<div class="div-content post" id="'.$resultado["Key_Noticia"].'">
+                              <div class="image-container">
+                              <img id="imagem" src="data:image/jpeg;base64,'.base64_encode($resultado["Imagem"]).'">
+                              </div>
+                              <h4 id="Data">'.ucfirst(utf8_encode(strftime("%d %B, %Y &agrave;s %H:%M", strtotime($resultado["DataPublicacao"])))).'</h4>
+                              <h3 id="titulo">'.utf8_encode($resultado["Titulo"]).'</h3>
+                              </div>';
+                           }
+                        }
+                        echo $ultimoPost;
+                        $queryLoadNoticias->closeCursor();
+                     } else {
+                        echo "Ainda não existe nenhuma notícia.";
+                     }
+                  ?>
                </div>
-               <h3 id="titulo"></h3>
             </div>
-            -->
-            <div class="div-container flow">
-               <?php
-               
-               ?>
-            </div>
-            <div class="div-load">
-               <div class="botao">
-                  <p>Carregar Mais</p>
-                  <img src="../img/icons/arrow-dwn.png">
-               </div>
-            </div>
+            <?php
+               if ($contagem > $ultimoPost) {
+                  echo '<div class="div-load">
+                     <div class="botao">
+                        <p>Carregar Mais</p>
+                        <img src="../img/icons/arrow-dwn.png">
+                     </div>
+                  </div>';
+               } else if ($contagem == 0 || $contagem <= $ultimoPost) {
+                  // code...
+               }
+            ?>
          </div>
          <div class="parallax-container">
             <div class="parallax">

@@ -236,6 +236,8 @@
             window.location = "#video";
          }, 25));
 
+         changeText(1);
+
          function changeText(id) {
             $("#img-certs").find("*").removeClass("selected");
             $("#" + id).addClass("selected");

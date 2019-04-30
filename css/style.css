@@ -55,7 +55,6 @@ main {
    -webkit-transform: translateX(-50%);
    padding: 0px;
    overflow: hidden;
-   position: relative;
    text-align: center;
    z-index: -1;
 }
@@ -230,7 +229,7 @@ main {
 }
 
 .carousel {
-   height: auto;
+   height: 60%;
    width: 60%;
 }
 

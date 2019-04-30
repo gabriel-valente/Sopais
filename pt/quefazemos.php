@@ -27,7 +27,7 @@
             <div class="navigation" onclick="back();">
                <img src="../img/icons/arrow-bwd.png">
             </div>
-            <div class="carousel carousel-slider center" id="carousel">
+            <div class="carousel carousel-slider center">
                <div class="carousel-item center" data-cindex="0">
                   <img src="../img/carousel/1.1.jpg">
                </div>
@@ -127,9 +127,9 @@
             </div>
          </div>
          <div class="div-wrapper flow division-top temas" id="info">
-            <p class="temaSelected" id="1" onclick="mudarCarousel(18, 1);"><a href="#carousel">Estampagem</a></p>
-            <p id="2" onclick="mudarCarousel(0, 2);"><a href="#carousel">Conformação de Fita</a></p>
-            <p id="3" onclick="mudarCarousel(28, 3);"><a href="#carousel">Conformação de Tubo</a></p>
+            <p class="temaSelected" id="1" onclick="mudarCarousel(18, 1);"><a href="#info">Estampagem</a></p>
+            <p id="2" onclick="mudarCarousel(0, 2);"><a href="#info">Conformação de Fita</a></p>
+            <p id="3" onclick="mudarCarousel(28, 3);"><a href="#info">Conformação de Tubo</a></p>
             <p id="4" onclick="mudarCarousel(null, 4);"><a href="#info">Apoio ao Desenvolvimento de Projetos</a></p>
             <p id="5" onclick="mudarCarousel(null, 5);"><a href="#info">Soldadura</a></p>
          </div>
