@@ -6,7 +6,6 @@
       <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
       <title>Sopais</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
       <link rel="stylesheet" type="text/css" href="../fullPage.js/dist/fullpage.css" />
       <script type="text/javascript" src="../fullPage.js/dist/fullpage.js"></script>
 
@@ -15,6 +14,7 @@
 
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/index.css">
+      <link rel="stylesheet" href="../css/footer.css">
    </head>
    <body>
       <?php
@@ -25,8 +25,8 @@
             <video preload="metadata" data-autoplay autoplay controls muted controlsList="nodownload">
                <source src="../img/SOPAIS.mp4" type="video/mp4">
             </video>
-            <h1 class="heading">Excellence tailored for your products.</h1>
-            </div>
+            <h1 class="heading">Excellence tailored for your products</h1>
+         </div>
          <div class="section" id="section1">
                <div class="div-division flow division-top" id="img-certs">
                   <div class="div-cert" id="1" onclick="changeText($(this).attr('id'))">
@@ -52,99 +52,107 @@
             <div class="navigation" onclick="back();">
                <img src="../img/icons/arrow-bwd.png">
             </div>
-            <div class="carousel carousel-slider center">
-               <div class="carousel-item center">
-                  <img src="../img/carousel/1.1.jpg">
+            <div class="div-carousel flow">
+               <div class="div-header">
+                  <h3>What we do</h3>
+                  <div class="button">
+                     <a href="whatwedo.php">View more</a>
+                  </div>
                </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/1.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/1.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/2.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/2.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/2.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/3.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/3.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/3.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/3.4.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.4.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/4.5.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/5.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/5.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/5.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/6.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/6.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/7.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/7.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/7.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/8.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/8.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/9.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/9.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/9.3.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/10.1.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/10.2.jpg">
-               </div>
-               <div class="carousel-item center">
-                  <img src="../img/carousel/10.3.jpg">
+               <div class="carousel carousel-slider center">
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/1.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/1.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/1.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/2.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/2.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/2.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/3.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/3.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/3.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/3.4.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.4.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/4.5.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/5.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/5.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/5.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/6.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/6.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/7.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/7.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/7.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/8.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/8.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/9.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/9.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/9.3.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/10.1.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/10.2.jpg">
+                  </div>
+                  <div class="carousel-item center">
+                     <img src="../img/carousel/10.3.jpg">
+                  </div>
                </div>
             </div>
             <div class="navigation" onclick="forward();">
@@ -162,7 +170,7 @@
             </div>
          </div>
          <div class="section" id="section4">
-            <h5>News</h5>
+            <h3>News</h3>
             <div class="div-division" id="div-noticias">
                <div class="div-container flow">
                   <div class="div-content post">
@@ -187,12 +195,12 @@
                   </div>
                </div>
                <div class="button">
-                  <a href="new.php">More News</a>
+                  <a href="news.php">More News</a>
                </div>
             </div>
          </div>
          <div class="section fp-auto-height" id="section5">
-            <footer>
+            <div class="footer">
                <div class="div-bar">
                   <div class="div-bar-logo" id="bg1"></div>
                   <div class="div-bar-logo" id="bg2"></div>
@@ -222,13 +230,12 @@
                <div class="div-bar">
                   <p class="text">Copyright © 2019 SOPAIS - Componentes Metálicos Lda.</p>
                </div>
-            </footer>
+            </div>
          </div>
       </main>
 
       <?php
       include_once "includes/aside.php";
-      include_once "includes/footer.php";
       ?>
 
       <script>
@@ -243,16 +250,16 @@
             $("#" + id).addClass("selected");
 
             if (id == 1) {
-               $(".cert-desc").html("Sistemas de Gestão de Qualidade para a Indústria Automóvel");
+               $(".cert-desc").html("Automotive Quality Management Systems");
             }
             else if (id == 2) {
-               $(".cert-desc").html("Sistemas de Gestão de Qualidade");
+               $(".cert-desc").html("Quality Management Systems");
             }
             else if (id == 3) {
-               $(".cert-desc").html("Sistemas de Gestão Ambiental");
+               $(".cert-desc").html("Environmental Management Systems");
             }
             else if (id == 4) {
-               $(".cert-desc").html("Sistemas de Gestão de Saúde e Segurança no Trabalho");
+               $(".cert-desc").html("Health & Safety Management Systems");
             }
             else {
                $(".cert-desc").html();
@@ -260,8 +267,10 @@
          }
 
          var myFullpage = new fullpage("#fullpage", {
-            anchors: ["video", "certificados", "produtos", "informacoes", "noticias", "footer"],
+            anchors: ["video", "certificates", "products", "information", "news", "footer"],
             scrollBar: true,
+            css3: true,
+            scrollingSpeed: 1000,
             responsiveWidth: 888,
             easing: "easeInOutCubic"
          });

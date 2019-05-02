@@ -12,8 +12,6 @@
       <link rel="stylesheet" href="../materialize/css/materialize.css">
       <script src="../materialize/js/materialize.min.js"></script>
 
-      <script src="../modernizr.js"></script>
-
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/index.css">
       <link rel="stylesheet" href="../css/footer.css">
@@ -268,14 +266,13 @@
             }
          }
 
-         var E = fp_utils.preventDefault;
          var myFullpage = new fullpage("#fullpage", {
             anchors: ["video", "certificados", "produtos", "informacoes", "noticias", "footer"],
             scrollBar: true,
             css3: true,
             scrollingSpeed: 1000,
             responsiveWidth: 888,
-            easing: "easeInOutCubic",
+            easing: "easeInOutCubic"
          });
 
          document.addEventListener('DOMContentLoaded', function() {

@@ -27,7 +27,7 @@
             <div class="navigation" onclick="back();">
                <img src="../img/icons/arrow-bwd.png">
             </div>
-            <div class="carousel carousel-slider center" id="carousel">
+            <div class="carousel carousel-slider center">
                <div class="carousel-item center">
                   <img src="../img/carousel/1.1.jpg">
                </div>
@@ -126,20 +126,33 @@
                <img src="../img/icons/arrow-fwd.png">
             </div>
          </div>
-         <div class="div-wrapper flow division-top temas" id="info">
-            <p onclick="mudarCarousel(0, 1);"><a href="#carousel">Stamping</a></p>
-            <p onclick="mudarCarousel(3, 2);"><a href="#carousel">Precision Metalworking</a></p>
-            <p onclick="mudarCarousel(6, 3);"><a href="#carousel">Tube Forming</a></p>
-            <p onclick="mudarCarousel(null, 4);"><a href="#info">Support for New Projects</a></p>
-            <p onclick="mudarCarousel(null, 5);"><a href="#info">Welding</a></p>
-         </div>
-         <div class="div-wrapper texto">
-            <p></p>
-         </div>
-         <div class="div-wrapper">
-            <video preload="metadata" autoplay muted loop id="video">
-               <source src="" type="video/mp4">
-            </video>
+
+         <p onclick="mudarCarousel(0, 1);"><a href="#carousel">Stamping</a></p>
+         <p onclick="mudarCarousel(3, 2);"><a href="#carousel">Precision Metalworking</a></p>
+         <p onclick="mudarCarousel(6, 3);"><a href="#carousel">Tube Forming</a></p>
+         <p onclick="mudarCarousel(null, 4);"><a href="#info">Support for New Projects</a></p>
+         <p onclick="mudarCarousel(null, 5);"><a href="#info">Welding</a></p>
+
+         <div id="anchor">
+            <div class="div-wrapper flow" id="info">
+               <div class="flow division-top temas">
+                  <ul>
+                     <li><p class="temaSelected" id="1" onclick="mudarCarousel(18, 1);"><a href="#anchor">Stamping</a></p></li>
+                     <li><p id="2" onclick="mudarCarousel(0, 2);"><a href="#anchor">Precision Metalworking</a></p></li>
+                     <li><p id="3" onclick="mudarCarousel(28, 3);"><a href="#anchor">Tube Forming</a></p></li>
+                     <li><p id="4" onclick="mudarCarousel(null, 4);"><a href="#anchor">Support for New Projects</a></p></li>
+                     <li><p id="5" onclick="mudarCarousel(null, 5);"><a href="#anchor">Welding</a></p></li>
+                  </ul>
+               </div>
+               <div class="content">
+                  <video preload="metadata" autoplay muted loop id="video">
+                     <source src="../img/Stamping.mp4" type="video/mp4">
+                     </video>
+                     <div class="texto">
+                        <p>We have a diversified range of hydraulic and mechanic stamping machines with pressures between 45 and 315 tons of force.</p>
+                     </div>
+               </div>
+            </div>
          </div>
          <div class="parallax-container">
             <div class="parallax">
@@ -165,6 +178,9 @@
             var instances = M.Carousel.init(elems, {
                fullWidth: true
             });
+            var el = document.querySelector(".carousel");
+            var l = M.Carousel.getInstance(el);
+            l.set(20);
          });
 
          function back() {
@@ -182,33 +198,45 @@
          function mudarCarousel(item, id) {
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
-            l.set(item);
+            if (item != null) {
+               l.set(item);
+            }
 
             var $video = $('video');
 
             if (id == 1) {
                $(".texto p").html("We have a diversified range of hydraulic and mechanic stamping machines with pressures between 45 and 315 tons of force.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/Stamping.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             } else if (id == 2) {
                $(".texto p").html("We have BIHLER machines working for the company with specialized technicians dedicated to them.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/PrecisionMetalworking.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             } else if (id == 3) {
                $(".texto p").html("Decreasing, widening, cutting and tube forming are some of the capabilities that SOPAIS has to offer to its clients.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/TubeForming.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             } else if (id == 4) {
                $(".texto p").html("Our team of specialist is at your disposal to help you develop your new projects.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/SupportNewProjects.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             } else if (id == 5) {
                $(".texto p").html("Robotic MIG/MAG welding processed by Yaskawa robots and resistance welding used to fix nuts.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/Welding.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             }

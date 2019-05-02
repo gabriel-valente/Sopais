@@ -94,7 +94,7 @@
                "fadeDuration": 500,
                "imageFadeDuration": 500,
                "resizeDuration": 500
-            })
+            });
          });
       </script>
       <?php

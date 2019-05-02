@@ -52,14 +52,14 @@
                </div>
                <div class="div-content form">
                   <form id="formulario" name="formulario" action="../backend/send.php" method="post">
-                     <p>Name:<br>
+                     <p>
                         <input type="text" id="nome" name="nome" value="" placeholder="Name" maxlength="60" required>
                      </p>
-                     <p>Email:<br>
-                     <input type="text" id="email" name="email" value="" placeholder="Email" maxlength="256" required>
+                     <p>
+                        <input type="text" id="email" name="email" value="" placeholder="Email" maxlength="256" required>
                      </p>
-                     <p>Message:<br>
-                     <textarea id="mensagem" name="mensagem" rows="16" cols="80" placeholder="Message" maxlength="512" required></textarea>
+                     <p>
+                        <textarea id="mensagem" name="mensagem" rows="16" cols="80" placeholder="Message" maxlength="512" required></textarea>
                      </p>
                      <input type="submit" id="submit" name="submit" value="Send">
                   </form>
@@ -81,7 +81,7 @@
             } else if (action == "Valid") {
                document.getElementById(input).classList.remove("form-input-erro");
             }
-            
+
             if (document.getElementById(input).value != "") {
                document.getElementById(input).classList.add("formUsed");
             } else {

@@ -170,17 +170,6 @@
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, {
                fullWidth: true,
-               onCycleTo: function(data) {
-                  var lastindex;
-                  var index;
-                  lastindex = index;
-                  index = $(data).data('cindex');
-                  var timer;
-                  console.log(clearTimeout(timer));
-                  timer = setTimeout(function() {
-                     console.log("cena");
-                  }, 1000);
-               },
             });
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
