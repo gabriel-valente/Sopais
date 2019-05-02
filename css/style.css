@@ -235,7 +235,7 @@ main {
 
 @media screen and (max-width: 950px) {
    .navigation {
-      height: auto;
+      height: 100%;
       width: 5%;
       transition: all 0.25s ease-in-out;
       -moz-transition: all 0.25s ease-in-out;

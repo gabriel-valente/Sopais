@@ -126,20 +126,26 @@
                <img src="../img/icons/arrow-fwd.png">
             </div>
          </div>
-         <div class="div-wrapper flow division-top temas" id="info">
-            <p class="temaSelected" id="1" onclick="mudarCarousel(18, 1);"><a href="#info">Estampagem</a></p>
-            <p id="2" onclick="mudarCarousel(0, 2);"><a href="#info">Conformação de Fita</a></p>
-            <p id="3" onclick="mudarCarousel(28, 3);"><a href="#info">Conformação de Tubo</a></p>
-            <p id="4" onclick="mudarCarousel(null, 4);"><a href="#info">Apoio ao Desenvolvimento de Projetos</a></p>
-            <p id="5" onclick="mudarCarousel(null, 5);"><a href="#info">Soldadura</a></p>
-         </div>
-         <div class="div-wrapper">
-            <video preload="metadata" autoplay muted loop id="video">
-               <source src="../img/Stamping.mp4" type="video/mp4">
-               </video>
+         <div id="anchor">
+            <div class="div-wrapper flow" id="info">
+               <div class="flow division-top temas">
+                  <ul>
+                     <li><p class="temaSelected" id="1" onclick="mudarCarousel(18, 1);"><a href="#anchor">Estampagem</a></p></li>
+                     <li><p id="2" onclick="mudarCarousel(0, 2);"><a href="#anchor">Conformação de Fita</a></p></li>
+                     <li><p id="3" onclick="mudarCarousel(28, 3);"><a href="#anchor">Conformação de Tubo</a></p></li>
+                     <li><p id="4" onclick="mudarCarousel(null, 4);"><a href="#anchor">Apoio ao Desenvolvimento de Projetos</a></p></li>
+                     <li><p id="5" onclick="mudarCarousel(null, 5);"><a href="#anchor">Soldadura</a></p></li>
+                  </ul>
+               </div>
+               <div class="content">
+                  <video preload="metadata" autoplay muted loop id="video">
+                     <source src="../img/Stamping.mp4" type="video/mp4">
+                     </video>
+                     <div class="texto">
+                        <p>Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 e as 315 toneladas.</p>
+                     </div>
+               </div>
             </div>
-         <div class="div-wrapper texto">
-            <p>Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 e as 315 toneladas.</p>
          </div>
          <div class="parallax-container">
             <div class="parallax">
@@ -207,27 +213,37 @@
 
             if (id == 1) {
                $(".texto p").html("Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 e as 315 toneladas.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/Stamping.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             } else if (id == 2) {
                $(".texto p").html("Ao serviço da empresa temos máquinas BIHLER e técnicos com know-how especializado na afinação das mesmas.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/PrecisionMetalworking.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             } else if (id == 3) {
                $(".texto p").html("Redução, alargamento, corte e conformação de tubo são capacidades que a SOPAIS põe à disposição dos seus clientes.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/TubeForming.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             } else if (id == 4) {
                $(".texto p").html("Dispomos de uma equipa de especialistas prontos para ajudar o seu negócio.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/SupportNewProjects.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             } else if (id == 5) {
                $(".texto p").html("Dispomos de uma ótima qualidade de soldadura com tecnologias MIG/MAG e soldadura por resistência.");
+               $($video).fadeOut(5);
                videoSrc = $('source', $video).attr('src', "../img/Welding.mp4");
+               $($video).fadeIn(500);
                $video[0].load();
                $video[0].play();
             }

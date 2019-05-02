@@ -12,6 +12,8 @@
       <link rel="stylesheet" href="../materialize/css/materialize.css">
       <script src="../materialize/js/materialize.min.js"></script>
 
+      <script src="../modernizr.js"></script>
+
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/index.css">
       <link rel="stylesheet" href="../css/footer.css">
@@ -55,6 +57,9 @@
             <div class="div-carousel flow">
                <div class="div-header">
                   <h3>O que fazemos</h3>
+                  <div class="button">
+                     <a href="quefazemos.php">Ver mais</a>
+                  </div>
                </div>
                <div class="carousel carousel-slider center">
                   <div class="carousel-item center">
@@ -167,7 +172,7 @@
             </div>
          </div>
          <div class="section" id="section4">
-            <h5>Notícias</h5>
+            <h3>Notícias</h3>
             <div class="div-division" id="div-noticias">
                <div class="div-container flow">
                   <div class="div-content post">
@@ -196,8 +201,8 @@
                </div>
             </div>
          </div>
-         <div class="section fp-auto-height fp-footer" id="section5">
-            <footer>
+         <div class="section fp-auto-height" id="section5">
+            <div class="footer">
                <div class="div-bar">
                   <div class="div-bar-logo" id="bg1"></div>
                   <div class="div-bar-logo" id="bg2"></div>
@@ -227,7 +232,7 @@
                <div class="div-bar">
                   <p class="text">Copyright © 2019 SOPAIS - Componentes Metálicos Lda.</p>
                </div>
-            </footer>
+            </div>
          </div>
       </main>
 
@@ -263,11 +268,14 @@
             }
          }
 
+         var E = fp_utils.preventDefault;
          var myFullpage = new fullpage("#fullpage", {
             anchors: ["video", "certificados", "produtos", "informacoes", "noticias", "footer"],
             scrollBar: true,
+            css3: true,
+            scrollingSpeed: 1000,
             responsiveWidth: 888,
-            easing: "easeInOutCubic"
+            easing: "easeInOutCubic",
          });
 
          document.addEventListener('DOMContentLoaded', function() {

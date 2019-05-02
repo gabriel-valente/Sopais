@@ -1,0 +1,10 @@
+<form method="post">
+   <textarea id="editor" name="editor"></textarea>
+</form>
+
+tinymce.init({
+   selector: '#mytextarea',
+   plugins: "link linkchecker searchreplace pagebreak media image imagetools visualblocks preview fullscreen tinymcespellchecker emoticons textcolor table lists advlist help autosave save",
+   toolbar: "cut copy paste | undo redo | link pagebreak image | styleselect forecolor backcolor | bold italic underline strikethrough subscript superscript | alignleft aligncenter alignright alignjustify | table bullist numlist outdent indent | help restoredraft save",
+   spellchecker_language: "pt_PT"
+});

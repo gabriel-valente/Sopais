@@ -42,12 +42,7 @@
 
                   $queryVerificar->closeCursor();
 
-                  $queryLoadNoticias = $connection->prepare("SELECT Noticia.Key_Noticia, Titulo, DataPublicacao, Imagem.Imagem
-                  FROM Noticia
-                  INNER JOIN Imagem ON Noticia.Key_Noticia = Imagem.Key_Noticia
-                  WHERE Index_Imagem = 0
-                  ORDER BY DataPublicacao DESC
-                  LIMIT 1");
+                  $queryLoadNoticias = $connection->prepare("SELECT Key_Noticia, Titulo, Imagem, DataPublicacao FROM Noticia ORDER BY DataPublicacao DESC LIMIT 1");
                   $queryLoadNoticias->execute();
 
                   if ($queryLoadNoticias->rowCount() == 1) {
@@ -71,12 +66,7 @@
                      if ($contagem >= 1) {
                         $ultimoPost++;
 
-                        $queryLoadNoticias = $connection->prepare("SELECT Noticia.Key_Noticia, Titulo, DataPublicacao, Imagem.Imagem
-                        FROM Noticia
-                        INNER JOIN Imagem ON Noticia.Key_Noticia = Imagem.Key_Noticia
-                        WHERE Index_Imagem = 0
-                        ORDER BY DataPublicacao DESC
-                        LIMIT ".($ultimoPost).",6");
+                        $queryLoadNoticias = $connection->prepare("SELECT Key_Noticia, Titulo, Imagem, DataPublicacao FROM Noticia ORDER BY DataPublicacao DESC LIMIT ".($ultimoPost).",6");
                         $queryLoadNoticias->execute();
 
                         if ($queryLoadNoticias->rowCount() >= 1) {

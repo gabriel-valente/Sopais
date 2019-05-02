@@ -8,6 +8,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <link rel="stylesheet" href="../materialize/css/materialize.css">
       <script src="../materialize/js/materialize.min.js"></script>
+      <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=75m26byuv004g3ef1g0nt44veoaej2ja385dzy5fynrjt9jm"></script>
 
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/noticias.css">
@@ -30,10 +31,7 @@
                   }
 
                   include_once "../backend/database.php";
-
-                  $conteudo = array();
-
-                  $queryNoticia = $connection->prepare("SELECT Titulo, DataPublicacao FROM Noticia WHERE Key_Noticia = :Key");
+                  $queryNoticia = $connection->prepare("SELECT Titulo, Imagem, Conteudo, DataPublicacao FROM Noticia WHERE Key_Noticia = :Key");
                   $queryNoticia->bindParam(":Key", $url["query"], PDO::PARAM_STR);
                   $queryNoticia->execute();
 
@@ -47,58 +45,17 @@
                      $Titulo = $resultado[0]["Titulo"];
                      setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
                      $DataPublicacao = ucfirst(utf8_encode(strftime("%d %B, %Y &agrave;s %H:%M", strtotime($resultado[0]["DataPublicacao"]))));
+                     $imagem = "data:image/jpeg;base64,".base64_encode($resultado[0]["Imagem"]);
+                     $Conteudo = $resultado[0]["Conteudo"];
                   }
                   $queryNoticia->closeCursor();
 
-                  $queryImagens = $connection->prepare("SELECT Key_Imagem, Imagem, Index_Imagem FROM Imagem WHERE Key_Noticia = :Key ORDER BY Index_Imagem");
-                  $queryImagens->bindParam(":Key", $url["query"], PDO::PARAM_STR);
-                  $queryImagens->execute();
-
-                  if ($queryImagens->rowCount() >= 1) {
-                     foreach ($queryImagens->fetchAll() as $resultado) {
-                        array_push($conteudo, array(
-                           $resultado["Key_Imagem"],
-                           "data:image/jpeg;base64,".base64_encode($resultado["Imagem"]),
-                           $resultado["Index_Imagem"]
-                        ));
-                     }
-                  }
-                  $queryImagens->closeCursor();
-
-                  $queryTexto = $connection->prepare("SELECT Key_Texto, Texto, Index_Texto FROM Texto WHERE Key_Noticia = :Key ORDER BY Index_Texto");
-                  $queryTexto->bindParam(":Key", $url["query"], PDO::PARAM_STR);
-                  $queryTexto->execute();
-
-                  if ($queryTexto->rowCount() >= 1) {
-                     foreach ($queryTexto->fetchAll() as $resultado) {
-                        array_push($conteudo, array(
-                           $resultado["Key_Texto"],
-                           $resultado["Texto"],
-                           $resultado["Index_Texto"]
-                        ));
-                     }
-                  }
-                  $queryTexto->closeCursor();
-
-                  usort($conteudo, function($a, $b) {
-                     return $a[2] - $b[2];
-                  });
-
                   echo '<h3 id="titulo">'.$Titulo.'</h3>';
                   echo '<p id="data">'.$DataPublicacao.'</p>';
-
-                  if (strpos($conteudo[0][1], 'data:image/jpeg;base64,') !== false) {
-                     echo '<img id="imagem" src="'.$conteudo[0][1].'">';
-                  }
                ?>
             </div>
             <article>
-               <?php
-                  foreach ($conteudo as $item) {
-                     print_r($item);
-                     exit();
-                  }
-               ?>
+               <?php echo $Conteudo; ?>
             </article>
          </div>
       </main>

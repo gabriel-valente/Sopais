@@ -95,7 +95,17 @@ main {
    -webkit-display: flex;
 }
 
+#info {
+   width: 90%;
+}
+
+#anchor {
+   margin-top: -100px;
+   padding-top: 60px;
+}
+
 .temas {
+   width: 50%;
    flex-direction: row;
    -ms-flex-direction: row;
    -moz-flex-direction: row;
@@ -105,15 +115,15 @@ main {
    -moz-flex-wrap: wrap;
    -webkit-flex-wrap: wrap;
    justify-content: space-around;
+   transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
 }
 
-.temas p {
-   font-size: 20px;
+.temas p, .temas a {
+   font-size: 16px;
    color: #8F8F8F;
-   text-decoration: underline;
-   text-decoration-color: #8F8F8F;
-   text-decoration-style: solid 4px;
-   text-align: center;
+   text-align: left;
    cursor: pointer;
    line-height: normal;
    user-select: none;
@@ -132,12 +142,9 @@ main {
    -webkit-transition: all 0.5s ease;
 }
 
-.temas p:hover {
-   font-size: 20px;
+.temas p:hover, .temas a:hover {
+   font-size: 16px;
    color: #50558B;
-   text-decoration: underline;
-   text-decoration-color: #273B7B;
-   text-decoration-style: solid 4px;
    transform: scale(1.1);
    -o-transform: scale(1.1);
    -ms-transform: scale(1.1);
@@ -149,15 +156,19 @@ main {
 }
 
 .temaSelected {
-   font-size: 20px;
+   font-size: 16px;
    color: #50558B !important;
-   text-decoration: underline !important;
-   text-decoration-color: #273B7B !important;
-   text-decoration-style: solid 4px !important;
    transform: scale(1.2) !important;
    -ms-transform: scale(1.2) !important;
    -moz-transform: scale(1.2) !important;
    -webkit-transform: scale(1.2) !important;
+   transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+}
+
+.content {
+   width: 50%;
    transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
    -webkit-transition: all 0.5s ease;
@@ -171,6 +182,66 @@ main {
    transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
    -webkit-transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 870px) {
+   .temas {
+      width: 100%;
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+   }
+
+   .temas p, .temas a {
+      font-size: 18px;
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+   }
+   .temas p:hover, .temas a:hover {
+      font-size: 18px;
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+   }
+   .temaSelected {
+      font-size: 18px;
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+   }
+
+   .content {
+      width: 100%;
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   #info {
+      width: 95%;
+   }
+
+   .temas p, .temas a {
+      font-size: 15px;
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+   }
+   .temas p:hover, .temas a:hover {
+      font-size: 15px;
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+   }
+   .temaSelected {
+      font-size: 15px;
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+   }
 }
 
 @media screen and (max-width: 950px) {

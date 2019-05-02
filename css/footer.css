@@ -91,7 +91,7 @@ footer {
    margin-bottom: auto;
 }
 
-footer a, footer p {
+footer a, footer p, .footer a, .footer p {
    font-size: 14px;
    line-height: 10px;
 }
