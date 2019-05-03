@@ -23,7 +23,7 @@
                <img class="img-heading" src="../img/welding.png">
             </div>
          </div>
-         <div class="section div-division flow division-top">
+         <div class="section div-division flow division-top" id="carousel">
             <div class="navigation" onclick="back();">
                <img src="../img/icons/arrow-bwd.png">
             </div>
@@ -127,12 +127,6 @@
             </div>
          </div>
 
-         <p onclick="mudarCarousel(0, 1);"><a href="#carousel">Stamping</a></p>
-         <p onclick="mudarCarousel(3, 2);"><a href="#carousel">Precision Metalworking</a></p>
-         <p onclick="mudarCarousel(6, 3);"><a href="#carousel">Tube Forming</a></p>
-         <p onclick="mudarCarousel(null, 4);"><a href="#info">Support for New Projects</a></p>
-         <p onclick="mudarCarousel(null, 5);"><a href="#info">Welding</a></p>
-
          <div id="anchor">
             <div class="div-wrapper flow" id="info">
                <div class="flow division-top temas">
@@ -162,6 +156,8 @@
       </main>
 
       <script>
+         $("nav a[href$='whatwedo.php']").addClass("paginaatual");
+
          $(document).on('click', 'a[href^="#"]', function (event) {
             event.preventDefault();
 
@@ -178,29 +174,39 @@
             var instances = M.Carousel.init(elems, {
                fullWidth: true
             });
+
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
-            l.set(20);
+
+            setTimeout(function() {
+               $('html, body').animate({ scrollTop: $('#carousel').offset().top}, 500);
+            }, 200);
          });
 
          function back() {
+            clearTimeout(timer);
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
             l.prev();
+            setTimeout(timer);
          }
 
          function forward() {
+            clearTimeout(timer);
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
             l.next();
+            setTimeout(timer);
          }
 
          function mudarCarousel(item, id) {
+            clearTimeout(timer);
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
             if (item != null) {
                l.set(item);
             }
+            setTimeout(timer);
 
             var $video = $('video');
 

@@ -84,6 +84,8 @@
          </div>
       </main>
       <script>
+         $("nav a[href$='quality.php']").addClass("paginaatual");
+
          $(document).ready(function() {
             var elems = document.querySelectorAll('.parallax');
             var instances = M.Parallax.init(elems);

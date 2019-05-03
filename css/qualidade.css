@@ -104,6 +104,10 @@ main {
    color: #FFF !important;
 }
 
+.lbox {
+   cursor: zoom-in;
+}
+
 #color1 {
    background-image: linear-gradient(#FFF 30%, #7D8AAD 90%);
 }

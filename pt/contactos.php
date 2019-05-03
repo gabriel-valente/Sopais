@@ -26,50 +26,42 @@
                <img class="img-heading" src="../img/seguranca.png">
             </div>
          </div>
-         <div class="div-wrapper">
-               <div id="mapid"></div>
-            <div class="div-container">
-               <div class="div-content">
+         <div class="div-division flow">
+            <div id="mapid"></div>
+            <div class="div-container flow" id="address">
+               <div class="div-box">
                   <h6>Endereço</h6>
                   <p>Eco-Parque Empresarial Estarreja<br>Rua de Canelas, nº3<br>3860-529 Estarreja, Portugal</p>
                </div>
-               <div class="div-content">
+               <div class="div-box">
                   <h6>Fale Connosco</h6>
                   <p>Telefone: (+351) 234 548 137<br>E-mail: geral@sopais.pt</p>
                </div>
             </div>
-            <div class="div-container">
-               <div class="div-content icons">
-                  <a class="link" target="_blank" href="https://www.facebook.com/sopaislda" id="noScript">
-                     <img class="social" src="../img/icons/facebookbox.png">
-                  </a>
-                  <a class="link" target="_blank" href="https://www.youtube.com/channel/UCUwKckOoooyihJaUKwSuMIQ" id="noScript">
-                     <img class="social" src="../img/icons/youtubebox.png">
-                  </a>
-                  <a class="link" target="_blank" href="https://www.linkedin.com/company/sopais?trk=tyah&trkInfo=tarId%3A1397663293041%2Ctas%3Asopais%2Cidx%3A1-1-1" id="noScript">
-                     <img class="social" src="../img/icons/linkedinbox.png">
-                  </a>
-               </div>
-               <div class="div-content form">
-                  <form id="formulario" name="formulario" action="../backend/send.php" method="post">
-                     <p>
-                        <input type="text" id="nome" name="nome" value="" placeholder="Nome" maxlength="60" required>
-                     </p>
-                     <p>
-                        <input type="text" id="email" name="email" value="" placeholder="Email" maxlength="256" required>
-                     </p>
-                     <p>
-                        <textarea id="mensagem" name="mensagem" rows="16" cols="80" placeholder="Mensagem" maxlength="65535" required></textarea>
-                     </p>
-                     <input type="submit" id="submit" name="submit" value="Enviar">
-                  </form>
-                  <h4 id="form-report"></h4>
-               </div>
+         </div>
+         <div class="div-wrapper">
+            <div class="div-content form">
+               <h6>Enviar uma mensagem:</h6>
+               <form id="formulario" name="formulario" action="../backend/send.php" method="post">
+                  <p>
+                     <input type="text" id="nome" name="nome" value="" placeholder="Nome" maxlength="60" required>
+                  </p>
+                  <p>
+                     <input type="text" id="email" name="email" value="" placeholder="Email" maxlength="256" required>
+                  </p>
+                  <p>
+                     <textarea id="mensagem" name="mensagem" rows="16" cols="80" placeholder="Mensagem" maxlength="65535" required></textarea>
+                  </p>
+                  <input type="submit" id="submit" name="submit" value="Enviar">
+               </form>
+               <h4 id="form-report"></h4>
             </div>
          </div>
       </main>
 
       <script>
+         $("nav a[href$='contactos.php']").addClass("paginaatual");
+
          $(document).ready(function() {
             var elems = document.querySelectorAll('.parallax');
             var instances = M.Parallax.init(elems);
@@ -254,6 +246,7 @@
 
       </script>
       <?php
+         include_once "includes/aside.php";
          include_once "includes/footer.php";
       ?>
    </body>

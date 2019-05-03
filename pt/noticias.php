@@ -112,6 +112,8 @@
          </div>
       </main>
       <script>
+         $("nav a[href$='noticias.php']").addClass("paginaatual");
+
          $(document).on('click','.loadMore',function(){
             var ultimoPost = parseInt($("#noticias .div-content.post:last").attr('cont'));
             var contagem = <?php echo $contagem; ?>;

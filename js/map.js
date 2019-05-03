@@ -7,8 +7,15 @@ $(document).ready(function() {
       [40.775402, -8.590762]
    ]).addTo(mymap);
    var marker = L.marker([40.7753012, -8.5903603]).addTo(mymap);
-   marker.bindPopup("<b>Sopais - Componentes Metálicos</b><br>Eco-Parque Empresarial Estarreja<br>Rua de Canelas, nº3<br>3860-529 Estarreja, Portugal").openPopup();
-   polygon.bindPopup("<b>Coordenadas:</b><br>40°46'31.1\"N 8°35'25.3\"W<br><a target='_blank' href='https://goo.gl/maps/NinfYNcHL5tnWEEd6'>Ou clique aqui!</a>").openPopup();
+
+   if (window.location.href.includes("/pt/")) {
+      marker.bindPopup("<b>Sopais - Componentes Metálicos</b><br>Eco-Parque Empresarial Estarreja<br>Rua de Canelas, nº3<br>3860-529 Estarreja, Portugal").openPopup();
+      polygon.bindPopup("<b>Coordenadas:</b><br>40°46'31.1\"N 8°35'25.3\"W<br><a target='_blank' href='https://goo.gl/maps/NinfYNcHL5tnWEEd6'>Ou clique aqui!</a>").openPopup();
+   } else {
+      marker.bindPopup("<b>Sopais - Componentes Metálicos</b><br>Eco-Parque Empresarial Estarreja<br>Rua de Canelas, nº3<br>3860-529 Estarreja, Portugal");
+      polygon.bindPopup("<b>Coordinates:</b><br>40°46'31.1\"N 8°35'25.3\"W<br><a target='_blank' href='https://goo.gl/maps/NinfYNcHL5tnWEEd6'>Or click here!</a>").openPopup();
+   }
+
    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 16,

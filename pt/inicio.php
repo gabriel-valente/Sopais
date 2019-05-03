@@ -173,26 +173,55 @@
             <h3>Notícias</h3>
             <div class="div-division" id="div-noticias">
                <div class="div-container flow">
-                  <div class="div-content post">
-                     <div class="image-container">
-                        <img src="http://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9">
-                     </div>
-                     <h3>Lorem ipsum dolor sit amet.</h3>
-                  </div>
+                  <?php
+                     include_once "../backend/database.php";
 
-                  <div class="div-content post">
-                     <div class="image-container">
-                        <img src="https://i.pinimg.com/originals/e2/b8/2a/e2b82aded815e80351b929a77519adaa.jpg">
-                     </div>
-                     <h3>Lorem ipsum dolor sit amet.</h3>
-                  </div>
+                     $contagem;
+                     $ultimoPost = 0;
 
-                  <div class="div-content post">
-                     <div class="image-container">
-                        <img src="https://images.wallpaperscraft.com/image/city_vector_panorama_119914_3840x2160.jpg">
-                     </div>
-                     <h3>Lorem ipsum dolor sit amet.</h3>
-                  </div>
+                     $queryVerificar = $connection->prepare("SELECT COUNT(key_Noticia) AS 'Contagem' FROM Noticia");
+                     $queryVerificar->execute();
+
+                     if ($queryVerificar->rowCount() == 0) {
+                        echo "Erro de coneção com o servidor!";
+
+                        $queryVerificar->closeCursor();
+                     } else {
+                        $resultado = $queryVerificar->fetch(PDO::FETCH_OBJ);
+                        $contagem = $resultado->Contagem;
+
+                        $queryVerificar->closeCursor();
+
+                        if ($contagem >= 1) {
+                           $queryLoadNoticias = $connection->prepare("SELECT Key_Noticia, Titulo, Imagem, DataPublicacao FROM Noticia ORDER BY DataPublicacao DESC LIMIT 3");
+                           $queryLoadNoticias->execute();
+
+                           if ($queryLoadNoticias->rowCount() >= 1) {
+                              foreach ($queryLoadNoticias->fetchAll() as $resultado) {
+                                 $ultimoPost++;
+
+                                 if (strlen(utf8_encode($resultado["Titulo"])) > 60) {
+                                    $titulo = mb_substr(utf8_encode($resultado["Titulo"]), 0, 60)."<code>...</code>";
+                                 } else {
+                                    $titulo = utf8_encode($resultado["Titulo"]);
+                                 }
+
+                                 setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
+                                 echo '<div class="div-content post artigo" id="'.$resultado["Key_Noticia"].'" cont="'.$ultimoPost.'">
+                                 <div class="image-container">
+                                 <img id="imagem" src="data:image/jpeg;base64,'.base64_encode($resultado["Imagem"]).'">
+                                 </div>
+                                 <h4 id="Data">'.ucfirst(utf8_encode(strftime("%d %B, %Y &agrave;s %H:%M", strtotime($resultado["DataPublicacao"])))).'</h4>
+                                 <h3 id="titulo">'.$titulo.'</h3>
+                                 </div>';
+                              }
+                           }
+                           $queryLoadNoticias->closeCursor();
+                        } else {
+                           echo "Ainda não existe nenhuma notícia.";
+                        }
+                     }
+                  ?>
                </div>
                <div class="button">
                   <a href="noticias.php">Mais notícias</a>
@@ -239,6 +268,8 @@
       ?>
 
       <script>
+         $("nav a[href$='inicio.php']").addClass("paginaatual");
+
          $(document).ready(setTimeout(function() {
             window.location = "#video";
          }, 25));

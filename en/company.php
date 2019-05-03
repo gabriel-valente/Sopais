@@ -55,6 +55,7 @@
       </main>
 
       <script>
+         $("nav a[href$='company.php']").addClass("paginaatual");
          $(document).ready(function() {
             var elems = document.querySelectorAll('.parallax');
             var instances = M.Parallax.init(elems);

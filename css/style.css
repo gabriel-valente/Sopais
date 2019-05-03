@@ -233,6 +233,10 @@ main {
    width: 60%;
 }
 
+code {
+   letter-spacing: -4px;
+}
+
 @media screen and (max-width: 950px) {
    .navigation {
       height: 100%;

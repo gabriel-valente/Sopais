@@ -59,22 +59,12 @@
             </article>
          </div>
       </main>
+      <script>
+      $("nav a[href$='noticias.php']").addClass("paginaatual");
+      </script>
       <?php
          include_once "includes/aside.php";
          include_once "includes/footer.php";
       ?>
    </body>
 </html>
-
-
-
-Array (
-   [0] => Array (
-      [0] => hum
-      [1] => 0
-   )
-   [1] => Array (
-      [0] => hum
-      [1] => 1
-   )
-)

@@ -245,6 +245,21 @@ nav {
    left: 50%;
 }
 
+.paginaatual {
+   color: #273B7B;
+   border-bottom: solid 1px #273B7B;
+   -o-border-bottom: solid 1px #273B7B;
+   -moz-border-bottom: solid 1px #273B7B;
+   -webkit-border-bottom: solid 1px #273B7B;
+   transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   -moz-transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   transition: all 0.2s ease, font-size 1s ease;
+   -moz-transition: all 0.2s ease, font-size 1s ease;
+   -webkit-transition: all 0.2s ease, font-size 1s ease;
+}
+
 @media screen and (max-width: 950px) {
    .desktop {
       display: none;
