@@ -165,6 +165,12 @@
             }, 500);
          });
 
+         timer = setInterval(function() {
+            var el = document.querySelector(".carousel");
+            var l = M.Carousel.getInstance(el);
+            l.next();
+         }, 3000);
+
          $(document).ready(function() {
             var elems2 = document.querySelectorAll('.parallax');
             var instances2 = M.Parallax.init(elems2);
@@ -177,41 +183,43 @@
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
 
+            var largura = $('video').width();
+            $("video").height(largura * 0.4285714286);
+
             setTimeout(function() {
                $('html, body').animate({ scrollTop: $('#carousel').offset().top}, 500);
             }, 200);
          });
 
-         timer = setInterval(function() {
-            var el = document.querySelector(".carousel");
-            var l = M.Carousel.getInstance(el);
-            l.next();
-         }, 3000);
-
          function back() {
-            clearTimeout(timer);
+            clearInterval(timer);
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
             l.prev();
-            setTimeout(timer);
+            setInterval(timer);
          }
 
          function forward() {
-            clearTimeout(timer);
+            clearInterval(timer);
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
             l.next();
-            setTimeout(timer);
+            setInterval(timer);
          }
 
+         $(window).resize(function() {
+            var largura = $('video').width();
+            $("video").height(largura * 0.4285714286);
+         });
+
          function mudarCarousel(item, id) {
-            clearTimeout(timer);
+            clearInterval(timer);
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
             if (item != null) {
                l.set(item);
             }
-            setTimeout(timer);
+            setInterval(timer);
 
             var $video = $('video');
 
@@ -220,39 +228,44 @@
 
             if (id == 1) {
                $(".texto p").html("Parque diversificado de prensas, mecânicas e hidráulicas, com forças compreendidas entre as 45 e as 315 toneladas.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/Stamping.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/Stamping.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             } else if (id == 2) {
                $(".texto p").html("Ao serviço da empresa temos máquinas BIHLER e técnicos com know-how especializado na afinação das mesmas.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/PrecisionMetalworking.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/PrecisionMetalworking.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             } else if (id == 3) {
                $(".texto p").html("Redução, alargamento, corte e conformação de tubo são capacidades que a SOPAIS põe à disposição dos seus clientes.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/TubeForming.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/TubeForming.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             } else if (id == 4) {
                $(".texto p").html("Dispomos de uma equipa de especialistas prontos para ajudar o seu negócio.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/SupportNewProjects.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/SupportNewProjects.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             } else if (id == 5) {
                $(".texto p").html("Dispomos de uma ótima qualidade de soldadura com tecnologias MIG/MAG e soldadura por resistência.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/Welding.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/Welding.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             }
          }
       </script>

@@ -126,7 +126,6 @@
                <img src="../img/icons/arrow-fwd.png">
             </div>
          </div>
-
          <div id="anchor">
             <div class="div-wrapper flow" id="info">
                <div class="flow division-top temas">
@@ -178,10 +177,19 @@
             var el = document.querySelector(".carousel");
             var l = M.Carousel.getInstance(el);
 
+            var largura = $('video').width();
+            $("video").height(largura * 0.4285714286);
+
             setTimeout(function() {
                $('html, body').animate({ scrollTop: $('#carousel').offset().top}, 500);
             }, 200);
          });
+
+         timer = setInterval(function() {
+            var el = document.querySelector(".carousel");
+            var l = M.Carousel.getInstance(el);
+            l.next();
+         }, 3000);
 
          function back() {
             clearTimeout(timer);
@@ -199,6 +207,11 @@
             setTimeout(timer);
          }
 
+         $(window).resize(function() {
+            var largura = $('video').width();
+            $("video").height(largura * 0.4285714286);
+         });
+
          function mudarCarousel(item, id) {
             clearTimeout(timer);
             var el = document.querySelector(".carousel");
@@ -210,41 +223,49 @@
 
             var $video = $('video');
 
+            $(".temaSelected").removeClass("temaSelected");
+            $("#" + id).addClass("temaSelected");
+
             if (id == 1) {
                $(".texto p").html("We have a diversified range of hydraulic and mechanic stamping machines with pressures between 45 and 315 tons of force.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/Stamping.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/Stamping.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             } else if (id == 2) {
                $(".texto p").html("We have BIHLER machines working for the company with specialized technicians dedicated to them.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/PrecisionMetalworking.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/PrecisionMetalworking.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             } else if (id == 3) {
                $(".texto p").html("Decreasing, widening, cutting and tube forming are some of the capabilities that SOPAIS has to offer to its clients.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/TubeForming.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/TubeForming.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             } else if (id == 4) {
                $(".texto p").html("Our team of specialist is at your disposal to help you develop your new projects.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/SupportNewProjects.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/SupportNewProjects.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             } else if (id == 5) {
                $(".texto p").html("Robotic MIG/MAG welding processed by Yaskawa robots and resistance welding used to fix nuts.");
-               $($video).fadeOut(5);
-               videoSrc = $('source', $video).attr('src', "../img/Welding.mp4");
-               $($video).fadeIn(500);
-               $video[0].load();
-               $video[0].play();
+               $($video).fadeOut(500, function() {
+                  videoSrc = $('source', $video).attr('src', "../img/Welding.mp4");
+                  $video[0].load();
+                  $video[0].play();
+                  $($video).fadeIn(500);
+               });
             }
          }
       </script>

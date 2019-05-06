@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,7 @@
                $queryVerificar->execute();
 
                if ($queryVerificar->rowCount() == 0) {
-                  echo "Erro de coneção com o servidor!";
+                  echo "Error connecting to the server!";
 
                   $queryVerificar->closeCursor();
                } else {
@@ -47,12 +47,12 @@
 
                   if ($queryLoadNoticias->rowCount() == 1) {
                      foreach ($queryLoadNoticias->fetchAll() as $resultado) {
-                        setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
+                        setlocale(LC_ALL, 'en', 'en.utf-8', 'en.utf-8', 'english');
                         echo '<div class="div-content masterPost artigo" id="'.$resultado["Key_Noticia"].'">
                         <div class="image-container">
                         <img id="imagem" src="data:image/jpeg;base64,'.base64_encode($resultado["Imagem"]).'">
                         </div>
-                        <h4 id="Data">'.ucfirst(utf8_encode(strftime("%d %B, %Y &agrave;s %H:%M", strtotime($resultado["DataPublicacao"])))).'</h4>
+                        <h4 id="Data">'.ucfirst(utf8_encode(strftime("%d %B, %Y at %I:%M %p", strtotime($resultado["DataPublicacao"])))).'</h4>
                         <h3 id="titulo">'.utf8_encode($resultado["Titulo"]).'</h3>
                         </div>';
                      }
@@ -72,19 +72,19 @@
                         if ($queryLoadNoticias->rowCount() >= 1) {
                            foreach ($queryLoadNoticias->fetchAll() as $resultado) {
                               $ultimoPost++;
-                              setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
+                              setlocale(LC_ALL, 'en', 'en.utf-8', 'en.utf-8', 'english');
                               echo '<div class="div-content post artigo" id="'.$resultado["Key_Noticia"].'" cont="'.$ultimoPost.'">
                               <div class="image-container">
                               <img id="imagem" src="data:image/jpeg;base64,'.base64_encode($resultado["Imagem"]).'">
                               </div>
-                              <h4 id="Data">'.ucfirst(utf8_encode(strftime("%d %B, %Y &agrave;s %H:%M", strtotime($resultado["DataPublicacao"])))).'</h4>
+                              <h4 id="Data">'.ucfirst(utf8_encode(strftime("%d %B, %Y at %I:%M %p", strtotime($resultado["DataPublicacao"])))).'</h4>
                               <h3 id="titulo">'.utf8_encode($resultado["Titulo"]).'</h3>
                               </div>';
                            }
                         }
                         $queryLoadNoticias->closeCursor();
                      } else {
-                        echo "Ainda não existe nenhuma notícia.";
+                        echo "There is no news yet.";
                      }
                   ?>
                </div>
@@ -99,7 +99,7 @@
 
                echo '<div class="div-load '.$class.'">
                   <div class="botao loadMore" id="'.$ultimoPost.'">
-                     <p>Carregar Mais</p>
+                     <p>Load More</p>
                      <img src="../img/icons/arrow-dwn.png">
                   </div>
                </div>';
@@ -112,7 +112,7 @@
          </div>
       </main>
       <script>
-         $("nav a[href$='noticias.php']").addClass("paginaatual");
+         $("nav a[href$='news.php']").addClass("paginaatual");
 
          $(document).on('click','.loadMore',function(){
             var ultimoPost = parseInt($("#noticias .div-content.post:last").attr('cont'));
@@ -122,7 +122,7 @@
                url:'../backend/loadNews.php',
                data: {
                   ultimoPost: ultimoPost,
-                  language: "PT"
+                  language: "EN"
                },
                success:function(result){
                   $('.loadMore').attr("id", ultimoPost + 1);
@@ -137,7 +137,7 @@
 
          $(document).on('click','.artigo',function(){
             id = $(this).attr("id");
-            window.location = "paginaNoticia.php?" + id;
+            window.location = "newsPage.php?" + id;
          });
 
          $(document).ready(function() {

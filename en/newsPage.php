@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
                   $url = parse_url($_SERVER["REQUEST_URI"]);
 
                   if (empty($url["query"])) {
-                     header("Location: noticias.php");
+                     header("Location: news.php");
                      exit();
                   } else {
                      $noticia = $url["query"];
@@ -35,15 +35,15 @@
                   $queryNoticia->execute();
 
                   if ($queryNoticia->rowCount() == 0) {
-                     header("Location: noticias.php");
+                     header("Location: news.php");
                   } elseif ($queryNoticia->rowCount() > 1) {
-                     header("Location: noticias.php");
+                     header("Location: news.php");
                   } else {
                      $resultado = $queryNoticia->fetchAll();
 
                      $Titulo = $resultado[0]["Titulo"];
-                     setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
-                     $DataPublicacao = ucfirst(utf8_encode(strftime("%d %B, %Y &agrave;s %H:%M", strtotime($resultado[0]["DataPublicacao"]))));
+                     setlocale(LC_ALL, 'en', 'en.utf-8', 'en.utf-8', 'english');
+                     $DataPublicacao = ucfirst(utf8_encode(strftime("%d %B, %Y at %I:%M %p", strtotime($resultado[0]["DataPublicacao"]))));
                      $imagem = "data:image/jpeg;base64,".base64_encode($resultado[0]["Imagem"]);
                      $Conteudo = $resultado[0]["Conteudo"];
                   }
@@ -59,7 +59,7 @@
          </div>
       </main>
       <script>
-      $("nav a[href$='noticias.php']").addClass("paginaatual");
+      $("nav a[href$='news.php']").addClass("paginaatual");
       </script>
       <?php
          include_once "includes/aside.php";
