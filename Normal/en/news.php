@@ -42,18 +42,24 @@
 
                   $queryVerificar->closeCursor();
 
-                  $queryLoadNoticias = $connection->prepare("SELECT Key_Noticia, Titulo, Imagem, DataPublicacao FROM Noticia ORDER BY DataPublicacao DESC LIMIT 1");
+                  $queryLoadNoticias = $connection->prepare("SELECT Key_Noticia, TituloEN, Imagem, DataPublicacao FROM Noticia ORDER BY DataPublicacao DESC LIMIT 1");
                   $queryLoadNoticias->execute();
 
                   if ($queryLoadNoticias->rowCount() == 1) {
                      foreach ($queryLoadNoticias->fetchAll() as $resultado) {
+                        if (strlen(utf8_encode($resultado["TituloEN"])) > 60) {
+                           $titulo = mb_substr(utf8_encode($resultado["TituloEN"]), 0, 60)."<code>...</code>";
+                        } else {
+                           $titulo = utf8_encode($resultado["TituloEN"]);
+                        }
+
                         setlocale(LC_ALL, 'en', 'en.utf-8', 'en.utf-8', 'english');
                         echo '<div class="div-content masterPost artigo" id="'.$resultado["Key_Noticia"].'">
                         <div class="image-container">
                         <img id="imagem" src="data:image/jpeg;base64,'.base64_encode($resultado["Imagem"]).'">
                         </div>
                         <h4 id="Data">'.ucfirst(utf8_encode(strftime("%d %B, %Y at %I:%M %p", strtotime($resultado["DataPublicacao"])))).'</h4>
-                        <h3 id="titulo">'.utf8_encode($resultado["Titulo"]).'</h3>
+                        <h3 id="titulo">'.$titulo.'</h3>
                         </div>';
                      }
                   }
@@ -66,19 +72,25 @@
                      if ($contagem >= 1) {
                         $ultimoPost++;
 
-                        $queryLoadNoticias = $connection->prepare("SELECT Key_Noticia, Titulo, Imagem, DataPublicacao FROM Noticia ORDER BY DataPublicacao DESC LIMIT ".($ultimoPost).",6");
+                        $queryLoadNoticias = $connection->prepare("SELECT Key_Noticia, TituloEN, Imagem, DataPublicacao FROM Noticia ORDER BY DataPublicacao DESC LIMIT ".($ultimoPost).",6");
                         $queryLoadNoticias->execute();
 
                         if ($queryLoadNoticias->rowCount() >= 1) {
                            foreach ($queryLoadNoticias->fetchAll() as $resultado) {
                               $ultimoPost++;
+                              if (strlen(utf8_encode($resultado["TituloEN"])) > 60) {
+                                 $titulo = mb_substr(utf8_encode($resultado["TituloEN"]), 0, 60)."<code>...</code>";
+                              } else {
+                                 $titulo = utf8_encode($resultado["TituloEN"]);
+                              }
+
                               setlocale(LC_ALL, 'en', 'en.utf-8', 'en.utf-8', 'english');
                               echo '<div class="div-content post artigo" id="'.$resultado["Key_Noticia"].'" cont="'.$ultimoPost.'">
                               <div class="image-container">
                               <img id="imagem" src="data:image/jpeg;base64,'.base64_encode($resultado["Imagem"]).'">
                               </div>
                               <h4 id="Data">'.ucfirst(utf8_encode(strftime("%d %B, %Y at %I:%M %p", strtotime($resultado["DataPublicacao"])))).'</h4>
-                              <h3 id="titulo">'.utf8_encode($resultado["Titulo"]).'</h3>
+                              <h3 id="titulo">'.$titulo.'</h3>
                               </div>';
                            }
                         }

@@ -11,6 +11,8 @@
 
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/noticias.css">
+
+      <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5cd1a45e84760c0019807bcb&product=sop' async='async'></script>
    </head>
    <body>
       <?php
@@ -30,7 +32,7 @@
                   }
 
                   include_once "../backend/database.php";
-                  $queryNoticia = $connection->prepare("SELECT Titulo, Imagem, Conteudo, DataPublicacao FROM Noticia WHERE Key_Noticia = :Key");
+                  $queryNoticia = $connection->prepare("SELECT TituloEN, Imagem, ConteudoEN, DataPublicacao FROM Noticia WHERE Key_Noticia = :Key");
                   $queryNoticia->bindParam(":Key", $url["query"], PDO::PARAM_STR);
                   $queryNoticia->execute();
 
@@ -41,21 +43,23 @@
                   } else {
                      $resultado = $queryNoticia->fetchAll();
 
-                     $Titulo = $resultado[0]["Titulo"];
+                     $Titulo = $resultado[0]["TituloEN"];
                      setlocale(LC_ALL, 'en', 'en.utf-8', 'en.utf-8', 'english');
                      $DataPublicacao = ucfirst(utf8_encode(strftime("%d %B, %Y at %I:%M %p", strtotime($resultado[0]["DataPublicacao"]))));
                      $imagem = "data:image/jpeg;base64,".base64_encode($resultado[0]["Imagem"]);
-                     $Conteudo = $resultado[0]["Conteudo"];
+                     $Conteudo = $resultado[0]["ConteudoEN"];
                   }
                   $queryNoticia->closeCursor();
 
                   echo '<h3 id="titulo">'.$Titulo.'</h3>';
                   echo '<p id="data">'.$DataPublicacao.'</p>';
+                  echo '<img id="imagemHeader" src="'.$imagem.'">';
                ?>
             </div>
             <article>
                <?php echo $Conteudo; ?>
             </article>
+            <div class="sharethis-inline-share-buttons"></div>
          </div>
       </main>
       <script>

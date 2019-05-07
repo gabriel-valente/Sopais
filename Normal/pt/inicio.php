@@ -193,17 +193,17 @@
                         $queryVerificar->closeCursor();
 
                         if ($contagem >= 1) {
-                           $queryLoadNoticias = $connection->prepare("SELECT Key_Noticia, Titulo, Imagem, DataPublicacao FROM Noticia ORDER BY DataPublicacao DESC LIMIT 3");
+                           $queryLoadNoticias = $connection->prepare("SELECT Key_Noticia, TituloPT, Imagem, DataPublicacao FROM Noticia ORDER BY DataPublicacao DESC LIMIT 3");
                            $queryLoadNoticias->execute();
 
                            if ($queryLoadNoticias->rowCount() >= 1) {
                               foreach ($queryLoadNoticias->fetchAll() as $resultado) {
                                  $ultimoPost++;
 
-                                 if (strlen(utf8_encode($resultado["Titulo"])) > 60) {
-                                    $titulo = mb_substr(utf8_encode($resultado["Titulo"]), 0, 60)."<code>...</code>";
+                                 if (strlen(utf8_encode($resultado["TituloPT"])) > 60) {
+                                    $titulo = mb_substr(utf8_encode($resultado["TituloPT"]), 0, 60)."<code>...</code>";
                                  } else {
-                                    $titulo = utf8_encode($resultado["Titulo"]);
+                                    $titulo = utf8_encode($resultado["TituloPT"]);
                                  }
 
                                  setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');

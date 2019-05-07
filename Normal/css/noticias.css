@@ -142,8 +142,24 @@
    color: #7E7E7E;
 }
 
+#titulo {
+   font-size: 2.29em;
+}
+
+#imagemHeader {
+   width: 70%;
+   height: auto;
+   margin: auto;
+   text-align: center;
+   vertical-align: middle;
+   display: table-cell;
+}
 
 @media screen and (max-width: 888px) {
+   #titulo {
+      font-size: 1.17em;
+   }
+
    .masterPost img, .post img {
       transform: scale(1);
       filter: grayscale(0);
