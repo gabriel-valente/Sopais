@@ -6,8 +6,8 @@
       <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
       <title>Sopais</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="../fullPage.js/dist/fullpage.css" />
-      <script type="text/javascript" src="../fullPage.js/dist/fullpage.js"></script>
+      <link rel="stylesheet" type="text/css" href="../fullPage.js/dist/fullpage.min.css" />
+      <script type="text/javascript" src="../fullPage.js/dist/fullpage.min.js"></script>
 
       <link rel="stylesheet" href="../materialize/css/materialize.css">
       <script src="../materialize/js/materialize.min.js"></script>

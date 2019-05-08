@@ -23,32 +23,33 @@
             <div class="div-header">
                <?php
                   $url = parse_url($_SERVER["REQUEST_URI"]);
+
                   if (empty($url["query"])) {
                      header("Location: noticias.php");
                      exit();
                   } else {
                      $noticia = $url["query"];
-
-                     include_once "../backend/database.php";
-                     $queryNoticia = $connection->prepare("SELECT TituloPT, Imagem, ConteudoPT, DataPublicacao FROM Noticia WHERE Key_Noticia = :Key");
-                     $queryNoticia->bindParam(":Key", parse_url($_SERVER["REQUEST_URI"], PHP_URL_QUERY), PDO::PARAM_STR);
-                     $queryNoticia->execute();
-
-                     if ($queryNoticia->rowCount() == 0) {
-                        header("Location: noticias.php");
-                     } elseif ($queryNoticia->rowCount() > 1) {
-                        header("Location: noticias.php");
-                     } else {
-                        $resultado = $queryNoticia->fetchAll();
-
-                        $Titulo = $resultado[0]["TituloPT"];
-                        setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
-                        $DataPublicacao = ucfirst(utf8_encode(strftime("%d %B, %Y &agrave;s %H:%M", strtotime($resultado[0]["DataPublicacao"]))));
-                        $imagem = "data:image/jpeg;base64,".base64_encode($resultado[0]["Imagem"]);
-                        $Conteudo = $resultado[0]["ConteudoPT"];
-                     }
-                     $queryNoticia->closeCursor();
                   }
+
+                  include_once "../backend/database.php";
+                  $queryNoticia = $connection->prepare("SELECT TituloPT, Imagem, ConteudoPT, DataPublicacao FROM Noticia WHERE Key_Noticia = :Key");
+                  $queryNoticia->bindParam(":Key", $url["query"], PDO::PARAM_STR);
+                  $queryNoticia->execute();
+
+                  if ($queryNoticia->rowCount() == 0) {
+                     header("Location: noticias.php");
+                  } elseif ($queryNoticia->rowCount() > 1) {
+                     header("Location: noticias.php");
+                  } else {
+                     $resultado = $queryNoticia->fetchAll();
+
+                     $Titulo = utf8_encode($resultado[0]["TituloPT"]);
+                     setlocale(LC_ALL, 'pt_PT', 'pt_PT.utf-8', 'pt_PT.utf-8', 'portuguese');
+                     $DataPublicacao = ucfirst(utf8_encode(strftime("%d %B, %Y &agrave;s %H:%M", strtotime($resultado[0]["DataPublicacao"]))));
+                     $imagem = "data:image/jpeg;base64,".base64_encode($resultado[0]["Imagem"]);
+                     $Conteudo = utf8_encode($resultado[0]["ConteudoPT"]);
+                  }
+                  $queryNoticia->closeCursor();
 
                   echo '<h3 id="titulo">'.$Titulo.'</h3>';
                   echo '<p id="data">'.$DataPublicacao.'</p>';

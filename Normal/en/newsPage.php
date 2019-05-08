@@ -43,11 +43,11 @@
                   } else {
                      $resultado = $queryNoticia->fetchAll();
 
-                     $Titulo = $resultado[0]["TituloEN"];
+                     $Titulo = utf8_encode($resultado[0]["TituloEN"]);
                      setlocale(LC_ALL, 'en', 'en.utf-8', 'en.utf-8', 'english');
                      $DataPublicacao = ucfirst(utf8_encode(strftime("%d %B, %Y at %I:%M %p", strtotime($resultado[0]["DataPublicacao"]))));
                      $imagem = "data:image/jpeg;base64,".base64_encode($resultado[0]["Imagem"]);
-                     $Conteudo = $resultado[0]["ConteudoEN"];
+                     $Conteudo = utf8_encode($resultado[0]["ConteudoEN"]);
                   }
                   $queryNoticia->closeCursor();
 
