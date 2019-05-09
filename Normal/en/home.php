@@ -269,6 +269,11 @@
       <script>
          $("nav a[href$='home.php']").addClass("paginaatual");
 
+         $(document).on('click','.artigo',function(){
+            id = $(this).attr("id");
+            window.location = "newsPage.php?" + id;
+         });
+
          $(document).ready(setTimeout(function() {
             window.location = "#video";
          }, 25));
