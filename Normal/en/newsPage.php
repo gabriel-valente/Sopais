@@ -25,7 +25,7 @@
                   $url = parse_url($_SERVER["REQUEST_URI"]);
 
                   if (empty($url["query"])) {
-                     header("Location: news.php");
+                     echo "<script type='text/javascript'>window.top.location='en/news.php';</script>";
                      exit();
                   } else {
                      $noticia = $url["query"];

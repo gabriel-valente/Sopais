@@ -23,7 +23,7 @@
                $a += 1;
                $key = KeyGenerator(4);
 
-               $queryProcurarkey = $connection->prepare("SELECT * FROM mensagem WHERE Key_Mensagem = :Key");
+               $queryProcurarkey = $connection->prepare("SELECT * FROM Mensagem WHERE Key_Mensagem = :Key");
                $queryProcurarkey->bindParam(":Key", $key, PDO::PARAM_STR);
                $queryProcurarkey->execute();
 
@@ -34,7 +34,7 @@
                }
 
             } while (true);
-            $queryInserir = $connection->prepare("INSERT INTO mensagem(Key_Mensagem, Nome, Email, Mensagem) VALUES (:Key, :Nome, :Email, :Mensagem)");
+            $queryInserir = $connection->prepare("INSERT INTO Mensagem(Key_Mensagem, Nome, Email, Mensagem) VALUES (:Key, :Nome, :Email, :Mensagem)");
 
             $queryInserir->bindParam(":Key", $key, PDO::PARAM_STR);
             $queryInserir->bindParam(":Nome", $nome, PDO::PARAM_STR);

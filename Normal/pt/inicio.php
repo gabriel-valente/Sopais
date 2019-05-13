@@ -179,7 +179,7 @@
                      $contagem;
                      $ultimoPost = 0;
 
-                     $queryVerificar = $connection->prepare("SELECT COUNT(key_Noticia) AS 'Contagem' FROM Noticia");
+                     $queryVerificar = $connection->prepare("SELECT COUNT(Key_Noticia) AS 'Contagem' FROM Noticia");
                      $queryVerificar->execute();
 
                      if ($queryVerificar->rowCount() == 0) {

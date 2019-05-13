@@ -34,7 +34,7 @@
          <a class="link" target="_blank" href="https://www.youtube.com/channel/UCUwKckOoooyihJaUKwSuMIQ" id="noScript">
             <img class="social" src="../img/icons/youtubebox.png">
          </a>
-         <a class="link" target="_blank" href="https://www.linkedin.com/company/sopais?trk=tyah&trkInfo=tarId%3A1397663293041%2Ctas%3Asopais%2Cidx%3A1-1-1" id="noScript">
+         <a class="link" target="_blank" href="https://www.linkedin.com/company/sopais" id="noScript">
             <img class="social" src="../img/icons/linkedinbox.png">
          </a>
       </div>

@@ -15,10 +15,12 @@
          $var_country_code = $geoplugin->countryCode;
 
          if ($var_country_code == "PT") {
-            header("Location: pt/inicio.php");
+            echo "<script type='text/javascript'>window.top.location='pt/inicio.php';</script>";
+            exit();
          }
          else {
-            header("Location: en/home.php");
+            echo "<script type='text/javascript'>window.top.location='en/home.php';</script>";
+            exit();
          }
       ?>
    </body>
