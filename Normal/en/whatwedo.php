@@ -182,7 +182,7 @@
 
             setTimeout(function() {
                $('html, body').animate({ scrollTop: $('#carousel').offset().top}, 500);
-            }, 200);
+            }, 500);
          });
 
          timer = setInterval(function() {

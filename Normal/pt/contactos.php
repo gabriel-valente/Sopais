@@ -23,7 +23,7 @@
       <main>
          <div class="parallax-container">
             <div class="parallax">
-               <img class="img-heading" src="../img/seguranca.png">
+               <img class="img-heading" src="../img/frente.jpg">
             </div>
          </div>
          <div class="div-division flow">

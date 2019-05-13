@@ -161,7 +161,7 @@
             event.preventDefault();
 
             $('html, body').animate({
-               scrollTop: $($.attr(this, 'href')).offset().top
+               scrollTop: $($.attr('html, body', 'href')).offset().top
             }, 500);
          });
 
@@ -188,7 +188,7 @@
 
             setTimeout(function() {
                $('html, body').animate({ scrollTop: $('#carousel').offset().top}, 500);
-            }, 200);
+            }, 500);
          });
 
          function back() {
