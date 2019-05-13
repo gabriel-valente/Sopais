@@ -1,6 +1,6 @@
 <?php
    try {
-      $connection = new PDO("mysql:host=localhost;dbname=sopaispt_website", "sopaispt", "hM1aS0pb74");
+      $connection = new PDO("mysql:host=localhost;dbname=website", "root", "");
       $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
    }
    catch(PDOException $e)

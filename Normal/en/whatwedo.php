@@ -169,13 +169,15 @@
             var elems2 = document.querySelectorAll('.parallax');
             var instances2 = M.Parallax.init(elems2);
 
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems, {
-               fullWidth: true
-            });
+            setTimeout(function() {
+               var elems = document.querySelectorAll('.carousel');
+               var instances = M.Carousel.init(elems, {
+                  fullWidth: true
+               });
 
-            var el = document.querySelector(".carousel");
-            var l = M.Carousel.getInstance(el);
+               var el = document.querySelector(".carousel");
+               var l = M.Carousel.getInstance(el);               
+            }, 100);
 
             var largura = $('video').width();
             $("video").height(largura * 0.4285714286);

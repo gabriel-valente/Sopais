@@ -312,10 +312,12 @@
          });
 
          document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems, {
-               fullWidth: true
-            });
+            setTimeout(function() {
+               var elems = document.querySelectorAll('.carousel');
+               var instances = M.Carousel.init(elems, {
+                  fullWidth: true
+               });
+            }, 100);
          });
 
          function back() {
