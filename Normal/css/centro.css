@@ -1,0 +1,22 @@
+.div-wrapper {
+   margin-top: 0px;
+}
+
+.div-heading, .div-texto {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.div-heading img {
+   width: 100%;
+}
+
+.div-texto ul li {
+   list-style-type: square;
+}
+
+@media screen and (max-width: 720px) {
+   .div-texto ul li {
+      font-size: 14px;
+   }
+}

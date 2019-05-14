@@ -37,9 +37,11 @@
                   $queryNoticia->execute();
 
                   if ($queryNoticia->rowCount() == 0) {
-                     header("Location: noticias.php");
+                     echo "<script type='text/javascript'>window.top.location='noticias.php';</script>";
+                     exit();
                   } elseif ($queryNoticia->rowCount() > 1) {
-                     header("Location: noticias.php");
+                     echo "<script type='text/javascript'>window.top.location='noticias.php';</script>";
+                     exit();
                   } else {
                      $resultado = $queryNoticia->fetchAll();
 

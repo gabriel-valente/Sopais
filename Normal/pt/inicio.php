@@ -231,7 +231,7 @@
          <div class="section fp-auto-height fp-footer" id="section5">
             <div class="footer">
                <div class="div-bar">
-                  <div class="div-bar-logo" id="bg1"></div>
+                  <div class="div-bar-logo" id="bg1" onClick="location.href = 'centro.php';"></div>
                   <div class="div-bar-logo" id="bg2"></div>
                   <div class="div-bar-logo" id="bg3"></div>
                </div>

@@ -245,7 +245,7 @@
                   $($video).fadeIn(500);
                });
             } else if (id == 3) {
-               $(".texto p").html("Redução, alargamento, corte e conformação de tubo são capacidades que a SOPAIS põe à disposição dos seus clientes.");
+               $(".texto p").html("Redução, alargamento, corte e conformação de tubo são capacidades que a SOPAIS coloca à disposição dos seus clientes.");
                $($video).fadeOut(500, function() {
                   videoSrc = $('source', $video).attr('src', "../img/TubeForming.mp4");
                   $video[0].load();
