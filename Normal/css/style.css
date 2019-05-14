@@ -188,6 +188,7 @@ main {
 
 .parallax-container {
    height: 20vw;
+   width: 100%;
 }
 
 #section0 .fp-tableCell {
@@ -288,5 +289,16 @@ code {
       transition: all 1s;
       -moz-transition: all 1s;
       -webkit-transition: all 1s;
+   }
+
+   .parallax-container {
+      height: 35vw;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .navigation {
+      margin: 50% 0px;
+      margin-bottom: auto;
    }
 }
