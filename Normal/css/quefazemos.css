@@ -105,7 +105,7 @@ main {
 }
 
 .temas {
-   width: 50%;
+   width: 40%;
    flex-direction: row;
    -ms-flex-direction: row;
    -moz-flex-direction: row;
@@ -114,16 +114,21 @@ main {
    -ms-flex-wrap: wrap;
    -moz-flex-wrap: wrap;
    -webkit-flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: flex-end;
    transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
    -webkit-transition: all 0.5s ease;
 }
 
+.temas ul {
+   height: auto;
+   margin: 15% 0px auto 0px;
+}
+
 .temas p, .temas a {
    font-size: 16px;
    color: #8F8F8F;
-   text-align: left;
+   text-align: right;
    cursor: pointer;
    line-height: normal;
    user-select: none;
@@ -133,10 +138,6 @@ main {
    -webkit-touch-callout: none;
    margin: 10px;
    margin-bottom: 0px;
-   transform: scale(1);
-   -ms-transform: scale(1);
-   -moz-transform: scale(1);
-   -webkit-transform: scale(1);
    transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
    -webkit-transition: all 0.5s ease;
@@ -145,11 +146,11 @@ main {
 .temas p:hover, .temas a:hover {
    font-size: 16px;
    color: #50558B;
-   transform: scale(1.1);
-   -o-transform: scale(1.1);
-   -ms-transform: scale(1.1);
-   -moz-transform: scale(1.1);
-   -webkit-transform: scale(1.1);
+   transform: translateX(-5px);
+   -o-transform: translateX(-5px);
+   -ms-transform: translateX(-5px);
+   -moz-transform: translateX(-5px);
+   -webkit-transform: translateX(-5px);
    transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
    -webkit-transition: all 0.5s ease;
@@ -158,17 +159,18 @@ main {
 .temaSelected {
    font-size: 16px;
    color: #50558B !important;
-   transform: scale(1.2) !important;
-   -ms-transform: scale(1.2) !important;
-   -moz-transform: scale(1.2) !important;
-   -webkit-transform: scale(1.2) !important;
+   transform: translateX(-20px) !important;
+   -o-transform: translateX(-20px) !important;
+   -ms-transform: translateX(-20px) !important;
+   -moz-transform: translateX(-20px) !important;
+   -webkit-transform: translateX(-20px) !important;
    transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
    -webkit-transition: all 0.5s ease;
 }
 
 .content {
-   width: 50%;
+   width: 60%;
    transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
    -webkit-transition: all 0.5s ease;
@@ -187,9 +189,15 @@ main {
 @media screen and (max-width: 870px) {
    .temas {
       width: 100%;
+      justify-content: space-around;
       transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
+   }
+
+   .temas ul {
+      height: auto;
+      margin: 10px auto; 
    }
 
    .temas p, .temas a {
