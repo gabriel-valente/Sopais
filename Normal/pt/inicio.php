@@ -257,7 +257,7 @@
                   </div>
                </div>
                <div class="div-bar">
-                  <p class="text">Copyright © 2019 SOPAIS - Componentes Metálicos Lda.</p>
+                  <p class="text">Copyright © 2019 SOPAIS - Componentes Metálicos Lda. - Feito por: <div class="creditos" onClick="location.href = 'creditos.php';"> Gabriel Valente</div></p>
                </div>
             </div>
          </div>

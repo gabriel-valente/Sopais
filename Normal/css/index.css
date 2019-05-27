@@ -313,6 +313,19 @@ h2 {
    line-height: 15px;
 }
 
+.div-bar .text {
+   margin-right: 0px;
+}
+
+.creditos {
+   text-decoration: underline;
+   cursor: pointer;
+   font-size: 14px;
+   color: #DDD;
+   margin: 10px;
+   margin-left: 0px;
+}
+
 @media screen and (max-width: 950px) {
    video {
       margin-top: 0px;
