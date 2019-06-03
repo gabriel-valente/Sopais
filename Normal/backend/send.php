@@ -37,9 +37,9 @@
             $queryInserir = $connection->prepare("INSERT INTO Mensagem(Key_Mensagem, Nome, Email, Mensagem) VALUES (:Key, :Nome, :Email, :Mensagem)");
 
             $queryInserir->bindParam(":Key", $key, PDO::PARAM_STR);
-            $queryInserir->bindParam(":Nome", $nome, PDO::PARAM_STR);
+            $queryInserir->bindParam(":Nome", utf8_decode($nome), PDO::PARAM_STR);
             $queryInserir->bindParam(":Email", $email, PDO::PARAM_STR);
-            $queryInserir->bindParam(":Mensagem", $mensagem, PDO::PARAM_STR);
+            $queryInserir->bindParam(":Mensagem", utf8_decode($mensagem), PDO::PARAM_STR);
 
             if ($queryInserir->execute()) {
                $queryInserir->closeCursor();
@@ -53,7 +53,6 @@
                echo "Error";
                exit();
             }
-
             exit();
          }
       }

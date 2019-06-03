@@ -5,6 +5,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
       <title>Sopais</title>
+            
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140688859-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-140688859-1');
+        </script>
+      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <link rel="stylesheet" type="text/css" href="../fullPage.js/dist/fullpage.min.css" />
       <script type="text/javascript" src="../fullPage.js/dist/fullpage.min.js"></script>
@@ -162,7 +173,7 @@
          <div class="section" id="section3">
             <div class="div-division" id="fundo">
                <div class="div-wrapper">
-                  <h5 class="div-message"><i><b> SOPAIS </b> – Componentes Metálicos, Lda.</i> is a <b> metalworking company with nearly 30 years of experience.</b><br> Our mission is focused on a great customer service with the guarantee that our customer’s clients will be completely satisfied.</h5>
+                  <h5 class="div-message"><i><b> SOPAIS </b>.– Componentes Metálicos, Lda.</i> is a <b> metalworking company with nearly 30 years of experience.</b><br> Our mission is focused on a great customer service with the guarantee that our customer’s clients will be completely satisfied.</h5>
                   <div class="button">
                      <a href="company.php">Know more</a>
                   </div>
@@ -256,7 +267,7 @@
                   </div>
                </div>
                <div class="div-bar">
-                  <p class="text">Copyright © 2019 SOPAIS - Componentes Metálicos Lda. - Developed by: <div class="creditos" onClick="location.href = 'credits.php';"> Gabriel Valente</div></p>
+                  <p class="text">Copyright © 2019 SOPAIS - Componentes Metálicos Lda. - Developed by: <a class="creditos" onClick="location.href = 'creditos.php';"> Gabriel Valente</a></p>
                </div>
             </div>
          </div>

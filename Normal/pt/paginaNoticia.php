@@ -5,6 +5,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
       <title>Sopais</title>
+            
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140688859-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-140688859-1');
+        </script>
+      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <link rel="stylesheet" href="../materialize/css/materialize.css">
       <script src="../materialize/js/materialize.min.js"></script>
@@ -12,7 +23,7 @@
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/noticias.css">
 
-      <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5cd1a45e84760c0019807bcb&product=sop' async='async'></script>
+      <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5cd1a59584760c0019807bcc&product=inline-share-buttons' async='async'></script>
    </head>
    <body>
       <?php
@@ -25,7 +36,7 @@
                   $url = parse_url($_SERVER["REQUEST_URI"]);
 
                   if (empty($url["query"])) {
-                     echo "<script type='text/javascript'>window.top.location='pt/noticias.php';</script>";
+                     echo "<script type='text/javascript'>window.top.location='noticias.php';</script>";
                      exit();
                   } else {
                      $noticia = $url["query"];

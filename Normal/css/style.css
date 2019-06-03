@@ -198,7 +198,7 @@ main {
 .navigation {
    height: 100px;
    width: 20%;
-   margin: 30% 0px;
+   margin: 50vh 0px;
 }
 
 .navigation img {
@@ -293,12 +293,5 @@ code {
 
    .parallax-container {
       height: 35vw;
-   }
-}
-
-@media screen and (max-width: 500px) {
-   .navigation {
-      margin: 50% 0px;
-      margin-bottom: auto;
    }
 }
