@@ -5,17 +5,26 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
       <title>Sopais</title>
-      
+
       <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140688859-1"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-        
+
           gtag('config', 'UA-140688859-1');
         </script>
-        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140688859-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-140688859-2');
+        </script>
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
       <link rel="stylesheet" href="../materialize/css/materialize.css">
@@ -54,13 +63,13 @@
                <p>R: Gosto bastante de hardware, mas preferia trabalhar em programação. Entre web e aplicações prefiro programação de aplicações, ou então web mas back-end.</p>
                <br>
                <h6>P: Pensas em fazer fotografia como algo profissional?</h6>
-               <p>R: Gostava de conseguir fazer fotografia profissionalmente, é algo que gosto bastante fazer, mas talvez deixar apenas como hobby será melhor.</p>
+               <p>R: Gostava de conseguir fazer fotografia profissionalmente, é algo que gosto bastante de fazer, mas talvez deixar apenas como hobby será melhor.</p>
                <br>
                <h6>P: Que projeto mais gostavas de fazer?</h6>
                <p>R: Gostava de participar no desenvolvimento de um grande jogo, adorado por milhares de jogadores e poder ver o jogo que eu ajudei a desenvolver em um evento.</p>
                <br>
                <h6>P: Onde gostavas de trabalhar?</h6>
-               <p>R: A minha ideia de espaço de trabalho "perfeito", seria um sitio rodeado de programadores, designers graficos... uma equipa completa a trabalhar para o desenvolvimento de uma aplicação ou website.</p>
+               <p>R: A minha ideia de espaço de trabalho "perfeito", seria um sítio rodeado de programadores, designers graficos... uma equipa completa a trabalhar para o desenvolvimento de uma aplicação ou website.</p>
                <br>
                <h6>P: Posso pedir um trabalho?</h6>
                <p>R: Claro, software, hardware, fotografia. Pode contactar-me por email ou LinkedIn.</p>
